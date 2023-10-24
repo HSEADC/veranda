@@ -1,5 +1,6 @@
 body.about {
   background-color: var(--bezh);
+  // overflow-y: hidden;
   * {
     box-sizing: border-box;
   }
@@ -32,7 +33,7 @@ body.about {
   div.window {
     width: 100%;
     height: 46.667vw;
-    background-image: url("images/mainScreen.png");
+    background-image: url('images/mainScreen.png');
     background-size: cover;
     border-radius: 154px;
     display: flex;
