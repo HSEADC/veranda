@@ -1,0 +1,149 @@
+body.about {
+  background-color: var(--bezh);
+  * {
+    box-sizing: border-box;
+  }
+  p {
+    font-family: HelveticaNeueCyr;
+    font-size: 24px;
+    color: var(--darkGreen);
+    line-height: 28px;
+  }
+  span.spot {
+    background-color: var(--secondaryGreen);
+    font-size: 24px;
+    padding: 15px 25px;
+    border-radius: 12px;
+    // width: 150px;
+    height: 55px;
+    text-align: center;
+    align-items: center;
+    // display: flex;
+  }
+  div.homeScreen {
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primaryGreen);
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 0px 0px 32px 32px;
+  }
+  // HomeScreen
+  div.window {
+    width: 100%;
+    height: 46.667vw;
+    background-image: url("images/mainScreen.png");
+    background-size: cover;
+    border-radius: 154px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.row {
+      display: flex;
+      width: 83%;
+      justify-content: space-between;
+      align-items: center;
+
+      div.social {
+        display: flex;
+        gap: 15px;
+        a {
+          width: 50px;
+          height: 50px;
+          background-color: red;
+        }
+      }
+    }
+
+    h1 {
+      font-family: Granite;
+      font-size: 120px;
+      display: block;
+      margin-top: 40px;
+      color: var(--darkGreen);
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+  // Ticker
+  div.ticker {
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    margin: 15px 0px;
+  }
+  // About
+  div.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+
+    div.info > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    span.spot {
+      background-color: white;
+    }
+    p.infoText {
+      width: 650px;
+      font-size: 24px;
+      color: white;
+      line-height: 32px;
+      margin-bottom: 25px;
+
+      span {
+        font-family: Granite;
+        font-size: 26px;
+        color: var(--secondaryGreen);
+      }
+    }
+  }
+  // Whom
+  div.whom {
+    display: flex;
+    padding: 0 100px;
+    flex-direction: column;
+
+    div.cardsW {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      div {
+        width: 49%;
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 32px;
+        padding: 30px 20px;
+
+        div.profilePic {
+          padding: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        img {
+          width: 80px;
+          height: 80px;
+          background-size: cover;
+          border-radius: 120px;
+        }
+        svg {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
