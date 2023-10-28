@@ -109,6 +109,7 @@ body.about {
     display: flex;
     padding: 0 100px;
     flex-direction: column;
+    margin-bottom: 50px;
 
     div.cardsW {
       margin-top: 50px;
@@ -144,6 +145,18 @@ body.about {
           height: 80px;
         }
       }
+    }
+  }
+  // Stats screen
+  section {
+    .stats {
+      margin-top: 50px;
+      width: 100%;
+      padding: 100px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      // Problem
     }
   }
 }
