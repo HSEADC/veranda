@@ -1,18 +1,18 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const HtmlWebpackPartialsPlugin = require("html-webpack-partials-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 
-const webpack = require("webpack");
-const path = require("path");
+const webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
   entry: {
-    index: "./src/index.js",
+    index: './src/index.js'
   },
   output: {
-    filename: "[name].[contenthash].js",
-    path: path.resolve(__dirname, "docs"),
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'docs')
   },
   module: {
     rules: [
@@ -20,121 +20,125 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-            plugins: ["@babel/plugin-proposal-class-properties"],
-          },
-        },
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: ['@babel/plugin-proposal-class-properties']
+          }
+        }
       },
       {
         test: /\.js?$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            cacheDirectory: true,
-          },
-        },
+            cacheDirectory: true
+          }
+        }
       },
       {
         test: /\.scss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader",
+          'css-loader',
+          'sass-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [["postcss-preset-env"]],
-              },
-            },
-          },
-        ],
+                plugins: [['postcss-preset-env']]
+              }
+            }
+          }
+        ]
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader'
       },
       {
         resourceQuery: /raw/,
-        type: "asset/source",
+        type: 'asset/source'
       },
       {
         test: /\.(png|svg|jpg|jpeg|webp)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "images/[hash][ext][query]",
-        },
+          filename: 'images/[hash][ext][query]'
+        }
       },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
-        loader: "file-loader",
+        loader: 'file-loader',
         options: {
-          name: "fonts/[name].[ext]",
-        },
-      },
-    ],
+          name: 'fonts/[name].[ext]'
+        }
+      }
+    ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
-      chunkFilename: "[id].[contenthash].css",
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].[contenthash].css'
     }),
 
     // Index
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html",
+      template: './src/home.html',
+      filename: './home.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/about.html",
-      filename: "./about.html",
+      template: './src/index.html',
+      filename: './index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: './about.html'
     }),
 
     // Section
     new HtmlWebpackPlugin({
-      template: "./src/articles.html",
-      filename: "./articles.html",
+      template: './src/articles.html',
+      filename: './articles.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/gallery.html",
-      filename: "./gallery.html",
+      template: './src/gallery.html',
+      filename: './gallery.html'
     }),
     // Article
     new HtmlWebpackPlugin({
-      template: "./src/articles/glamping.html",
-      filename: "./articles/glamping.html",
+      template: './src/articles/glamping.html',
+      filename: './articles/glamping.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/articles/advice.html",
-      filename: "./articles/advice.html",
+      template: './src/articles/advice.html',
+      filename: './articles/advice.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/gallery/house.html",
-      filename: "./gallery/house.html",
+      template: './src/gallery/house.html',
+      filename: './gallery/house.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/gallery/garden.html",
-      filename: "./gallery/garden.html",
+      template: './src/gallery/garden.html',
+      filename: './gallery/garden.html'
     }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, "./src/partials/analytics.html"),
-        location: "analytics",
-        template_filename: "*",
-        priority: "replace",
-      },
-    ]),
+        path: path.join(__dirname, './src/partials/analytics.html'),
+        location: 'analytics',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ])
   ],
   optimization: {
-    minimizer: [new CssMinimizerPlugin()],
-  },
-};
+    minimizer: [new CssMinimizerPlugin()]
+  }
+}

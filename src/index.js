@@ -1,2 +1,2 @@
-console.log('Cooooooool!');
-import './index.css';
+console.log('veranda-media')
+import './index.css'
