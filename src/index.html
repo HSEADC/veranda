@@ -5,5 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>verānda-медиа</title>
   </head>
-  <body class="index"></body>
+  <body class="index">
+    <!-- Zaglushka -->
+    <div class="container">
+      <div>
+        <p>
+          Москва <span><img src="images/arrow.png" alt="" width="12px" /></span
+          ><br />за город
+        </p>
+        <div class="social">
+          <a href=""><img src="images/darkTelegram.svg" alt="" /></a>
+          <a href=""><img src="images/darkYouTube.svg" alt="" /></a>
+          <a href=""><img src="images/darkVk.svg" alt="" /></a>
+        </div>
+        <p>Отбытие<br />в 11:10</p>
+      </div>
+      <h1>Наш поезд отправляется <br />уже совсем скоро!</h1>
+      <p>
+        Оставьте свою электронную почту, <br />чтобы быть в курсе запуска медиа.
+      </p>
+      <!-- form -->
+      <form id="my-form" action="https://formspree.io/f/xaygvkzy" method="POST">
+        <input type="email" name="email" placeholder="e-mail" />
+        <button id="my-form-button">отправить</button>
+        <p id="my-form-status"></p>
+      </form>
+      <!-- logo -->
+      <h1 class="logo">verānda</h1>
+      <div class="scene"></div>
+    </div>
+    <script>
+      var form = document.getElementById('my-form')
+
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'Спасибо,что оставили свою почту!'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML =
+                    'Упс!Что-то пошло не так. Попробуйте снова позже'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Упс!Что-то пошло не так. Попробуйте снова позже'
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
+  </body>
 </html>

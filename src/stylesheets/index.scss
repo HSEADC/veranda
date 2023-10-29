@@ -1,3 +1,126 @@
 body.index {
-  background-color: var(--bezh);
+  background-color: var(--primaryGreen);
+  overflow-y: hidden;
+  margin: 0 auto;
+
+  .social > a:hover {
+    opacity: 80%;
+  }
+  h1 {
+    font-family: HelveticaNeueCyr;
+    font-size: 3.472vw;
+    text-align: center;
+    margin: 1.778vw 0vw 1.5vw 0vw;
+    color: var(--darkGreen);
+  }
+  h1.logo {
+    font-family: Granite;
+    position: absolute;
+    margin: 0;
+    bottom: -0.9vw;
+  }
+  p {
+    font-family: HelveticaNeueCyr;
+    font-size: 1.667vw;
+    color: var(--darkGreen);
+    font-weight: 400;
+    line-height: 1.967vw;
+    z-index: 1;
+  }
+  #my-form-status {
+    // color: white;
+    font-size: 1.25vw;
+    opacity: 50%;
+    margin-top: 0.694vw;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.083vw;
+    align-items: center;
+  }
+  button {
+    border: none;
+    width: 12.5vw;
+    padding: 1.342vw;
+    border-radius: 4.167vw;
+    margin-top: 1.6vw;
+    background-color: var(--primaryGreen);
+    color: white;
+    font-size: 1.667vw;
+  }
+  button:hover {
+    opacity: 80%;
+  }
+  input {
+    font-family: HelveticaNeueCyr;
+    padding: 20px;
+    border-radius: 4.167vw;
+    width: 28.306vw;
+    font-size: 1.667vw;
+    border: 0.139vw solid var(--darkGreen);
+    color: var(--darkGreen);
+  }
+  ::placeholder {
+    color: var(--darkGreen);
+  }
+  input:focus {
+    border: 0.139vw solid var(--primaryGreen);
+    outline: none;
+  }
+  label,
+  input,
+  button {
+    z-index: 1;
+  }
+  // p:nth-child(3) {
+  // margin-top: 30px;
+  // }
+
+  .container {
+    background-color: var(--bezh);
+    width: 86vw;
+    height: 36vw;
+    padding: 3.472vw;
+    margin: 3.472vw;
+    border-radius: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .scene {
+      background-repeat: no-repeat;
+      background-image: url('images/scene.svg');
+      background-size: cover;
+      position: absolute;
+      background-position: bottom;
+      width: 87vw;
+      height: 23.931vw;
+      bottom: -0.1vw;
+      left: 3.5vw;
+      // left: 3.5vw;
+    }
+    // .scene:last-child {
+    // width: 29.722vw;
+    // height: 24.514vw;
+    // left: 24.514vw;
+    // bottom: -0.1vw;
+    // background-image: url('images/scene2.svg');
+    // }
+
+    div:first-child {
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+
+      span > img {
+        transform: rotate(-90deg);
+      }
+      .social {
+        display: flex;
+        gap: 0.347vw;
+      }
+    }
+  }
 }
