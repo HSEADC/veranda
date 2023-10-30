@@ -89,8 +89,8 @@ module.exports = {
 
     // Index
     new HtmlWebpackPlugin({
-      template: './src/home.html',
-      filename: './home.html'
+      template: './src/aboutUs.html',
+      filename: './aboutUs.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
@@ -100,33 +100,24 @@ module.exports = {
       template: './src/about.html',
       filename: './about.html'
     }),
-
-    // Section
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/gallery.html',
-      filename: './gallery.html'
+      template: './src/queAnswer.html',
+      filename: './queAnswer.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas.html',
+      filename: './ideas.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/winter.html',
+      filename: './articles/winter.html'
+    }),
+
     // Article
-    new HtmlWebpackPlugin({
-      template: './src/articles/glamping.html',
-      filename: './articles/glamping.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/articles/advice.html',
-      filename: './articles/advice.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/gallery/house.html',
-      filename: './gallery/house.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/gallery/garden.html',
-      filename: './gallery/garden.html'
-    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
