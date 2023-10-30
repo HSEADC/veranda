@@ -527,7 +527,9 @@ body.about {
       display: flex;
       gap: 0.694vw;
       align-items: flex-end;
-
+      p {
+        color: var(--secondaryGreen);
+      }
       a {
         font-size: 1.944vw;
         font-family: HelveticaNeueCyr;

@@ -2,7 +2,9 @@ body.index {
   background-color: var(--primaryGreen);
   overflow-y: hidden;
   margin: 0 auto;
-
+  * {
+    cursor: url('images/cursorVeranda.svg'), pointer;
+  }
   .social > a:hover {
     opacity: 80%;
   }
@@ -54,7 +56,7 @@ body.index {
   }
   input {
     font-family: HelveticaNeueCyr;
-    padding: 20px;
+    padding: 1.389vw;
     border-radius: 4.167vw;
     width: 28.306vw;
     font-size: 1.667vw;

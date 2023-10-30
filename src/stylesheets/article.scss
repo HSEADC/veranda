@@ -7,12 +7,12 @@ body.article {
     box-sizing: border-box;
   }
   h1 {
-    font-size: 56px;
+    font-size: 3.889vw;
     color: var(--darkGreen);
 
     span {
       font-family: 'Granite';
-      font-size: 58px;
+      font-size: 4.028vw;
       color: var(--darkGreen);
     }
   }
@@ -22,7 +22,7 @@ body.article {
 
     li {
       list-style: none;
-      padding: 25px;
+      padding: 1.736vw;
 
       a {
         text-decoration: none;
@@ -40,7 +40,7 @@ body.article {
   .block1 {
     display: flex;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 4.167vw;
     flex-direction: column;
 
     .wrapper {
@@ -49,17 +49,17 @@ body.article {
       justify-content: center;
 
       .headPicture {
-        width: 1000px;
-        height: 545px;
+        width: 69.444vw;
+        height: 37.847vw;
         background-image: url('images/headPicture.png');
         background-size: cover;
-        border-radius: 32px;
-        margin-left: 200px;
+        border-radius: 2.222vw;
+        margin-left: 13.889vw;
       }
     }
     .block2 {
-      padding: 0 100px;
-      margin-top: 70px;
+      padding: 0 6.944vw;
+      margin-top: 4.861vw;
 
       .wrapperAbout {
         display: flex;
@@ -68,45 +68,45 @@ body.article {
           width: 65%;
 
           p {
-            margin-top: 25px;
-            line-height: 32px;
+            margin-top: 1.736vw;
+            line-height: 2.222vw;
           }
         }
         .tags {
           display: flex;
           flex-wrap: wrap;
           flex-shrink: none;
-          height: 120px;
-          gap: 10px;
+          height: 8.333vw;
+          gap: 0.694vw;
           justify-content: flex-end;
 
           p > span {
-            padding: 15px 25px;
-            border-radius: 12px;
-            border: solid 2px var(--darkGreen);
+            padding: 1.042vw 1.736vw;
+            border-radius: 0.833vw;
+            border: solid 0.139vw var(--darkGreen);
           }
           p:last-child {
-            margin-top: 7px;
+            margin-top: 0.486vw;
           }
         }
       }
     }
   }
   hr {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    width: 1230px;
-    border: 1px solid;
+    margin-top: 4.861vw;
+    margin-bottom: 4.861vw;
+    width: 85.417vw;
+    border: 0.069vw solid;
   }
   .block3 {
     display: flex;
     justify-content: space-between;
-    padding: 0 0 0 100px;
+    padding: 0 0 0 6.944vw;
     .secondPic {
-      width: 437px;
-      height: 455px;
+      width: 30.347vw;
+      height: 31.597vw;
       background-image: url('images/cozyChair.png');
-      border-radius: 32px;
+      border-radius: 2.222vw;
     }
     .moretext {
       display: flex;
@@ -115,93 +115,92 @@ body.article {
       position: relative;
 
       p {
-        width: 700px;
-        margin-top: 20px;
-        line-height: 32px;
+        width: 48.611vw;
+        margin-top: 1.389vw;
+        line-height: 2.222vw;
       }
       p > span {
-        padding: 15px 25px;
-        border-radius: 12px;
-        border: solid 2px var(--darkGreen);
+        padding: 1.042vw 1.736vw;
+        border-radius: 0.833vw;
+        border: solid 0.139vw var(--darkGreen);
         position: absolute;
         bottom: 0;
       }
       h2 {
-        font-size: 38px;
+        font-size: 2.639vw;
+        color: var(--darkGreen);
       }
     }
   }
   .txtBlock {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 4.167vw;
+    margin-bottom: 4.167vw;
     display: flex;
     align-items: flex-end;
     .numBlock {
-      margin-left: 490px;
-      margin-top: 70px;
-      margin-right: 60px;
+      margin-left: 34.028vw;
+      margin-top: 4.861vw;
+      margin-right: 3.167vw;
 
       h1 > span {
-        font-size: 67px;
+        font-size: 4.653vw;
       }
     }
     p {
-      line-height: 32px;
-      width: 700px;
+      line-height: 2.222vw;
+      width: 48.611vw;
     }
   }
   .frame {
-    width: 1130xpx;
-    height: 495px;
-    border: solid 2px var(--darkGreen);
-    border-radius: 32px;
-    margin: 0 100px 60px 100px;
+    width: 78.472vw;
+    height: 34.375vw;
+    border: solid 0.139vw var(--darkGreen);
+    border-radius: 2.222vw;
+    margin: 0 6.944vw 4.167vw 6.944vw;
   }
   .picBlocks {
     display: flex;
-    gap: 50px;
-    margin: 0 100px 60px 100px;
+    gap: 3.472vw;
+    margin: 0 4.167vw 4.167vw 4.167vw;
 
     .picContainer:first-child {
-      width: 438px;
-      height: 494px;
+      width: 30.417vw;
+      height: 34.306vw;
       background-image: url('images/wood.png');
       background-size: cover;
-      border-radius: 32px;
+      border-radius: 2.222vw;
     }
     .picContainer:last-child {
-      width: 728px;
-      height: 494px;
-      border: 2px solid var(--darkGreen);
+      width: 50.556vw;
+      height: 34.306vw;
+      border: 0.139vw solid var(--darkGreen);
       background-size: cover;
-      border-radius: 32px;
+      border-radius: 2.222vw;
     }
-  }
-  .picBlocksWrap {
   }
   .ending {
     font-family: Granite;
     text-align: center;
-    margin: 150px 250px 0;
-    font-size: 36px;
-    line-height: 39px;
+    margin: 10.417vw 17.361vw 0;
+    font-size: 2.5vw;
+    line-height: 2.708vw;
   }
   .lineWrap {
     hr {
-      margin-top: 30px;
-      width: 900px;
+      margin-top: 2.083vw;
+      width: 62.5vw;
     }
   }
   footer {
     width: 100%;
-    height: 400px;
+    height: 27.778vw;
     position: relative;
     align-items: center;
     justify-content: center;
     display: flex;
     .logo {
       font-family: Granite;
-      font-size: 100px;
+      font-size: 6.944vw;
     }
     .snowForest {
       width: 1363px;
