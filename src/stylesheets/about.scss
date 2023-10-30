@@ -57,22 +57,11 @@ body.about {
       justify-content: space-between;
       align-items: center;
 
-      .dropdown:hover .dropdown-content {
-        display: block;
-        transition: all 0.5s;
-      }
-      .dropdown:hover .dropbtn {
-        border-radius: 1.433vw 1.433vw 0px 0px;
-      }
       .dropdown {
         position: relative;
         display: inline-block;
         transition: all 0.5s;
 
-        .dropbtn:hover img {
-          transform: rotate(45deg);
-          transition: all 0.2s;
-        }
         .dropbtn {
           background-color: var(--secondaryGreen);
           color: white;
