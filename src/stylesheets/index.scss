@@ -1,128 +1,99 @@
 body.index {
-  background-color: var(--primaryGreen);
-  overflow-y: hidden;
-  margin: 0 auto;
+  background-color: var(--bezh);
   * {
-    cursor: url('images/cursorVeranda.svg'), pointer;
+    box-sizing: border-box;
   }
-  .social > a:hover {
-    opacity: 80%;
-  }
-  h1 {
-    font-family: HelveticaNeueCyr;
-    font-size: 3.472vw;
-    text-align: center;
-    margin: 1.778vw 0vw 1.5vw 0vw;
-    color: var(--darkGreen);
-  }
-  h1.logo {
-    font-family: Granite;
-    position: absolute;
-    margin: 0;
-    bottom: -0.9vw;
-  }
-  p {
-    font-family: HelveticaNeueCyr;
-    font-size: 1.667vw;
-    color: var(--darkGreen);
-    font-weight: 400;
-    line-height: 1.967vw;
-    z-index: 1;
-  }
-  #my-form-status {
-    // color: white;
-    font-size: 1.25vw;
-    opacity: 50%;
-    margin-top: 0.694vw;
-  }
-  form {
+  // TagRows
+  .tagBox {
     display: flex;
     flex-direction: column;
-    margin-top: 2.083vw;
+    margin: 0 auto;
     align-items: center;
-  }
-  button {
-    border: none;
-    width: 12.5vw;
-    padding: 1.342vw;
-    border-radius: 4.167vw;
-    margin-top: 1.6vw;
-    background-color: var(--primaryGreen);
-    color: white;
-    font-size: 1.667vw;
-  }
-  button:hover {
-    opacity: 80%;
-  }
-  input {
-    font-family: HelveticaNeueCyr;
-    padding: 1.389vw;
-    border-radius: 4.167vw;
-    width: 28.306vw;
-    font-size: 1.667vw;
-    border: 0.139vw solid var(--darkGreen);
-    color: var(--darkGreen);
-  }
-  ::placeholder {
-    color: var(--darkGreen);
-  }
-  input:focus {
-    border: 0.139vw solid var(--primaryGreen);
-    outline: none;
-  }
-  label,
-  input,
-  button {
-    z-index: 1;
-  }
-  // p:nth-child(3) {
-  // margin-top: 30px;
-  // }
 
-  .container {
+    .row {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  // Fonts
+  h1 {
+    font-family: Manrope;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -1px;
+    color: var(--darkGreen);
+  }
+  .accent {
+    font-family: Lora;
+  }
+  // Colors
+  .cream {
+    color: var(--bezh);
+  }
+  .darkGreen {
+    color: var(--darkGreen);
+  }
+
+  // Tags
+  span.brick {
+    padding: 18px 22px;
     background-color: var(--bezh);
-    width: 86vw;
-    height: 36vw;
-    padding: 3.472vw;
-    margin: 3.472vw;
-    border-radius: 4vw;
+    border-radius: 9px;
     display: flex;
-    flex-direction: column;
+  }
+  span.round {
+    padding: 18px 22px;
+    border-radius: 200px;
+    background-color: var(--darkGreen);
+    display: flex;
+  } // SectionHome
+  .iconRound {
+    width: 105px;
+    height: 105px;
+    background-image: url('images/pingPong.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  // SectionHome
+  section.home {
+    width: 100vw;
+    height: 700px;
+    background-color: var(--primaryGreen);
+    background-image: url('images/housesBGYellow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
     align-items: center;
+  }
+  // AboutMedia
+  section.aboutMedia {
+    width: 100vw;
+    height: 800px;
     position: relative;
 
-    .scene {
-      background-repeat: no-repeat;
-      background-image: url('images/scene.svg');
-      background-size: cover;
+    .picture {
       position: absolute;
-      background-position: bottom;
-      width: 87vw;
-      height: 23.931vw;
-      bottom: -0.1vw;
-      left: 3.5vw;
-      // left: 3.5vw;
+      background-image: url('images/bicycleBig.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 1066px;
+      height: 681px;
+      bottom: 0;
     }
-    // .scene:last-child {
-    // width: 29.722vw;
-    // height: 24.514vw;
-    // left: 24.514vw;
-    // bottom: -0.1vw;
-    // background-image: url('images/scene2.svg');
-    // }
+    .picture:last-child {
+      background-image: url('images/shroom.png');
+      width: 160px;
+      height: 160px;
+      right: 0;
+    }
 
-    div:first-child {
-      display: flex;
-      width: 90%;
-      justify-content: space-between;
-
-      span > img {
-        transform: rotate(-90deg);
-      }
-      .social {
-        display: flex;
-        gap: 0.347vw;
-      }
+    span.round {
+      width: 410px;
+      margin-top: 140px;
+      margin-left: 140px;
+      background-color: var(--primaryGreen);
     }
   }
 }

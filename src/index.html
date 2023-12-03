@@ -8,43 +8,41 @@
     <title>verānda-медиа</title>
   </head>
   <body class="index">
-    <!-- Zaglushka -->
-    <div class="container">
-      <div>
-        <p>
-          Москва <span><img src="images/arrow.png" alt="" width="12px" /></span
-          ><br />за город
-        </p>
-        <div class="social">
-          <a href="https://vk.com/public223193055" target="_blank"
-            ><img src="images/socialDark-1.svg" alt=""
-          /></a>
-          <a href="https://t.me/+KqICHv7p-fM1M2Ey" target="_blank"
-            ><img src="images/socialDark-2.svg" alt=""
-          /></a>
-          <a
-            href="https://www.youtube.com/channel/UC-aRJrDfPy2pTzOyu2jAYkA"
-            target="_blank"
-            ><img src="images/socialDark.svg" alt=""
-          /></a>
+    <!-- Home -->
+    <section class="home">
+      <div class="tagBox">
+        <span class="brick"><h1>Новый медиасервис</h1></span>
+        <div class="row">
+          <span class="round"
+            ><h1 style="color: var(--bezh)" class="accent">
+              о современной
+            </h1></span
+          >
+          <div class="iconRound"></div>
         </div>
-        <p>Отбытие<br />в 11:10</p>
+        <div class="row">
+          <div class="iconRound"></div>
+          <span style="background-color: var(--bezh)" class="brick cream"
+            ><h1 class="accent">загородной</h1></span
+          >
+          <span style="background-color: var(--bezh)" class="round cream"
+            ><h1 class="accent">жизни</h1></span
+          >
+        </div>
       </div>
-      <h1>Наш поезд отправляется <br />уже совсем скоро!</h1>
-      <p>
-        Оставьте свою электронную почту, <br />чтобы быть в курсе запуска медиа.
-      </p>
-      <!-- form -->
-      <form id="my-form" action="https://formspree.io/f/xaygvkzy" method="POST">
-        <input type="email" name="email" placeholder="e-mail" />
-        <button id="my-form-button">отправить</button>
-        <p id="my-form-status"></p>
-      </form>
-      <!-- logo -->
-      <h1 class="logo">verānda</h1>
-      <div class="scene"></div>
-    </div>
-    <script>
+    </section>
+    <!-- AboutMedia -->
+    <section class="aboutMedia">
+      <span class="round"><h1 class="accent">о чем медиа</h1></span>
+      <div class="picture"></div>
+      <div class="picture"></div>
+    </section>
+    <!-- Articles -->
+    <section></section>
+    <!-- Form -->
+    <footer></footer>
+
+    <!-- <script>
       var form = document.getElementById('my-form')
 
       async function handleSubmit(event) {
@@ -80,6 +78,6 @@
           })
       }
       form.addEventListener('submit', handleSubmit)
-    </script>
+    </script> -->
   </body>
 </html>
