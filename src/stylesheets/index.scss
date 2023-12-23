@@ -3,377 +3,296 @@ body.index {
   * {
     box-sizing: border-box;
   }
-
-  // TagRows
-  .tagBox {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-
-    .row {
-      display: flex;
-      width: 100%;
-      flex-direction: row;
-    }
-  }
-
-  .topic {
-    h2 {
-      font-weight: 600;
-      font-family: Manrope;
-      font-size: 28px;
-      display: inline-block;
-      color: var(--darkGreen);
-      margin-bottom: 15px;
-    }
-  }
-  // TagGrid
-  .tag {
-    background-color: #fdffdd;
-    padding: 8px 15px 8px;
-    display: flex;
-    align-items: center;
-    display: inline-block;
-    border-radius: 200px;
-    justify-content: center;
-    border: 2px solid var(--darkGreen);
-    margin-bottom: 30px;
-  }
   // Fonts
   h1 {
     font-family: Manrope;
-    font-size: 60px;
-    line-height: 110%;
-    letter-spacing: -1px;
+    font-weight: 500;
+    font-size: 82px;
+    height: 80px;
+    display: block;
     color: var(--darkGreen);
   }
-  p {
-    font-size: 30px;
-    letter-spacing: -1%;
-    line-height: 110%;
+  h2 {
+    font-size: 42px;
     font-family: Manrope;
-    color: var(--darkGreen);
-  }
-  .accent {
-    font-family: Lora;
-  }
-  // Colors
-  .cream {
+    font-weight: 600px;
     color: var(--bezh);
   }
-  .darkGreen {
+  .accent {
+    font-family: '_21_Cent';
+    font-size: 90px;
+  }
+  p {
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 500px;
+    line-height: 120%;
     color: var(--darkGreen);
   }
 
   // Tags
-  span.brick {
-    padding: 18px 22px;
-    background-color: var(--bezh);
-    border-radius: 9px;
-    display: flex;
+  p > span {
+    font-size: 20px;
+    border: 2px solid var(--bezh);
+    padding: 10px 15px;
+    color: var(--bezh);
+    border-radius: 12px;
   }
-  span.round {
-    padding: 18px 22px;
-    border-radius: 200px;
-    background-color: var(--darkGreen);
-  } // SectionHome
-  .iconRound {
-    width: 105px;
-    height: 105px;
-    background-image: url('images/pingPong.svg');
-    background-repeat: no-repeat;
+  // Icon
+  .insertIcon {
+    background-image: url('images/treeInsIcon.svg');
+    width: 80px;
+    height: 84px;
     background-size: cover;
   }
-  // Icons
-  .roundSun {
-    background-image: url('images/roundSun.png');
+  // Links
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
   }
-  .roundSparks {
-    background-image: url('images/roundSparks.png');
+  a {
+    font-family: Manrope;
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--darkGreen);
   }
-  .roundTree {
-    background-image: url('images/roundTree.png');
+  a.button {
+    padding: 30px 50px;
+    font-size: 28px;
+    display: inline-block;
+    font-family: Manrope;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: var(--bezh);
+    border: 3px solid var(--darkGreen);
   }
-  // SectionHome
-  section.home {
-    width: 100vw;
-    height: 800px;
-    background-color: var(--primaryGreen);
-    background-image: url('images/housesBGYellow.png');
-    background-repeat: no-repeat;
-    background-position: center;
+  // TextWrapper
+  .textWrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-
-    .logoLine {
-      background-image: url('images/logo.png');
-      position: absolute;
-      width: 100%;
-      height: 50px;
-      background-repeat: no-repeat;
-      background-position: center;
-      top: 30px;
-    }
-  }
-  // AboutMedia
-  section.aboutMedia {
-    width: 100vw;
-    height: 719px;
-    position: relative;
-    background-image: url('images/aboutMedia.png');
-    // background-position: top;
-
-    .iconRound {
-      background-image: url('images/drink.svg');
-      position: absolute;
-      right: 130px;
-      top: 240px;
-      transform: rotate(12deg);
-    }
-
-    .aboutText {
-      display: flex;
-      padding: 120px;
-      justify-content: space-between;
-
-      p {
-        width: 500px;
-      }
-
-      span.round {
-        width: 410px;
-        height: 110px;
-        background-color: var(--primaryGreen);
-      }
-    }
-  }
-  section.contents {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--primaryGreen);
-    border-radius: 72px;
-    padding-bottom: 70px;
-    gap: 70px;
-    // Heading
-
-    .heading {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 100px;
-      margin-bottom: 70px;
-    }
-    // Cards First
-
-    .cardGrid {
-      width: 100%;
-      height: 1000px;
-      display: grid;
-      grid-template-columns: repeat(16, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-      padding: 0px 50px 0px 50px;
-
-      .gridItem {
-        grid-area: 1 / 1 / 2 / 6;
-        background-color: var(--bezh);
-        border-radius: 12px;
-        padding: 25px;
-        p {
-          font-size: 18px;
-        }
-        .topic {
-          h2 {
-            font-weight: 600;
-            font-family: Manrope;
-            font-size: 28px;
-            display: inline-block;
-            color: var(--darkGreen);
-            margin-bottom: 15px;
-          }
-        }
-      }
-      .gridItem:nth-child(1) {
-        background-image: url('images/houseCard.png');
-        background-size: cover;
-        background-size: 69%;
-        background-position: bottom;
-        background-repeat: no-repeat;
-      }
-      .gridItem:nth-child(2) {
-        grid-area: 1 / 6 / 2 / 17;
-        background-image: url('images/grassBicycle.png');
-        background-size: cover;
-      }
-      .gridItem:nth-child(3) {
-        grid-area: 2 / 1 / 3 / 12;
-        background-image: url('images/vibing.png');
-        background-size: cover;
-      }
-      .gridItem:nth-child(4) {
-        grid-area: 2 / 12 / 3 / 17;
-        background-image: url('images/treeCard.png');
-        background-size: cover;
-        background-size: 69%;
-        background-position: bottom;
-        background-repeat: no-repeat;
-      }
-    }
-    // ToneOfMedia
-    .toneOfMedia {
-      display: flex;
-      width: 100%;
-      height: 800px;
-      align-items: center;
-      background-image: url('images/flowersBG.png');
-      background-size: cover;
-      background-position: bottom;
-
-      .tagBox {
-        .row {
-          margin-top: 40px;
-        }
-        h1.big {
-          width: 960px;
-          text-align: center;
-        }
-      }
-    }
-    // CardsSecond
-
-    .cardsGridSecond {
-      display: grid;
-      padding: 0 50px 0px 50px;
-      grid-template-columns: repeat(16, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 15px;
-      grid-row-gap: 15px;
-      height: 1100px;
-      width: 100%;
-
-      .gridItem:first-child {
-        background-image: url('images/cupCard.svg');
-        background-size: 60%;
-        background-position: bottom;
-        background-repeat: no-repeat;
-      }
-      .gridItem {
-        grid-area: 1 / 1 / 2 / 5;
-        background-color: var(--bezh);
-        border-radius: 30px;
-        padding: 20px;
-        p {
-          font-size: 18px;
-        }
-      }
-      .gridItem:nth-child(2) {
-        grid-area: 1 / 5 / 2 / 13;
-        background-image: url('images/guys.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom -8px right;
-
-        .tag {
-          background: none;
-          border: 2px solid var(--bezh);
-
-          p {
-            color: var(--bezh);
-          }
-        }
-      }
-      .gridItem:nth-child(3) {
-        grid-area: 1 / 13 / 2 / 17;
-        background-image: url('images/carrot.png');
-        background-size: 85%;
-        background-position: bottom;
-        background-repeat: no-repeat;
-      }
-      .gridItem:nth-child(4) {
-        grid-area: 2 / 1 / 3 / 5;
-        background-image: url('images/tent.png');
-        background-size: cover;
-        background-position: bottom;
-      }
-      .gridItem:nth-child(5) {
-        grid-area: 2 / 5 / 3 / 13;
-        background-image: url('images/umbrella.png');
-        background-size: cover;
-        background-position: bottom;
-      }
-      .gridItem:nth-child(6) {
-        grid-area: 2 / 13 / 3 / 17;
-        background-image: url('images/abibas.png');
-        background-size: cover;
-        background-position: bottom;
-      }
-    }
-  }
-
-  // Footer
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 150px 70px;
+    gap: 7px;
 
     h1 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    form {
-      width: 1000px;
-      display: flex;
-
-      input::placeholder {
-        color: var(--darkGreen);
-      }
-      input:focus {
-        outline: none;
-      }
-      input:hover {
-        opacity: 85%;
-      }
-      input {
-        width: 100%;
-        font-size: 40px;
-        padding: 18px 22px 22px;
-        font-family: Lora;
-        border-radius: 9px;
-        border: 4px solid var(--darkGreen);
-      }
-      button {
-        font-size: 40px;
-        font-family: Manrope;
-        border-radius: 200px;
-        padding: 18px 22px;
-        outline: none;
-        border: none;
-        background-color: var(--darkGreen);
+      display: inline-block;
+      span {
+        padding: 0 6px 4px;
+        margin: 0 10px;
+        font-family: '_21_Cent';
         color: var(--bezh);
+        background-color: var(--darkGreen);
+        border-radius: 6px;
+        font-weight: lighter;
       }
     }
-    // Social
-    .social {
+  }
+  .spaceBetween {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+  }
+  // Section main
+  section.main {
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--primaryGreen);
+    header {
+      width: 100%;
       display: flex;
-      gap: 15px;
-      margin-top: 120px;
-      a.socialIcon {
-        width: 65px;
-        height: 65px;
-        background-image: url('images/darkTelegram.svg');
+      align-items: baseline;
+      margin-bottom: 35px;
+      justify-content: space-between;
+      .logo {
+        img {
+          height: 35px;
+        }
+      }
+      .links {
+        display: flex;
+        gap: 40px;
+      }
+    }
+    .textWrapper {
+      width: 1450px;
+    }
+    .contentImage {
+      width: 100%;
+      height: 39.833vw;
+      background-image: url('images/sectionMainImage.png');
+      border-radius: 30px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  // Section About
+  section.about {
+    display: flex;
+    background-color: var(--bezh);
+    background-image: url('images/aboutTrees.png');
+    height: 50.87vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    .wrap {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      .logo {
+        img {
+          height: 80px;
+        }
+      }
+      .textWrapper {
+        width: 1450px;
+        justify-content: center;
+
+        .insertIcon {
+          background-image: url('images/pongInsIcon.svg');
+          height: 97px;
+          width: 85px;
+        }
+      }
+    }
+  }
+  // Section Articles
+  section.article {
+    display: flex;
+    background-color: var(--primaryGreen);
+    padding: 60px 60px;
+    gap: 100px;
+    border-radius: 32px;
+
+    .textWrapper {
+      width: 700px;
+      align-items: flex-start;
+
+      .insertIcon {
+        height: 88px;
+        width: 95px;
+        background-image: url('images/cloudsInsIcon.svg');
+      }
+    }
+    .articleCard {
+      width: 864px;
+      height: 884px;
+      background-image: url('images/articlePic.png');
+      border-radius: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: flex-end;
+
+      .cardInfo {
+        background-color: var(--darkGreen);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        border-radius: 0 0 26px 26px;
+        padding: 25px 30px;
+        .tagLine {
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+    .description {
+      width: 720px;
+
+      p {
+        margin-top: 40px;
+        margin-bottom: 90px;
+      }
+      a.button:hover {
+        text-decoration: none;
+        opacity: 75%;
+      }
+    }
+  }
+  section.ideas {
+    height: 2000px;
+    .cardHeading {
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin-bottom: 60px;
+      background-color: var(--bezh);
+
+      .textWrapper {
+        margin: 0 auto;
+        width: 650px;
+
+        .insertIcon {
+          width: 100px;
+          height: 103px;
+          background-image: url('images/sparksInsIcon.svg');
+        }
+      }
+      .ideasCard {
+        width: 100%;
+        height: 890px;
+        background-color: var(--darkGreen);
+        border-radius: 30px;
+        background-image: url('images/ideasPic.png');
         background-size: cover;
-        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        padding: 25px;
+
+        .cardInfo {
+          width: 850px;
+          margin: 0 auto;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          h2 {
+            text-align: center;
+          }
+
+          .tagLine {
+            display: flex;
+            gap: 15px;
+          }
+        }
       }
-      a.socialIcon:nth-child(2) {
-        background-image: url('images/darkVk.svg');
+    }
+
+    .ideasBlock {
+      width: 100%;
+      background-image: url('images/flowersBg.png');
+      background-color: var(--bezh);
+      height: 705px;
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
+    .description {
+      margin-left: 220px;
+      padding-top: 50px;
+      p {
+        width: 640px;
+        margin-top: 30px;
+        margin-bottom: 70px;
       }
-      a.socialIcon:nth-child(3) {
-        background-image: url('images/darkYoutube.svg');
+      a.button {
+        background-color: var(--primaryGreen);
       }
     }
   }
