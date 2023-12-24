@@ -7,8 +7,8 @@ body.index {
   h1 {
     font-family: Manrope;
     font-weight: 500;
-    font-size: 82px;
-    height: 80px;
+    font-size: 4.167vw;
+    line-height: 90%;
     display: block;
     color: var(--darkGreen);
   }
@@ -42,13 +42,15 @@ body.index {
   .insertIcon {
     background-image: url('images/treeInsIcon.svg');
     width: 80px;
-    height: 84px;
+    height: 87px;
     background-size: cover;
   }
   // Links
-  a:hover {
-    text-decoration: underline;
-    text-underline-offset: 7px;
+  header {
+    a:hover {
+      text-decoration: underline;
+      text-underline-offset: 7px;
+    }
   }
   a {
     font-family: Manrope;
@@ -57,7 +59,7 @@ body.index {
     color: var(--darkGreen);
   }
   a.button {
-    padding: 30px 50px;
+    padding: 25px 45px;
     font-size: 28px;
     display: inline-block;
     font-family: Manrope;
@@ -66,19 +68,23 @@ body.index {
     background-color: var(--bezh);
     border: 3px solid var(--darkGreen);
   }
+  a.button:hover {
+    opacity: 75%;
+  }
   // TextWrapper
   .textWrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
 
     h1 {
       display: inline-block;
       span {
-        padding: 0 6px 4px;
+        padding: 3px 10px 4px 10px;
         margin: 0 10px;
         font-family: '_21_Cent';
+        vertical-align: middle;
         color: var(--bezh);
         background-color: var(--darkGreen);
         border-radius: 6px;
@@ -101,7 +107,7 @@ body.index {
   // Section main
   section.main {
     width: 100%;
-    padding: 60px;
+    padding: 80px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -163,8 +169,8 @@ body.index {
 
         .insertIcon {
           background-image: url('images/pongInsIcon.svg');
-          height: 97px;
-          width: 85px;
+          height: 94px;
+          width: 79px;
         }
       }
     }
@@ -182,8 +188,8 @@ body.index {
       align-items: flex-start;
 
       .insertIcon {
-        height: 88px;
-        width: 95px;
+        height: 81px;
+        width: 89px;
         background-image: url('images/cloudsInsIcon.svg');
       }
     }
@@ -239,14 +245,15 @@ body.index {
         width: 650px;
 
         .insertIcon {
-          width: 100px;
-          height: 103px;
+          width: 84px;
+          height: 84px;
+          background-size: cover;
           background-image: url('images/sparksInsIcon.svg');
         }
       }
       .ideasCard {
         width: 100%;
-        height: 890px;
+        height: 46.354vw;
         background-color: var(--darkGreen);
         border-radius: 30px;
         background-image: url('images/ideasPic.png');
@@ -293,6 +300,186 @@ body.index {
       }
       a.button {
         background-color: var(--primaryGreen);
+      }
+    }
+  }
+  section.card {
+    // height: 50.87vw;
+    background-color: var(--primaryGreen);
+    background-image: url('images/bgCloudsQa.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 29px;
+    border-radius: 30px;
+    padding: 120px;
+    display: flex;
+    position: relative;
+
+    .bikeQa {
+      position: absolute;
+      background-image: url('images/bikeQa.svg');
+      width: 618px;
+      height: 409px;
+      bottom: 46px;
+      right: 64px;
+    }
+    .qaWrap {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      .description {
+        width: 720px;
+
+        p {
+          margin-top: 40px;
+          margin-bottom: 90px;
+        }
+      }
+      .qaCard {
+        width: 550px;
+        height: 790px;
+        background-color: var(--bezh);
+        padding: 25px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 28px;
+        margin-left: 250px;
+
+        .qaImage {
+          background-image: url('images/sunsetQa.svg');
+          width: 412px;
+          height: 502px;
+          position: absolute;
+          background-repeat: no-repeat;
+          background-size: cover;
+          bottom: 39px;
+          left: 70px;
+        }
+        .cardInfo {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          h2,
+          p > span {
+            color: var(--darkGreen);
+          }
+          p > span {
+            border: 2px solid var(--darkGreen);
+          }
+
+          .tagLine {
+            display: flex;
+            gap: 15px;
+          }
+        }
+      }
+    }
+  }
+  // SectionForm
+  section.form {
+    background-color: var(--bezh);
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    .textWrapper {
+      width: 1075px;
+      height: 250px;
+      justify-content: center;
+    }
+    .insertIcon {
+      background-image: url('images/insIconFlower.svg');
+      width: 96px;
+      height: 96px;
+    }
+    .formWrapper {
+      form {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 70px;
+        input,
+        button {
+          border-radius: 12px;
+        }
+        input::placeholder {
+          color: var(--darkGreen);
+        }
+        input {
+          font-size: 28px;
+          font-family: '_21_Cent';
+          width: 529px;
+          padding: 20px 40px 20px 30px;
+          color: var(--darkGreen);
+          border: 3px solid var(--darkGreen);
+          background: none;
+        }
+        button:hover {
+          opacity: 75%;
+          cursor: pointer;
+        }
+        button {
+          font-family: Manrope;
+          font-size: 24px;
+          padding: 21px 45px;
+          color: var(--darkGreen);
+          background-color: var(--primaryGreen);
+          border: 3px solid var(--primaryGreen);
+        }
+      }
+    }
+    footer {
+      display: flex;
+      background-color: var(--darkGreen);
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 60px 80px;
+      border-radius: 30px 30px 0px 0px;
+
+      p {
+        color: var(--bezh);
+      }
+      .people {
+        display: flex;
+        gap: 120px;
+
+        .students,
+        .curators {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          p:nth-child(1) {
+            font-family: '_21_Cent';
+            font-size: 30px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      // Social Media
+      .socialMedia {
+        display: flex;
+        gap: 5px;
+        a {
+          width: 60px;
+          height: 60px;
+          background-size: cover;
+        }
+        a:nth-child(1) {
+          background-image: url('images/social_telegram.svg');
+        }
+        a:nth-child(2) {
+          background-image: url('images/social_vk.svg');
+        }
+        a:nth-child(3) {
+          background-image: url('images/social_youTube.svg');
+        }
+        a:hover {
+          opacity: 75%;
+        }
       }
     }
   }
