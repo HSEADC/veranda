@@ -21,6 +21,7 @@ body.index {
   .accent {
     font-family: '_21_Cent';
     font-size: 90px;
+    font-weight: lighter;
   }
   p {
     font-family: Manrope;
@@ -455,6 +456,7 @@ body.index {
           gap: 5px;
           p:nth-child(1) {
             font-family: '_21_Cent';
+            font-weight: lighter;
             font-size: 30px;
             margin-bottom: 10px;
           }

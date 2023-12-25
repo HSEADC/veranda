@@ -28,6 +28,7 @@ body.article {
 
     span {
       font-family: '_21_Cent';
+      font-weight: lighter;
       font-size: 44px;
     }
   }
@@ -77,6 +78,7 @@ body.article {
         padding: 5px 10px 5px 10px;
         display: inline-block;
         font-family: '_21_Cent';
+        font-weight: lighter;
         vertical-align: middle;
         color: var(--bezh);
         background-color: var(--darkGreen);
@@ -130,10 +132,16 @@ body.article {
     .links {
       display: flex;
       gap: 40px;
+
+      .links {
+        a::hover {
+          opacity: 75%;
+        }
+      }
     }
   }
   .headingTagsWrap {
-    grid-area: 1 / 1 / 2 / 17;
+    grid-column: 1/17;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -153,7 +161,7 @@ body.article {
 
   // CoverHeading
   .articleCover {
-    grid-area: 2 / 1 / 2 / 17;
+    grid-column: 1/17;
     height: 740px;
     margin-top: 30px;
     background-image: url('images/artticlePic.png');
@@ -186,6 +194,7 @@ body.article {
 
       h2 > span {
         font-family: '_21_Cent';
+        font-weight: lighter;
         font-size: 54px;
       }
     }
@@ -227,6 +236,7 @@ body.article {
       p.opinion {
         width: 56%;
         font-family: '_21_Cent';
+        font-weight: lighter;
         line-height: 130%;
         font-size: 30px;
       }
@@ -286,6 +296,7 @@ body.article {
       flex-direction: column;
       h1 {
         font-family: '_21_Cent';
+        font-weight: lighter;
       }
       h1,
       h3 {
@@ -308,6 +319,7 @@ body.article {
         input {
           font-size: 28px;
           font-family: '_21_Cent';
+          font-weight: lighter;
           width: 529px;
           padding: 20px 40px 20px 30px;
           color: var(--darkGreen);
@@ -353,6 +365,7 @@ body.article {
         gap: 5px;
         p:nth-child(1) {
           font-family: '_21_Cent';
+          font-weight: lighter;
           font-size: 30px;
           margin-bottom: 10px;
         }

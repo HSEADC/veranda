@@ -116,6 +116,10 @@ module.exports = {
       template: './src/articles/ecoHobby.html',
       filename: './articles/ecoHobby.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/ideaPage.html',
+      filename: './ideas/ideaPage.html'
+    }),
 
     // Article
 
