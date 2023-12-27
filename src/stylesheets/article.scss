@@ -161,7 +161,7 @@ body.article {
 
   // CoverHeading
   .articleCover {
-    grid-column: 1/17;
+    grid-area: 2 / 1 / 2 / 17;
     height: 740px;
     margin-top: 30px;
     background-image: url('images/artticlePic.png');

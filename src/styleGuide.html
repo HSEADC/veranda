@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="images/favicon.svg" />
+    <title>Стайлгайд</title>
   </head>
   <body class="styleGuide">
     <section class="cover">
@@ -29,19 +30,19 @@
     <section class="styleGuide">
       <!-- MenuSticky -->
       <div class="menuLeft">
-        <a href="">О бренде</a>
-        <a href="">Логотип</a>
-        <a href="">Цвета</a>
-        <a href="">Шрифты</a>
-        <a href="">Сетка</a>
-        <a href="">Фотографии</a>
-        <a href="">Графика</a>
-        <a href="">Носители</a>
+        <a href="#aboutBrand">О бренде</a>
+        <a href="#LogoType">Логотип</a>
+        <a href="#Colors">Цвета</a>
+        <a href="#Fonts">Шрифты</a>
+        <a href="#Grid">Сетка</a>
+        <a href="#PhotoStyle">Фотографии</a>
+        <a href="#Graphics">Графика</a>
+        <a href="#Identity">Носители</a>
       </div>
       <!-- BlocksLeft -->
       <div class="blocks">
         <!-- About -->
-        <div class="contentBlock">
+        <div id="aboutBrand" class="contentBlock">
           <div class="headingIcon">
             <h1>О бренде</h1>
             <div class="insertIcon"></div>
@@ -99,7 +100,7 @@
         </div>
       </div>
       <!-- LogoType building -->
-      <div class="contentBlock">
+      <div id="LogoType" class="contentBlock">
         <div class="headingIcon">
           <h1>Построение логотипа</h1>
           <div id="sparks" class="insertIcon"></div>
@@ -179,7 +180,7 @@
         </div>
       </div>
       <!--Colors Identity  -->
-      <div class="contentBlock colors">
+      <div id="Colors" class="contentBlock colors">
         <div class="headingIcon">
           <h1>Фирменные цвета</h1>
           <div id="clouds" class="insertIcon"></div>
@@ -193,7 +194,7 @@
           <div class="textMedia">
             <h1>
               Цветовая палитра отражает спокойный, расслабленный и одновременно
-              свежий характер загородной жизни.
+              свежий <br />характер загородной жизни.
             </h1>
           </div>
           <div class="coloursStyle"></div>
@@ -212,7 +213,7 @@
         </div>
       </div>
       <!-- Typography -->
-      <div class="contentBlock">
+      <div id="Fonts" class="contentBlock">
         <div class="headingIcon">
           <h1>Типографика</h1>
           <div id="pong" class="insertIcon"></div>
@@ -248,11 +249,11 @@
             </div>
           </div>
         </div>
-        <div class="uniwrap">
+        <div class="uniWrap">
           <!-- Rules Of using -->
           <div class="bulletTag">
             <div class="bulletFlower"><p>2</p></div>
-            <h3>Семантика шрифта</h3>
+            <h3>Правило использования</h3>
           </div>
           <div class="textMedia">
             <h1>
@@ -260,7 +261,164 @@
               его значению 2px <br />для компенсации размера строки Manrope.
             </h1>
           </div>
-          <div class="textLine"></div>
+          <div class="lineHeight"></div>
+        </div>
+      </div>
+      <!-- Grid -->
+      <div id="Grid" class="contentBlock">
+        <div class="headingIcon">
+          <h1>Сетка</h1>
+          <div id="coverGrid" class="insertIcon"></div>
+        </div>
+
+        <div class="columnWrap">
+          <!-- Desctop -->
+          <div class="uniWrap">
+            <div class="bulletTag">
+              <div class="bulletFlower"><p>1</p></div>
+              <h3>Десктоп</h3>
+            </div>
+            <p>
+              16 колонок, марджин 80px, гаттер 15px. Слева располагается краткое
+              описание текста, а от середины по левой выключке располагается
+              основной текст.
+            </p>
+          </div>
+          <!-- <Mobile -->
+          <div class="uniWrap">
+            <div class="bulletTag">
+              <div class="bulletFlower"><p>2</p></div>
+              <h3>Мобильная версия</h3>
+            </div>
+            <p>На телефоне 6 колонок, маржин <br />50px, гаттер 20px.</p>
+          </div>
+        </div>
+        <div class="gridExample"></div>
+      </div>
+      <!-- Photo -->
+      <div id="PhotoStyle" class="contentBlock">
+        <div class="headingIcon">
+          <h1>Фотографии</h1>
+          <div id="orange" class="insertIcon"></div>
+        </div>
+        <div class="columnWrap">
+          <!-- Cтилистика -->
+          <div class="uniWrap">
+            <div class="bulletTag">
+              <div class="bulletFlower"><p>1</p></div>
+              <h3>Стилистика</h3>
+            </div>
+            <p>
+              На фотографии с природой и дачной жизнью поверх помещается
+              припы-ленный голубо-зеленый градиент <br />(30-40% прозрачности:
+              чем меньше ненасыщенность кадра — тем меньше прозрачность
+              градиента).
+            </p>
+          </div>
+          <!-- Особенности -->
+          <div class="uniWrap">
+            <div class="bulletTag">
+              <div class="bulletFlower"><p>2</p></div>
+              <h3>Особенности</h3>
+            </div>
+            <p>
+              В выбранных кадрах должно присут-ствовать много воздуха, около
+              20-40% от всей композиции. У фрейма должны быть скругленные углы в
+              20px.
+            </p>
+          </div>
+        </div>
+        <div class="photoStyle"></div>
+        <!-- Расположение -->
+        <div class="uniWrap">
+          <div class="bulletTag">
+            <div class="bulletFlower"><p>3</p></div>
+            <h3>Расположение</h3>
+          </div>
+          <div class="textMedia">
+            <h1>
+              Кадры становятся либо почти во весь экран, <br />либо на уровне с
+              текстом.
+            </h1>
+          </div>
+          <div class="photoPositioning"></div>
+        </div>
+      </div>
+      <!-- Graphic -->
+      <div id="Graphics" class="contentBlock">
+        <div class="headingIcon">
+          <h1>Графика</h1>
+          <div id="mush" class="insertIcon"></div>
+        </div>
+        <div class="columnWrap">
+          <!-- Функция -->
+          <div class="uniWrap">
+            <div class="bulletTag">
+              <div class="bulletFlower"><p>1</p></div>
+              <h3>Стилистика</h3>
+            </div>
+            <p>
+              По смыслу иконки иконки выступают как интерпретация смысла текста
+              или как метафора на выбранное явление.
+            </p>
+          </div>
+          <!-- Использование -->
+          <div class="uniWrap">
+            <div class="bulletTag">
+              <div class="bulletFlower"><p>2</p></div>
+              <h3>Особенности</h3>
+            </div>
+            <p>
+              1) 3 и более фигуры образую <br />вместе паттерн;<br />
+              2) Иконки встают в текст между словами, усиляя главную идею;
+              <br />3) Используются <br />как самостоятельный элемент.
+            </p>
+          </div>
+        </div>
+        <div class="graphicsExample"></div>
+        <!-- Расположение -->
+        <div class="uniWrap">
+          <div class="bulletTag">
+            <div class="bulletFlower"><p>3</p></div>
+            <h3>Расположение</h3>
+          </div>
+          <div class="uniWrap">
+            <div class="textMedia">
+              <h1>
+                1) Выравнивание по середине <br />
+                рядом стоящего текста или по горизонтали
+              </h1>
+            </div>
+            <div class="textMedia">
+              <h1>
+                2) Положение перед небольшим блоком <br />текста по высоте
+                первых двух строчек
+              </h1>
+            </div>
+            <div class="textMedia">
+              <h1>
+                3) Наложение друг на друга и создание <br />уникальной истории
+              </h1>
+            </div>
+          </div>
+          <div class="manyGraph"></div>
+        </div>
+      </div>
+      <!-- Identity -->
+      <div id="Identity" class="contentBlock">
+        <div class="uniWrap">
+          <div class="headingIcon">
+            <h1>Носители</h1>
+            <div id="leika" class="insertIcon"></div>
+          </div>
+          <div class="identityWrapper">
+            <div class="identityPicBig"></div>
+            <div class="identityPicBig"></div>
+            <div class="idRow">
+              <div class="identityHalf"></div>
+              <div class="identityHalf"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

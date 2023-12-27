@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body.styleGuide {
   background-color: var(--bezh);
   * {
@@ -5,7 +8,7 @@ body.styleGuide {
   }
   p {
     font-family: Manrope;
-    font-size: 28px;
+    font-size: 1.333vw;
     color: var(--darkGreen);
     line-height: 120%;
   }
@@ -16,7 +19,7 @@ body.styleGuide {
     color: var(--darkGreen);
   }
   h3 {
-    font-size: 30px;
+    font-size: 1.429vw;
     font-weight: 600;
     font-family: Manrope;
     color: var(--darkGreen);
@@ -28,56 +31,56 @@ body.styleGuide {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 15px;
+    grid-column-gap: 0.714vw;
     grid-row-gap: 0px;
-    padding: 4.167vw;
+    // padding: 4.167vw;
     background-image: url('images/elki.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 4.762vw;
 
     img.coverImg:first-child {
-      grid-column: 6/8;
+      grid-column: 7/9;
       position: absolute;
-      width: 27.906vw;
-      bottom: 0;
+      width: 23.906vw;
+      bottom: 1vw;
     }
     img.coverImg:nth-child(2) {
       grid-column: 14/16;
       position: absolute;
       width: 13.25vw;
-      top: 200px;
+      top: 9.524vw;
     }
     img.coverImg:nth-child(3) {
       grid-column: 2/5;
       position: absolute;
       width: 14.354vw;
       height: 15.313vw;
-      top: 200px;
+      top: 9.524vw;
     }
     .nameWrap {
       grid-column: 6/12;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 120px;
+      margin-top: 5.714vw;
 
       .tagsLine {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
-        gap: 10px;
-        max-width: 650px;
+        gap: 0.476vw;
+        max-width: 30.952vw;
 
         p > span {
-          font-size: 25px;
+          font-size: 1.19vw;
           border: 3px solid var(--darkGreen);
-          padding: 10px 15px;
+          padding: 0.476vw 0.714vw;
           color: var(--darkGreen);
-          border-radius: 12px;
+          border-radius: 0.571vw;
           display: inline-block;
           background-color: var(--primaryGreen);
         }
@@ -86,16 +89,15 @@ body.styleGuide {
         background-color: var(--darkGreen);
         color: var(--bezh);
         font-family: '_21_Cent';
-        font-size: 64px;
+        font-size: 3.048vw;
         font-weight: lighter;
         display: inline-block;
-        padding: 5px 15px;
-        border-radius: 8px;
+        padding: 0.238vw 0.714vw;
+        border-radius: 0.381vw;
       }
       .logo {
         img {
           height: 10.417vw;
-          margin-bottom: 35px;
         }
       }
     }
@@ -103,23 +105,26 @@ body.styleGuide {
   //   BulletName
   .bulletName {
     display: flex;
-    gap: 20px;
+    gap: 0.952vw;
   }
   section.styleGuide {
     background-color: var(--bezh);
-    padding: 0px 0px 4.167vw 0px;
 
     .menuLeft {
       display: flex;
-      width: 180px;
+      width: 8.571vw;
       flex-direction: column;
-      gap: 10px;
-      margin-left: 50px;
+      gap: 0.476vw;
+      margin-left: 2.381vw;
       height: 0px;
       position: sticky;
-      top: 100px;
+      top: 4.762vw;
       font-size: 1.25vw;
       font-weight: 500;
+
+      a:hover {
+        opacity: 75%;
+      }
       a {
         font-family: Manrope;
         text-decoration: none;
@@ -130,28 +135,48 @@ body.styleGuide {
     .headingIcon {
       display: flex;
       align-items: center;
-      gap: 15px;
-      margin-bottom: 4.167vw;
+      gap: 0.714vw;
+      margin-bottom: 2.167vw;
 
       .insertIcon {
-        width: 90px;
-        height: 95px;
+        width: 4.286vw;
+        height: 4.524vw;
         background-image: url('images/cup.svg');
         background-size: cover;
         background-repeat: no-repeat;
       }
       #sparks.insertIcon {
         background-image: url('images/sparksInsIcon.svg');
-        width: 92px;
+        width: 4.381vw;
       }
       #clouds.insertIcon {
         background-image: url('images/cloudsStyle.svg');
-        width: 107px;
+        width: 5.095vw;
       }
       #pong.insertIcon {
         background-image: url('images/pingMyPong.svg');
-        width: 79px;
-        height: 107px;
+        width: 3.762vw;
+        height: 5.095vw;
+      }
+      #coverGrid.insertIcon {
+        background-image: url('images/coverGrid.svg');
+        width: 4.952vw;
+        height: 5.095vw;
+      }
+      #orange.insertIcon {
+        background-image: url('images/orange.svg');
+        width: 4.667vw;
+        height: 5.095vw;
+      }
+      #mush.insertIcon {
+        background-image: url('images/mush.svg');
+        width: 5vw;
+        height: 5vw;
+      }
+      #leika.insertIcon {
+        background-image: url('images/leika.svg');
+        width: 5.714vw;
+        height: 3.81vw;
       }
     }
     .blocks {
@@ -163,74 +188,103 @@ body.styleGuide {
       width: 100%;
       display: flex;
       flex-direction: column;
-      margin-bottom: 200px;
-      padding-left: 16.021vw;
+      margin-bottom: 9.524vw;
+      padding-left: 19.021vw;
       //   Булет + текст
       .uniWrap {
         display: flex;
-        min-width: 550px;
+        min-width: 26.19vw;
         flex-direction: column;
-        gap: 30px;
+        gap: 1.429vw;
         margin-bottom: 4.167vw;
         p {
-          max-width: 550px;
+          max-width: 26.19vw;
         }
         // Картинки__∞_))))
+        .lineHeight {
+          width: 58.857vw;
+          height: 9.143vw;
+          margin-top: 1.429vw;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: url('images/textLine.svg');
+        }
         .picCherta {
-          width: 400px;
-          height: 190px;
+          width: 19.048vw;
+          height: 9.048vw;
           background-image: url('images/Cherta.svg');
           background-size: cover;
           background-repeat: no-repeat;
         }
         .safeZone {
-          width: 540px;
-          height: 232px;
+          width: 25.714vw;
+          height: 11.048vw;
           background-image: url('images/safeZone.svg');
           background-size: cover;
           background-repeat: no-repeat;
         }
         .wrongLogo {
-          width: 1236px;
-          height: 80px;
+          width: 58.857vw;
+          height: 3.81vw;
           background-image: url('images/wrongLogo.svg');
           background-size: cover;
           background-repeat: no-repeat;
         }
         .logoVariants {
-          width: 1316px;
-          height: 852px;
+          width: 62.667vw;
+          height: 40.571vw;
           background-image: url('images/logoVariants.png');
           background-size: cover;
           background-repeat: no-repeat;
         }
         .coloursStyle {
-          width: 1320px;
-          height: 675px;
+          width: 62.857vw;
+          height: 32.143vw;
           background-image: url('images/colorsStyles.png');
           background-size: cover;
           background-repeat: no-repeat;
         }
         .usingColors {
-          width: 1316px;
-          height: 272px;
+          width: 62.667vw;
+          height: 12.952vw;
           background-image: url('images/usingColors.svg');
           background-size: cover;
           background-repeat: no-repeat;
         }
-        .textLine {
-          width: 1236px;
-          height: 120px;
+        // Identityblock
+        .identityWrapper {
+          display: flex;
+          width: 68.571vw;
+          gap: 20px;
+          flex-direction: column;
+
+          .idRow {
+            display: flex;
+            gap: 0.952vw;
+
+            .identityHalf {
+              width: 48%;
+              height: 19.048vw;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-color: red;
+            }
+          }
+        }
+        .identityPicBig {
+          width: 66.571vw;
+          height: 39.048vw;
+          background-image: url('images/identityPicBig.png');
           background-size: cover;
+          border-radius: 0.571vw;
           background-repeat: no-repeat;
-          background-image: url('images/textLine.svg');
         }
       }
       // Colum Wrap
       .columnWrap {
         display: flex;
         align-items: flex-start;
-        gap: 300px;
+        gap: 10.286vw;
         // Fonts
         .accent {
           font-family: '_21_Cent';
@@ -240,22 +294,22 @@ body.styleGuide {
           display: flex;
           flex-direction: column;
           gap: 25px;
-          margin-top: 60px;
-          max-width: 580px;
+          margin-top: 2.857vw;
+          max-width: 27.619vw;
 
           p:nth-child(1) {
-            margin-bottom: -20px;
-            font-size: 22px;
+            margin-bottom: -0.952vw;
+            font-size: 1.048vw;
           }
           p:nth-child(2) {
             line-height: 130%;
           }
           h1 {
-            font-size: 110px;
+            font-size: 5.238vw;
           }
         }
         .fontBlock:nth-child(2) {
-          max-width: 660px;
+          max-width: 31.429vw;
         }
       }
       //  Текст описание
@@ -276,10 +330,10 @@ body.styleGuide {
       //   КартинкаСкам
       .imgPasteMeaning {
         background-image: url('images/imageScam.svg');
-        width: 1290px;
+        width: 61.429vw;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 186px;
+        height: 8.857vw;
       }
       // Булеты
       .bulletTag {
@@ -307,20 +361,69 @@ body.styleGuide {
     .contentBlock:nth-child(3) {
       background-color: var(--yellow);
       padding-top: 4.167vw;
-      border-radius: 32px;
+      border-radius: 1.524vw;
     }
     .contentBlock:nth-child(5) {
       background-color: var(--primaryGreen);
       padding-top: 4.167vw;
-      border-radius: 32px;
+      border-radius: 1.524vw;
+    }
+    .contentBlock:nth-child(7) {
+      background-color: var(--yellow);
+      padding-top: 4.167vw;
+      border-radius: 1.524vw;
+    }
+    .contentBlock:nth-child(9) {
+      background-color: var(--primaryGreen);
+      padding-top: 4.167vw;
+      border-radius: 1.524vw;
+      margin-bottom: 0;
     }
     // Большой логотип
     .bigLogo {
-      width: 1350px;
-      height: 280px;
+      width: 64.286vw;
+      height: 13.333vw;
       background-image: url('images/logoStyle.svg');
       background-size: cover;
-      margin-bottom: 200px;
+      margin-bottom: 9.524vw;
+    }
+    .gridExample {
+      width: 62.667vw;
+      height: 33.619vw;
+      background-image: url('images/gridExample.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .photoStyle {
+      width: 66.667vw;
+      height: 32.905vw;
+      border-radius: 1.524vw;
+      background-image: url('images/photoStyle.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 3.81vw;
+    }
+    .photoPositioning {
+      width: 66.667vw;
+      height: 20.571vw;
+      background-image: url('images/PhotoPositioning.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .graphicsExample {
+      width: 66.81vw;
+      height: 59.333vw;
+      background-image: url('images/graphicsExample.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 3.81vw;
+    }
+    .manyGraph {
+      width: 66.667vw;
+      height: 11.905vw;
+      background-image: url('images/manyGraph.png');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
