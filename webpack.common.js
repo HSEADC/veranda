@@ -109,6 +109,10 @@ module.exports = {
       filename: './queAnswer.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/styleGuide.html',
+      filename: './styleGuide.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/ideas.html',
       filename: './ideas.html'
     }),
