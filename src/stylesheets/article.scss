@@ -141,7 +141,7 @@ body.article {
     }
   }
   .headingTagsWrap {
-    grid-column: 1/17;
+    grid-area: 1 / 1 / 2 / 17;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
