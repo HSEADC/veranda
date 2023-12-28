@@ -279,6 +279,28 @@ body.styleGuide {
           border-radius: 0.571vw;
           background-repeat: no-repeat;
         }
+        .identityPicBig:nth-child(2) {
+          background-image: url('images/plates.png');
+        }
+        .identityPicBig:nth-child(3) {
+          background-image: url('images/kepka.png');
+        }
+        .identityPicBig:nth-child(4) {
+          background-image: url('images/poster.png');
+          height: 43vw;
+        }
+        .identityPicBig:nth-child(5) {
+          background-image: url('images/shop.png');
+          height: 43vw;
+        }
+        .identityPicBig:nth-child(6) {
+          background-image: url('images/shirt.png');
+          height: 43vw;
+        }
+        .identityPicBig:nth-child(7) {
+          background-image: url('images/shopper.png');
+          height: 43vw;
+        }
       }
       // Colum Wrap
       .columnWrap {
