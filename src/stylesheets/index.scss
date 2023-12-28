@@ -188,7 +188,17 @@ body.index {
     padding: 5vw;
     gap: 5.208vw;
     border-radius: 1.667vw;
-
+    position: relative;
+    .cupBig {
+      position: absolute;
+      background-image: url('images/cupBig.Svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 15.469vw;
+      height: 21.875vw;
+      left: 75vw;
+      bottom: 1vw;
+    }
     .textWrapper {
       width: 36.458vw;
       align-items: flex-start;
