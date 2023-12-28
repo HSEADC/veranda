@@ -109,12 +109,24 @@ module.exports = {
       filename: './queAnswer.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/styleGuide.html',
+      filename: './styleGuide.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/ideas.html',
       filename: './ideas.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/ecoHobby.html',
       filename: './articles/ecoHobby.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/queAns.html',
+      filename: './QA/queAns.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/ideaPage.html',
+      filename: './ideas/ideaPage.html'
     }),
 
     // Article

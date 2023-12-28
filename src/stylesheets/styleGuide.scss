@@ -1,0 +1,429 @@
+html {
+  scroll-behavior: smooth;
+}
+body.styleGuide {
+  background-color: var(--bezh);
+  * {
+    box-sizing: border-box;
+  }
+  p {
+    font-family: Manrope;
+    font-size: 1.333vw;
+    color: var(--darkGreen);
+    line-height: 120%;
+  }
+  h1 {
+    font-size: 4.375vw;
+    font-family: Manrope;
+    font-weight: 600;
+    color: var(--darkGreen);
+  }
+  h3 {
+    font-size: 1.429vw;
+    font-weight: 600;
+    font-family: Manrope;
+    color: var(--darkGreen);
+  }
+  //   Cover
+  section.cover {
+    height: 100vh;
+    background-color: var(--primaryGreen);
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0.714vw;
+    grid-row-gap: 0px;
+    // padding: 4.167vw;
+    background-image: url('images/elki.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    position: relative;
+    margin-bottom: 4.762vw;
+
+    img.coverImg:first-child {
+      grid-column: 7/9;
+      position: absolute;
+      width: 23.906vw;
+      bottom: 1vw;
+    }
+    img.coverImg:nth-child(2) {
+      grid-column: 14/16;
+      position: absolute;
+      width: 13.25vw;
+      top: 9.524vw;
+    }
+    img.coverImg:nth-child(3) {
+      grid-column: 2/5;
+      position: absolute;
+      width: 14.354vw;
+      height: 15.313vw;
+      top: 9.524vw;
+    }
+    .nameWrap {
+      grid-column: 6/12;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5.714vw;
+
+      .tagsLine {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        gap: 0.476vw;
+        max-width: 30.952vw;
+
+        p > span {
+          font-size: 1.19vw;
+          border: 3px solid var(--darkGreen);
+          padding: 0.476vw 0.714vw;
+          color: var(--darkGreen);
+          border-radius: 0.571vw;
+          display: inline-block;
+          background-color: var(--primaryGreen);
+        }
+      }
+      h1.mainHead > span {
+        background-color: var(--darkGreen);
+        color: var(--bezh);
+        font-family: '_21_Cent';
+        font-size: 3.048vw;
+        font-weight: lighter;
+        display: inline-block;
+        padding: 0.238vw 0.714vw;
+        border-radius: 0.381vw;
+      }
+      .logo {
+        img {
+          height: 10.417vw;
+        }
+      }
+    }
+  }
+  //   BulletName
+  .bulletName {
+    display: flex;
+    gap: 0.952vw;
+  }
+  section.styleGuide {
+    background-color: var(--bezh);
+
+    .menuLeft {
+      display: flex;
+      width: 8.571vw;
+      flex-direction: column;
+      gap: 0.476vw;
+      margin-left: 2.381vw;
+      height: 0px;
+      position: sticky;
+      top: 4.762vw;
+      font-size: 1.25vw;
+      font-weight: 500;
+
+      a:hover {
+        opacity: 75%;
+      }
+      a {
+        font-family: Manrope;
+        text-decoration: none;
+        color: var(--darkGreen);
+      }
+    }
+    // Заголовки
+    .headingIcon {
+      display: flex;
+      align-items: center;
+      gap: 0.714vw;
+      margin-bottom: 2.167vw;
+
+      .insertIcon {
+        width: 4.286vw;
+        height: 4.524vw;
+        background-image: url('images/cup.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #sparks.insertIcon {
+        background-image: url('images/sparksInsIcon.svg');
+        width: 4.381vw;
+      }
+      #clouds.insertIcon {
+        background-image: url('images/cloudsStyle.svg');
+        width: 5.095vw;
+      }
+      #pong.insertIcon {
+        background-image: url('images/pingMyPong.svg');
+        width: 3.762vw;
+        height: 5.095vw;
+      }
+      #coverGrid.insertIcon {
+        background-image: url('images/coverGrid.svg');
+        width: 4.952vw;
+        height: 5.095vw;
+      }
+      #orange.insertIcon {
+        background-image: url('images/orange.svg');
+        width: 4.667vw;
+        height: 5.095vw;
+      }
+      #mush.insertIcon {
+        background-image: url('images/mush.svg');
+        width: 5vw;
+        height: 5vw;
+      }
+      #leika.insertIcon {
+        background-image: url('images/leika.svg');
+        width: 5.714vw;
+        height: 3.81vw;
+      }
+    }
+    .blocks {
+      display: flex;
+      flex-direction: column;
+    }
+    //Контент Блок
+    .contentBlock {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 9.524vw;
+      padding-left: 19.021vw;
+      //   Булет + текст
+      .uniWrap {
+        display: flex;
+        min-width: 26.19vw;
+        flex-direction: column;
+        gap: 1.429vw;
+        margin-bottom: 4.167vw;
+        p {
+          max-width: 26.19vw;
+        }
+        // Картинки__∞_))))
+        .lineHeight {
+          width: 58.857vw;
+          height: 9.143vw;
+          margin-top: 1.429vw;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: url('images/textLine.svg');
+        }
+        .picCherta {
+          width: 19.048vw;
+          height: 9.048vw;
+          background-image: url('images/Cherta.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .safeZone {
+          width: 25.714vw;
+          height: 11.048vw;
+          background-image: url('images/safeZone.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .wrongLogo {
+          width: 58.857vw;
+          height: 3.81vw;
+          background-image: url('images/wrongLogo.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .logoVariants {
+          width: 62.667vw;
+          height: 40.571vw;
+          background-image: url('images/logoVariants.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .coloursStyle {
+          width: 62.857vw;
+          height: 32.143vw;
+          background-image: url('images/colorsStyles.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .usingColors {
+          width: 62.667vw;
+          height: 12.952vw;
+          background-image: url('images/usingColors.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        // Identityblock
+        .identityWrapper {
+          display: flex;
+          width: 68.571vw;
+          gap: 20px;
+          flex-direction: column;
+
+          .idRow {
+            display: flex;
+            gap: 0.952vw;
+
+            .identityHalf {
+              width: 48%;
+              height: 19.048vw;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-color: red;
+            }
+          }
+        }
+        .identityPicBig {
+          width: 66.571vw;
+          height: 39.048vw;
+          background-image: url('images/identityPicBig.png');
+          background-size: cover;
+          border-radius: 0.571vw;
+          background-repeat: no-repeat;
+        }
+      }
+      // Colum Wrap
+      .columnWrap {
+        display: flex;
+        align-items: flex-start;
+        gap: 10.286vw;
+        // Fonts
+        .accent {
+          font-family: '_21_Cent';
+          font-weight: lighter;
+        }
+        .fontBlock {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          margin-top: 2.857vw;
+          max-width: 27.619vw;
+
+          p:nth-child(1) {
+            margin-bottom: -0.952vw;
+            font-size: 1.048vw;
+          }
+          p:nth-child(2) {
+            line-height: 130%;
+          }
+          h1 {
+            font-size: 5.238vw;
+          }
+        }
+        .fontBlock:nth-child(2) {
+          max-width: 31.429vw;
+        }
+      }
+      //  Текст описание
+      .textMedia {
+        max-width: 90%;
+        h1 {
+          font-size: 2.813vw;
+          line-height: 120%;
+
+          span {
+            font-size: 3.25vw;
+            font-family: '_21_Cent';
+            font-weight: lighter;
+          }
+        }
+      }
+
+      //   КартинкаСкам
+      .imgPasteMeaning {
+        background-image: url('images/imageScam.svg');
+        width: 61.429vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 8.857vw;
+      }
+      // Булеты
+      .bulletTag {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        .bulletFlower {
+          display: flex;
+          width: 3.385vw;
+          height: 3.385vw;
+          justify-content: center;
+          background-image: url('images/bulletFlower.svg');
+          align-items: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          p {
+            font-size: 1.458vw;
+            color: var(--darkGreen);
+          }
+        }
+      }
+    }
+    .contentBlock:nth-child(3) {
+      background-color: var(--yellow);
+      padding-top: 4.167vw;
+      border-radius: 1.524vw;
+    }
+    .contentBlock:nth-child(5) {
+      background-color: var(--primaryGreen);
+      padding-top: 4.167vw;
+      border-radius: 1.524vw;
+    }
+    .contentBlock:nth-child(7) {
+      background-color: var(--yellow);
+      padding-top: 4.167vw;
+      border-radius: 1.524vw;
+    }
+    .contentBlock:nth-child(9) {
+      background-color: var(--primaryGreen);
+      padding-top: 4.167vw;
+      border-radius: 1.524vw;
+      margin-bottom: 0;
+    }
+    // Большой логотип
+    .bigLogo {
+      width: 66.286vw;
+      height: 13.333vw;
+      background-image: url('images/logoStyle.svg');
+      background-size: cover;
+      margin-bottom: 9.524vw;
+    }
+    .gridExample {
+      width: 62.667vw;
+      height: 33.619vw;
+      background-image: url('images/gridExample.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .photoStyle {
+      width: 66.667vw;
+      height: 32.905vw;
+      border-radius: 1.524vw;
+      background-image: url('images/photoStyle.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 3.81vw;
+    }
+    .photoPositioning {
+      width: 66.667vw;
+      height: 20.571vw;
+      background-image: url('images/PhotoPositioning.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .graphicsExample {
+      width: 66.81vw;
+      height: 59.333vw;
+      background-image: url('images/graphicsExample.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 3.81vw;
+    }
+    .manyGraph {
+      width: 66.667vw;
+      height: 11.905vw;
+      background-image: url('images/manyGraph.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
