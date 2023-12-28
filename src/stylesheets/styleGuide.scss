@@ -45,7 +45,7 @@ body.styleGuide {
       grid-column: 7/9;
       position: absolute;
       width: 23.906vw;
-      bottom: 1vwf;
+      bottom: 1vw;
     }
     img.coverImg:nth-child(2) {
       grid-column: 14/16;
@@ -381,7 +381,7 @@ body.styleGuide {
     }
     // Большой логотип
     .bigLogo {
-      width: 64.286vw;
+      width: 66.286vw;
       height: 13.333vw;
       background-image: url('images/logoStyle.svg');
       background-size: cover;
