@@ -261,13 +261,16 @@ body.styleGuide {
           .idRow {
             display: flex;
             gap: 0.952vw;
-
+            .identityHalf:nth-child(2) {
+              background-image: url('images/poster.png');
+            }
             .identityHalf {
               width: 48%;
-              height: 19.048vw;
+              border-radius: 32px;
+              height: 22.048vw;
               background-size: cover;
               background-repeat: no-repeat;
-              background-color: red;
+              background-image: url('images/shopper.png');
             }
           }
         }
@@ -286,20 +289,20 @@ body.styleGuide {
           background-image: url('images/kepka.png');
         }
         .identityPicBig:nth-child(4) {
-          background-image: url('images/poster.png');
+          background-image: url('images/kepka.png');
           height: 43vw;
         }
         .identityPicBig:nth-child(5) {
           background-image: url('images/shop.png');
-          height: 43vw;
         }
         .identityPicBig:nth-child(6) {
           background-image: url('images/shirt.png');
-          height: 43vw;
         }
         .identityPicBig:nth-child(7) {
-          background-image: url('images/shopper.png');
-          height: 43vw;
+          background-image: url('images/kover.png');
+        }
+        .identityPicBig:nth-child(8) {
+          background-image: url('images/aero.png');
         }
       }
       // Colum Wrap
