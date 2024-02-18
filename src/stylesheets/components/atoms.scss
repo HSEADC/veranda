@@ -1,0 +1,50 @@
+// Header
+.A_NavigationLogo {
+  display: block;
+  width: 168px;
+  height: 44px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('images/A_NavigationLogoGreen.svg');
+}
+a.A_HeaderCategory {
+  font-family: Manrope;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--darkGreen);
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+// IconHeading
+// IconHeading
+h1.A_TitleManrope {
+  font-size: 72px;
+  font-family: Manrope;
+  font-weight: 600px;
+  text-align: center;
+  color: var(--darkGreen);
+  letter-spacing: -1px;
+
+  em.Accent {
+    font-family: '_21_Cent';
+    font-size: 82px;
+    line-height: 85%;
+  }
+}
+h1.A_TitleAccent {
+  font-size: 82px;
+  font-family: '_21_Cent';
+  color: var(--darkGreen);
+  font-weight: lighter;
+}
+// LinksCategories
+a.A_LinkCategory {
+  font-size: 18px;
+  font-family: Manrope;
+  text-decoration: none;
+  color: var(--darkGreen);
+}

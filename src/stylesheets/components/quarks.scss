@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+// Icons
+.Q_IconMedium {
+  width: 90px;
+  height: 85px;
+  background-size: contain;
+}
+.Glitter {
+  background-image: url('images/Q_GlitterMedium.svg');
+}
+// Header
+.Q_SearhIconHeader {
+  width: 24px;
+  height: 24px;
+  background-image: url('images/Q_SearhIconHeader.svg');
+  background-size: cover;
+}
+// Links
+.Q_ArrowForward {
+  height: 18px;
+  width: 18px;
+  background-image: url('images/Q_ArrowForward.svg');
+}

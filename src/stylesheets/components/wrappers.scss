@@ -1,0 +1,8 @@
+.W_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  grid-column: 1/25;
+  border-bottom: 1px solid var(--darkGreen);
+  padding-bottom: 20px;
+}

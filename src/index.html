@@ -57,220 +57,47 @@
 
     <title>verānda</title>
   </head>
-  <body class="index">
-    <section class="main">
-      <!-- Header -->
-      <header>
-        <div class="logo">
-          <img src="images/verandaLogo.svg" alt="" />
+  <body>
+    <!-- Header -->
+    <header class="O_Header">
+      <div class="W_Header">
+        <div class="A_NavigationLogo"></div>
+        <div class="M_HeaderCategories">
+          <a href="" class="A_HeaderCategory">Статьи</a
+          ><a href="" class="A_HeaderCategory">Идеи для отдыха</a
+          ><a href="" class="A_HeaderCategory">Вопрос-ответ</a>
         </div>
-        <div class="links">
-          <a href="#media">Медиа</a>
-          <a href="#article">Материал</a>
-          <a href="#sub">Подписаться</a>
-        </div>
-      </header>
-      <!-- MainContent -->
-      <div class="spaceBetween">
-        <div class="textWrapper">
-          <h1>Интересный</h1>
-          <div class="insertIcon"></div>
-          <h1>загородный отдых</h1>
-          <h1>может быть</h1>
-          <h1><span>доступен каждому!</span></h1>
-        </div>
-        <a href="#article">Узнать больше</a>
-      </div>
-      <div class="contentImage"></div>
-    </section>
-
-    <!-- Section About -->
-    <section id="media" class="about">
-      <div class="wrap">
-        <div class="logo"><img src="images/verandaLogo.svg" alt="" /></div>
-        <div class="textWrapper">
-          <h1>Расскажем, как можно</h1>
-          <h1><span>интересно</span></h1>
-
-          <h1>проводить</h1>
-          <div class="insertIcon"></div>
-          <h1>время за городом</h1>
-          <h1><span>без лишних забот</span></h1>
-        </div>
-      </div>
-    </section>
-    <!-- Section Article -->
-    <section id="article" class="article">
-      <div class="cupBig"></div>
-      <div class="articleCard">
-        <div class="cardInfo">
-          <div class="tagLine">
-            <p><span>дела цветочные</span></p>
-            <p><span>релакс</span></p>
-          </div>
-          <h2>Эко-хобби вместо психолога: <br />зачем горожанину свой сад</h2>
-        </div>
-      </div>
-      <div class="description">
-        <div class="textWrapper">
-          <h1>Душевные</h1>
-          <div class="insertIcon"></div>
-          <h1>и уютные статьи</h1>
-          <h1 class="accent">на любой вкус</h1>
-        </div>
-        <p>
-          Поведаем о жизни за городом без забот. <br />Для тех, кто имеет мало
-          практических навыков жизни за городом и устал от темпа городской
-          жизни, а также тех, кому трудно читать устаревший и неактуальный
-          контент про теплицы и закрутки.
-        </p>
-        <a class="button" href="articles/ecoHobby.html">Читать статью</a>
-      </div>
-    </section>
-    <!-- Section ideas -->
-    <section class="ideas">
-      <div class="cardHeading">
-        <div class="textWrapper">
-          <h1><span>Всегда</span></h1>
-          <h1>найдете</h1>
-          <h1>чем заняться</h1>
-          <div class="insertIcon"></div>
-        </div>
-
-        <div class="ideasCard">
-          <div class="cardInfo">
-            <div class="tagLine">
-              <p><span>сезоны</span></p>
-              <p><span>подборки</span></p>
-            </div>
-            <h2>
-              Мороз и солнце! Рассказываем, <br />чем можно заняться на даче в
-              холода
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="ideasBlock">
-        <div class="description">
-          <h1>Идеи для <span class="accent">отдыха</span></h1>
-          <p>
-            Ваши глаза устали от монитора, и вы хотите наконец расслабиться,
-            воспользовавшись благами природы? Мы поведаем, чем заняться и куда
-            поехать в пределах сосновых боров, <br />и как при этом не
-            наткнуться на диких медведей на случай, если вы такого не хотите.
-          </p>
-          <a href="ideas/ideaPage.html" class="button">Узнать про идеи</a>
-        </div>
-      </div>
-    </section>
-    <!-- Section Card -->
-    <section class="card">
-      <div class="bikeQa"></div>
-      <div class="qaWrap">
-        <div class="qaCard">
-          <div class="qaImage"></div>
-          <div class="cardInfo">
-            <div class="tagLine">
-              <p><span>без дачи</span></p>
-              <p><span>на выходных</span></p>
-            </div>
-            <h2>Когда лучше всего фотографировать закат</h2>
-          </div>
-        </div>
-        <div class="description">
-          <h1>Вопроc-ответ</h1>
-          <p>
-            Вы спрашиваете, мы отвечаем! Здесь находятся прикладные ответы на
-            самые разные вопросы современных загородников, полезные советы
-            <br />и просто классные карточки и чек-листы.
-          </p>
-          <a href="QA/queAns.html" class="button">Проверь себя</a>
-        </div>
-      </div>
-    </section>
-    <!-- Section Form -->
-    <section id="sub" class="form">
-      <div class="textWrapper">
-        <h1>Оставь свою электронную</h1>
-        <h1>почту, чтобы быть в курсе</h1>
-        <h1><span>запуска медиа</span></h1>
-        <div class="insertIcon"></div>
-      </div>
-      <div class="formWrapper">
-        <!-- Forma -->
-        <form
-          id="my-form"
-          action="https://formspree.io/f/xaygvkzy"
-          method="POST"
-        >
-          <input placeholder="e-mail" type="email" name="email" />
-          <button id="my-form-button">Отправить</button>
-          <p id="my-form-status"></p>
+        <form action="" class="M_SearchBar">
+          <input type="search" placeholder="Найти" />
+          <div class="Q_SearhIconHeader"></div>
         </form>
       </div>
-      <footer>
-        <div class="people">
-          <div class="students">
-            <p>Дизайнеры</p>
-            <p>Киприанова Ева</p>
-            <p>Кириллов Максим</p>
-          </div>
-          <div class="curators">
-            <p>Кураторы</p>
-            <p>Софья Каем</p>
-            <p>Анна Комкова</p>
-          </div>
+    </header>
+    <!-- HomeScreen -->
+    <section class="S_HomeScreen">
+      <div class="O_WelcomeScreen">
+        <div class="M_IconHeading">
+          <h1 class="A_TitleManrope">ver<em class="Accent">ā</em>nda —</h1>
+          <h1 class="A_TitleManrope">ваше</h1>
+          <div class="Q_IconMedium Glitter"></div>
+          <h1 class="A_TitleManrope">комфортное</h1>
+          <h1 class="A_TitleManrope">приключение</h1>
+          <h1 class="A_TitleAccent">за городом</h1>
         </div>
-        <!-- SocialMedia -->
-        <div class="socialMedia">
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-        </div>
-        <!-- Logo -->
-        <div class="logo">
-          <img src="images/verandWhite.svg" alt="" />
-        </div>
-      </footer>
+      </div>
     </section>
-
-    <script>
-      var form = document.getElementById('my-form')
-
-      async function handleSubmit(event) {
-        event.preventDefault()
-        var status = document.getElementById('my-form-status')
-        var data = new FormData(event.target)
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: 'application/json'
-          }
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = 'Спасибо,что оставили свою почту!'
-              form.reset()
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data['errors']
-                    .map((error) => error['message'])
-                    .join(', ')
-                } else {
-                  status.innerHTML =
-                    'Упс!Что-то пошло не так. Попробуйте снова позже'
-                }
-              })
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = 'Упс!Что-то пошло не так. Попробуйте снова позже'
-          })
-      }
-      form.addEventListener('submit', handleSubmit)
-    </script>
+    <!-- HomeArticles -->
+    <section class="S_ArticlesHeading">
+      <div class="O_HeadingLink">
+        <h1 class="A_TitleManrope">
+          <em class="Accent">Атмосферные</em> <br />
+          и уютные статьи
+        </h1>
+        <div class="M_LinkArticleCategory">
+          <a href="" class="A_LinkCategory">Перейти в раздел</a>
+          <div class="Q_ArrowForward"></div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,0 +1,46 @@
+// Header
+header.O_Header {
+  .M_HeaderCategories {
+    display: flex;
+    column-gap: 30px;
+  }
+  form.M_SearchBar {
+    padding: 10px 15px 10px 20px;
+    border-radius: 600px;
+    border: 1px solid var(--darkGreen);
+    display: flex;
+
+    input {
+      font-size: 18px;
+      font-family: Manrope;
+      border: none;
+
+      &::placeholder {
+        color: var(--darkGreen);
+        opacity: 75%;
+        background-color: var(--bezh);
+      }
+      &::placeholder:focus {
+        border: none;
+      }
+    }
+  }
+}
+// IconHeading
+.M_IconHeading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1160px;
+  text-align: center;
+  column-gap: 10px;
+
+  &:nth-child(1) {
+    margin: 80px auto 0px;
+  }
+}
+// Links
+.M_LinkArticleCategory {
+  display: flex;
+  grid-column: 22/25;
+}

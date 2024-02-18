@@ -1,0 +1,26 @@
+// Header
+header.O_Header {
+  width: 100%;
+  padding: 40px 150px 0px 150px;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+// HomeScreen
+.O_WelcomeScreen {
+  position: relative;
+  grid-column: 1/25;
+  height: 800px;
+  background-color: var(--blue);
+  background-image: url('images/mainScreenPlaceholder.png');
+  border-radius: 32px;
+}
+// HomeArticles
+.O_HeadingLink {
+  display: flex;
+  grid-column: 9/25;
+  justify-content: space-between;
+  align-items: flex-end;
+}
