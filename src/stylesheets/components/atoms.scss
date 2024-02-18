@@ -48,3 +48,31 @@ a.A_LinkCategory {
   text-decoration: none;
   color: var(--darkGreen);
 }
+// Tag
+.A_Tag {
+  border: 2px solid var(--darkGreen);
+  border-radius: 8px;
+  font-family: Manrope;
+  font-size: 16px;
+  padding: 10px;
+  height: auto;
+  width: auto;
+  color: var(--darkGreen);
+}
+// CardInfo
+.A_SubCard {
+  font-size: 30px;
+  font-family: Manrope;
+  font-weight: 600px;
+  color: var(--darkGreen);
+  letter-spacing: -1px;
+  line-height: 110%;
+  text-align: center;
+
+  em {
+    font-size: 34px;
+    font-family: '_21_Cent';
+    color: var(--darkGreen);
+    font-weight: lighter;
+  }
+}

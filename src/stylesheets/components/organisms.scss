@@ -24,3 +24,21 @@ header.O_Header {
   justify-content: space-between;
   align-items: flex-end;
 }
+// ArticleCard
+.O_CardArticle {
+  background-color: var(--bezh);
+  display: flex;
+  width: 33.5%;
+  flex-direction: column;
+  padding: 10px 10px 30px 10px;
+  border-radius: 16px;
+  text-decoration: none;
+  gap: 20px;
+}
+// Newarticle
+.O_NewArticle {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  grid-column: 1/14;
+}

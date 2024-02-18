@@ -44,3 +44,15 @@ header.O_Header {
   display: flex;
   grid-column: 22/25;
 }
+// TagLineCard
+.M_TagLine {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+// CardInfo
+.M_ArticleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
