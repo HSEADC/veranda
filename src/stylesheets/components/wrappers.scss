@@ -6,3 +6,52 @@
   border-bottom: 1px solid var(--darkGreen);
   padding-bottom: 20px;
 }
+// NewArticle
+.W_NewArticleHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+// Advices
+.W_ArticleHeadingBig {
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+  grid-column: 1/25;
+}
+.W_AdvicesCards {
+  display: flex;
+  column-gap: 15px;
+  grid-column: 1/25;
+  position: relative;
+  margin-top: 15px;
+}
+// Question-Answers
+.W_QaCards {
+  grid-column: 1/25;
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+// Footer
+.W_FooterCategories {
+  display: flex;
+  gap: 25px;
+}
+.W_FooterNameList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.W_Authors {
+  display: flex;
+  column-gap: 30px;
+}
+.W_Socials {
+  display: flex;
+  gap: 10px;
+}
+.W_FooterInfoForm {
+  display: flex;
+  gap: 50px;
+}

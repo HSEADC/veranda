@@ -7,6 +7,9 @@
   background-repeat: no-repeat;
   background-image: url('images/A_NavigationLogoGreen.svg');
 }
+.A_NavigationLogoCream {
+  background-image: url('images/A_NavigationLogoCream.svg');
+}
 a.A_HeaderCategory {
   font-family: Manrope;
   font-weight: 500;
@@ -40,6 +43,13 @@ h1.A_TitleAccent {
   font-family: '_21_Cent';
   color: var(--darkGreen);
   font-weight: lighter;
+
+  span.A_TitleSuperAccent {
+    background-color: var(--primaryGreen);
+    color: var(--darkGreen);
+    border-radius: 8px;
+    padding: 0px 4px;
+  }
 }
 // LinksCategories
 a.A_LinkCategory {
@@ -55,9 +65,8 @@ a.A_LinkCategory {
   font-family: Manrope;
   font-size: 16px;
   padding: 10px;
-  height: auto;
-  width: auto;
   color: var(--darkGreen);
+  width: auto;
 }
 // CardInfo
 .A_SubCard {
@@ -75,4 +84,47 @@ a.A_LinkCategory {
     color: var(--darkGreen);
     font-weight: lighter;
   }
+}
+// TextMain
+p.A_TextMain {
+  font-family: Manrope;
+  font-size: 22px;
+  line-height: 130%;
+  color: var(--darkGreen);
+  width: 77%;
+}
+// Button
+button.A_ButtonPrimary {
+  border: none;
+  color: var(--bezh);
+  background-color: var(--darkGreen);
+  font-size: 24px;
+  padding: 25px 10px;
+  width: 225px;
+  border-radius: 8px;
+
+  &:hover {
+    color: var(--darkGreen);
+    background-color: var(--primaryGreen);
+  }
+}
+// Footer
+.A_FooterCategoryLink {
+  font-size: 24px;
+  font-family: Manrope;
+  color: var(--bezh);
+  text-decoration: none;
+  &:hover {
+    color: var(--primaryGreen);
+  }
+}
+.A_AuthorCategory {
+  font-size: 22px;
+  font-family: '_21_Cent';
+  color: var(--bezh);
+}
+.A_FooterAuthorName {
+  font-size: 18px;
+  font-family: Manrope;
+  color: var(--bezh);
 }
