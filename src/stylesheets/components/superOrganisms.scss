@@ -27,7 +27,36 @@ section.S_ArticlesHeading {
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 15px;
+  padding: 150px 150px;
+  position: relative;
+}
+.S_AdvicesArticles {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
   padding: 75px 150px;
   position: relative;
+  border-radius: 32px;
   background-color: var(--blue);
+}
+.S_QaCards {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  padding: 75px 150px;
+  position: relative;
+  border-radius: 32px;
+
+  .O_HeadingLink {
+    grid-column: 1/25;
+  }
+}
+.S_Footer {
+  display: flex;
+  padding: 100px 150px;
+  background-color: var(--darkGreen);
+  justify-content: space-between;
+  border-radius: 32px 32px 0px 0px;
 }
