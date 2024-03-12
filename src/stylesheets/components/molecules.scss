@@ -71,3 +71,10 @@ header.O_Header {
   flex-direction: column;
   gap: 30px;
 }
+// HeadingLinkMain
+.M_HeadingLink {
+  display: flex;
+  grid-column: 9/25;
+  justify-content: space-between;
+  align-items: flex-end;
+}

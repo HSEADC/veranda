@@ -17,18 +17,11 @@ header.O_Header {
   background-image: url('images/mainScreenPlaceholder.png');
   border-radius: 32px;
 }
-// HomeArticles
-.O_HeadingLink {
-  display: flex;
-  grid-column: 9/25;
-  justify-content: space-between;
-  align-items: flex-end;
-}
 // ArticleCard
 .O_CardArticle {
   background-color: var(--bezh);
   display: flex;
-  width: 33.5%;
+  width: 530px;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
   border-radius: 16px;
