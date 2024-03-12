@@ -1,0 +1,149 @@
+// Header
+.A_NavigationLogo {
+  display: block;
+  width: 168px;
+  height: 44px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('images/A_NavigationLogoGreen.svg');
+}
+.A_NavigationLogoCream {
+  background-image: url('images/A_NavigationLogoCream.svg');
+}
+a.A_HeaderCategory {
+  font-family: Manrope;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--darkGreen);
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+// IconHeading
+// IconHeading
+h1.A_TitleManrope {
+  font-size: 72px;
+  font-family: Manrope;
+  font-weight: 600px;
+  text-align: center;
+  color: var(--darkGreen);
+  letter-spacing: -1px;
+
+  em.Accent {
+    font-family: '_21_Cent';
+    font-size: 82px;
+    line-height: 85%;
+  }
+}
+h1.A_TitleAccent {
+  font-size: 82px;
+  font-family: '_21_Cent';
+  color: var(--darkGreen);
+  font-weight: lighter;
+
+  span.A_TitleSuperAccent {
+    background-color: var(--primaryGreen);
+    color: var(--darkGreen);
+    border-radius: 8px;
+    padding: 0px 4px;
+  }
+}
+// LinksCategories
+a.A_LinkCategory {
+  font-size: 18px;
+  font-family: Manrope;
+  text-decoration: none;
+  color: var(--darkGreen);
+}
+// Tag
+.A_Tag {
+  border: 2px solid var(--darkGreen);
+  border-radius: 8px;
+  font-family: Manrope;
+  font-size: 16px;
+  padding: 10px;
+  color: var(--darkGreen);
+  width: auto;
+}
+// CardInfo
+.A_SubCard {
+  font-size: 30px;
+  font-family: Manrope;
+  font-weight: 600px;
+  color: var(--darkGreen);
+  letter-spacing: -1px;
+  line-height: 110%;
+  text-align: center;
+
+  em {
+    font-size: 34px;
+    font-family: '_21_Cent';
+    color: var(--darkGreen);
+    font-weight: lighter;
+  }
+}
+// TextMain
+p.A_TextMain {
+  font-family: Manrope;
+  font-size: 22px;
+  line-height: 130%;
+  color: var(--darkGreen);
+  width: 77%;
+}
+// Button
+button.A_ButtonPrimary {
+  border: none;
+  color: var(--bezh);
+  background-color: var(--darkGreen);
+  font-size: 24px;
+  padding: 25px 10px;
+  width: 225px;
+  border-radius: 8px;
+
+  &:hover {
+    color: var(--darkGreen);
+    background-color: var(--primaryGreen);
+  }
+}
+// Footer
+.A_FooterCategoryLink {
+  font-size: 24px;
+  font-family: Manrope;
+  color: var(--bezh);
+  text-decoration: none;
+  &:hover {
+    color: var(--primaryGreen);
+  }
+}
+.A_AuthorCategory {
+  font-size: 22px;
+  font-family: '_21_Cent';
+  color: var(--bezh);
+}
+.A_FooterAuthorName {
+  font-size: 18px;
+  font-family: Manrope;
+  color: var(--bezh);
+}
+// Socials
+.A_YouTube {
+  width: 45px;
+  height: 45px;
+  background-image: url('images/Q_YouTube.svg');
+  background-size: cover;
+}
+.A_Telegram {
+  width: 45px;
+  height: 45px;
+  background-image: url('images/Q_Telegram.svg');
+  background-size: cover;
+}
+.A_Vk {
+  width: 45px;
+  height: 45px;
+  background-image: url('images/Q_Vk.svg');
+  background-size: cover;
+}

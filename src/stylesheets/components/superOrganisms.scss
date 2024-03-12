@@ -1,0 +1,62 @@
+body {
+  background-color: var(--bezh);
+}
+section.S_HomeScreen {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+  padding: 0px 150px 0px 150px;
+  margin: 50px 0px 100px 0px;
+}
+section.S_ArticlesHeading {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 30px;
+  padding: 75px 150px;
+  margin: 50px 0px 100px 0px;
+  background-color: var(--primaryGreen);
+  border-radius: 32px;
+  grid-row: 30px;
+}
+.S_NewArticle {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  padding: 150px 150px;
+  position: relative;
+}
+.S_AdvicesArticles {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  padding: 75px 150px;
+  position: relative;
+  border-radius: 32px;
+  background-color: var(--blue);
+}
+.S_QaCards {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  padding: 75px 150px;
+  position: relative;
+  border-radius: 32px;
+
+  .M_HeadingLink {
+    grid-column: 1/25;
+  }
+}
+.S_Footer {
+  display: flex;
+  padding: 100px 150px;
+  background-color: var(--darkGreen);
+  justify-content: space-between;
+  border-radius: 32px 32px 0px 0px;
+}

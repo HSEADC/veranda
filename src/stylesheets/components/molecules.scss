@@ -1,0 +1,80 @@
+// Header
+header.O_Header {
+  .M_HeaderCategories {
+    display: flex;
+    column-gap: 30px;
+  }
+  form.M_SearchBar {
+    padding: 10px 15px 10px 20px;
+    border-radius: 600px;
+    border: 1px solid var(--darkGreen);
+    display: flex;
+
+    input {
+      font-size: 18px;
+      font-family: Manrope;
+      border: none;
+
+      &::placeholder {
+        color: var(--darkGreen);
+        opacity: 75%;
+        background-color: var(--bezh);
+      }
+      &::placeholder:focus {
+        border: none;
+      }
+    }
+  }
+}
+// IconHeading
+.M_IconHeading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1160px;
+  text-align: center;
+  gap: 10px;
+  align-items: baseline;
+
+  &:nth-child(1) {
+    margin: 80px auto 0px;
+  }
+}
+.M_IconHeadingLeft {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 10px;
+  align-items: baseline;
+}
+
+// Links
+.M_LinkArticleCategory {
+  display: flex;
+  grid-column: 22/25;
+}
+// TagLineCard
+.M_TagLine {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+// CardInfo
+.M_ArticleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+// Footer
+.M_FooterLogoSocial {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+// HeadingLinkMain
+.M_HeadingLink {
+  display: flex;
+  grid-column: 9/25;
+  justify-content: space-between;
+  align-items: flex-end;
+}

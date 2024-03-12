@@ -1,0 +1,79 @@
+// Header
+header.O_Header {
+  width: 100%;
+  padding: 40px 150px 0px 150px;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+// HomeScreen
+.O_WelcomeScreen {
+  position: relative;
+  grid-column: 1/25;
+  height: 800px;
+  background-color: var(--blue);
+  background-image: url('images/mainScreenPlaceholder.png');
+  border-radius: 32px;
+}
+// ArticleCard
+.O_CardArticle {
+  background-color: var(--bezh);
+  display: flex;
+  width: 530px;
+  flex-direction: column;
+  padding: 10px 10px 30px 10px;
+  border-radius: 16px;
+  text-decoration: none;
+  gap: 20px;
+}
+.O_ArticleCardLong {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--bezh);
+  height: 200px;
+  width: 33.5%;
+  border-radius: 12px;
+  padding: 25px;
+
+  h2 {
+    text-align: left;
+    max-width: 380px;
+    max-height: 70px;
+  }
+}
+.O_QaCard {
+  display: flex;
+  flex-direction: column;
+  height: 512px;
+  width: 33.5%;
+  background-color: var(--darkerBezh);
+  border-radius: 24px;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+// Newarticle
+.O_NewArticle {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  grid-column: 1/13;
+  grid-row: 1/2;
+}
+// ArticleHeading
+.O_ArticleWide {
+  display: flex;
+  height: 630px;
+  padding-bottom: 30px;
+  background-color: var(--primaryGreen);
+  border-radius: 24px;
+  background-image: url('images/O_HeadingImagePlaceholder.png');
+  background-size: contain;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+}
