@@ -102,10 +102,6 @@ module.exports = {
 
     // Index
     new HtmlWebpackPlugin({
-      template: './src/aboutUs.html',
-      filename: './aboutUs.html'
-    }),
-    new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html'
     }),
@@ -153,15 +149,6 @@ module.exports = {
         priority: 'replace'
       }
     ])
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BG230D1EQF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BG230D1EQF');
-</script>
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
