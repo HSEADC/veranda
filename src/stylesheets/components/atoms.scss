@@ -39,7 +39,7 @@ h1.A_TitleManrope {
   }
 }
 h1.A_TitleAccent {
-  font-size: 70px;
+  font-size: 72px;
   font-family: '_21_Cent';
   color: var(--darkGreen);
   font-weight: lighter;
@@ -111,6 +111,7 @@ a.A_LinkCategory {
 
   &:hover {
     background-color: var(--primaryGreen);
+    cursor: pointer;
   }
 }
 // CardInfo
@@ -174,4 +175,35 @@ button.A_ButtonPrimary {
   font-size: 18px;
   font-family: Manrope;
   color: var(--bezh);
+}
+// Responsive Content
+@media only screen and (max-width: 1440px) {
+  h1.A_TitleManrope {
+    font-size: 50px;
+
+    em.Accent {
+      font-family: '_21_Cent';
+      font-size: 55px;
+      line-height: 85%;
+    }
+  }
+  h1.A_TitleAccent {
+    font-size: 55px;
+    font-family: '_21_Cent';
+    color: var(--darkGreen);
+    font-weight: lighter;
+  }
+  // Icons
+  .A_IconMedium {
+    width: 55px;
+    height: 50px;
+    background-size: contain;
+  }
+  // Footer
+  .A_FooterCategoryLink {
+    font-size: 16px;
+    font-family: Manrope;
+    color: var(--bezh);
+    text-decoration: none;
+  }
 }
