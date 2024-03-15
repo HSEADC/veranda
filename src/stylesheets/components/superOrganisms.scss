@@ -1,15 +1,11 @@
 body {
   background-color: var(--bezh);
 }
-section.S_HomeScreen {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 0px;
+section.S_FirstScreen {
+  display: flex;
   width: 100%;
-  margin: 75px 0 75px 0px;
   padding: 0 7.813vw;
+  margin-top: 50px;
 }
 section.S_ArticlesHeading {
   display: flex;
@@ -48,10 +44,12 @@ section.S_ArticlesHeading {
   // Какой-то кринж?-----------------------------------
 }
 .S_AdvicesArticles {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
+  // display: grid;
+  // grid-template-columns: repeat(24, 1fr);
+  // grid-template-rows: 1fr;
+  // grid-column-gap: 15px;
+  display: flex;
+  flex-direction: column;
   padding: 75px 7.813vw 7.813vw;
   position: relative;
   border-radius: 32px;

@@ -27,6 +27,16 @@ header.O_Header {
   text-decoration: none;
   gap: 20px;
 }
+.O_CardArticleBig {
+  width: 41.471vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 30px 10px;
+  border-radius: 16px;
+  text-decoration: none;
+  background-color: var(--primaryGreen);
+  gap: 20px;
+}
 .O_ArticleCardLong {
   display: flex;
   flex-direction: column;
@@ -72,7 +82,7 @@ header.O_Header {
   padding-bottom: 30px;
   background-color: var(--primaryGreen);
   border-radius: 24px;
-  background-image: url('images/O_HeadingImagePlaceholder.png');
+  // background-image: url('images/O_HeadingImagePlaceholder.png');
   justify-content: center;
   align-items: flex-end;
   text-decoration: none;
