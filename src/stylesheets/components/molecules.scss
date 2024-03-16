@@ -48,7 +48,17 @@ header.O_Header {
   gap: 10px;
   align-items: baseline;
 }
+.M_LongArticleHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+  row-gap: 15px;
 
+  h2 {
+    text-align: left;
+  }
+}
 // Links
 .M_LinkArticleCategory {
   display: flex;

@@ -40,6 +40,10 @@ header.O_Header {
   text-decoration: none;
   background-color: var(--primaryGreen);
   gap: 20px;
+
+  img {
+    border-radius: 16px;
+  }
 }
 .O_ArticleCardLong {
   display: flex;
@@ -94,7 +98,32 @@ header.O_Header {
   background-position: bottom;
   background-repeat: no-repeat;
 }
+// IdeaCardBig
+.O_IdeaBigCard {
+  width: 49.3%;
+  height: 32.813vw;
+  background-color: var(--blue);
+  border-radius: 24px;
+  display: flex;
+  text-decoration: none;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 25px;
+  row-gap: 15px;
+  background-image: url('images/Q_BigArticleBicycle.png');
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+  background-position: bottom 0px right -110px;
+}
 
+.O_CardHigh {
+  width: 32.5%;
+  height: 26.615vw;
+  background-color: var(--primaryGreen);
+  border-radius: 16px;
+  padding: 25px;
+  text-decoration: none;
+}
 // Responsive
 @media only screen and (max-width: 1440px) {
   .O_CardArticle {
