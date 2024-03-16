@@ -8,8 +8,8 @@ header.O_Header {
 // HomeScreen
 .O_WelcomeScreen {
   position: relative;
-  grid-column: 1/25;
-  height: 35.667vw;
+  width: 100%;
+  height: 34.667vw;
   background-image: url('images/mainScreenPlaceholder.png');
   background-position: bottom;
   background-repeat: no-repeat;
@@ -26,6 +26,10 @@ header.O_Header {
   border-radius: 16px;
   text-decoration: none;
   gap: 20px;
+
+  img {
+    border-radius: 16px;
+  }
 }
 .O_CardArticleBig {
   width: 41.471vw;
