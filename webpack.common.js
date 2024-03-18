@@ -8,7 +8,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    filterTag: './src/javascript/tagFilter.js'
   },
   output: {
     filename: '[name].[contenthash].js',

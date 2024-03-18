@@ -2,8 +2,7 @@
 header.O_Header {
   display: flex;
   grid-row-gap: 0px;
-  padding: 0 7.813vw;
-  margin-top: 20px;
+  padding: 20px 7.813vw 0px;
 }
 // HomeScreen
 .O_WelcomeScreen {
@@ -58,9 +57,9 @@ header.O_Header {
   text-decoration: none;
 
   h2 {
-    text-align: left;
-    max-width: 380px;
+    max-width: 400px;
     max-height: 70px;
+    text-align: left;
   }
 }
 .O_QaCard {
@@ -123,6 +122,65 @@ header.O_Header {
   border-radius: 16px;
   padding: 25px;
   text-decoration: none;
+
+  .M_LongArticleHeading {
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+.W_TwoIdeasArticle {
+  .O_CardHigh {
+    width: 100%;
+    height: 65%;
+    background-color: var(--blue);
+    background-image: url('images/Q_ArticleRyeArticle.png');
+    background-position: bottom 0 right -20px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  .O_ArticleCardLong {
+    width: 100%;
+    height: 35%;
+    align-items: center;
+    row-gap: 20px;
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+// ArticleHtml
+.O_HeadingArticle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.O_ArticleAuthorDescription {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.O_ArticleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 35px;
+}
+// Breaker
+.O_BreakerOpinion {
+  background-color: var(--primaryGreen);
+  display: flex;
+  border-radius: 24px;
+  padding: 30px;
+}
+.O_SocialMediaBreaker {
+  display: flex;
+  background-color: var(--primaryGreen);
+  border-radius: 16px;
+  padding: 25px 30px;
+  width: 100%;
+  justify-content: space-between;
 }
 // Responsive
 @media only screen and (max-width: 1440px) {

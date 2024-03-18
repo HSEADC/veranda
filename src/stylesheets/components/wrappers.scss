@@ -44,3 +44,13 @@
   padding: 0px 7.813vw;
   margin-top: 50px;
 }
+.W_TwoIdeasArticle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 41.471vw;
+}
+// ArticleHtml
+.W_HomeScreenArticle {
+  background-color: var(--darkerBezh);
+}

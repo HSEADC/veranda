@@ -89,3 +89,30 @@ header.O_Header {
   align-items: flex-end;
   margin: 30px 0px;
 }
+// ArticleHtml
+.M_PersonProfileArticle {
+  display: flex;
+  column-gap: 20px;
+  width: 30%;
+}
+.M_NamePersonArticle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.M_SubheadText {
+  display: flex;
+  gap: 50px;
+}
+.M_BreakerIconText {
+  display: flex;
+  align-items: top;
+  gap: 30px;
+  align-items: center;
+
+  .A_Telegram {
+    width: 60px;
+    height: 60px;
+    background-image: url('images/A_Telegram60px.png');
+  }
+}

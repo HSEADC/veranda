@@ -75,3 +75,21 @@ section.S_ArticlesHeading {
   border-radius: 32px 32px 0px 0px;
   margin-top: 150px;
 }
+// ArticleHtml
+.S_ArticlePreview {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  padding: 0 7.813vw 75px;
+  border-radius: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+.S_WholeArticle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  padding: 0 7.813vw;
+  margin-top: 80px;
+  align-items: flex-end;
+}
