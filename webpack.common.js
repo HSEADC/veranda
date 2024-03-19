@@ -12,7 +12,7 @@ module.exports = {
     filterTag: './src/javascript/tagFilter.js'
   },
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'docs')
   },
   module: {
@@ -97,8 +97,8 @@ module.exports = {
     }),
 
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-      chunkFilename: '[id].[contenthash].css'
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     }),
 
     // Index

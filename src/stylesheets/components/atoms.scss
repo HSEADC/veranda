@@ -198,3 +198,137 @@ button.A_ButtonPrimary {
   font-family: Manrope;
   color: var(--bezh);
 }
+// ArticleHtml
+p.A_AuthorArticle {
+  font-size: 28px;
+  font-family: Manrope;
+  color: var(--darkGreen);
+}
+p.A_NameDescArticle {
+  font-size: 20px;
+  font-family: Manrope;
+  color: var(--darkGreen);
+}
+.A_ArticleDescription {
+  width: 69%;
+  h3 {
+    font-size: 32px;
+    font-family: Manrope;
+    color: var(--darkGreen);
+    line-height: 120%;
+
+    em {
+      font-size: 36px;
+      font-family: '_21_Cent';
+    }
+  }
+}
+// ArticleHtml_Block
+.A_SubHeadArticle {
+  font-size: 32px;
+  width: 30%;
+  font-family: Manrope;
+  color: var(--darkGreen);
+
+  em {
+    font-family: '_21_Cent';
+  }
+}
+.A_MainTextArticle {
+  font-size: 24px;
+  font-family: Manrope;
+  line-height: 140%;
+  color: var(--darkGreen);
+  width: 69%;
+}
+// ArticleHtml_BreakerText
+h3.A_BreakerText {
+  font-size: 30px;
+  font-family: '_21_Cent';
+  color: var(--darkGreen);
+  line-height: 120%;
+  width: 69%;
+}
+.A_BreakerLineText {
+  font-size: 28px;
+  font-family: Manrope;
+  color: var(--darkGreen);
+  line-height: 120%;
+}
+a.A_ActionArticle {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--darkGreen);
+  color: var(--bezh);
+  font-family: Manrope;
+  font-size: 20px;
+  border-radius: 12px;
+}
+// -----------------Responsive Content-------------------
+@media only screen and (max-width: 1440px) {
+  h1.A_TitleManrope {
+    font-size: 50px;
+
+    em.Accent {
+      font-family: '_21_Cent';
+      font-size: 55px;
+      line-height: 85%;
+    }
+  }
+  h1.A_TitleAccent {
+    font-size: 55px;
+    font-family: '_21_Cent';
+    color: var(--darkGreen);
+    font-weight: lighter;
+  }
+  // Icons
+  .A_IconMedium {
+    width: 55px;
+    height: 50px;
+    background-size: contain;
+  }
+  // ArticleIndex
+  .A_ArticleDescription {
+    h3 {
+      font-size: 24px;
+      font-family: Manrope;
+      color: var(--darkGreen);
+      line-height: 120%;
+
+      em {
+        font-size: 28px;
+        font-family: '_21_Cent';
+      }
+    }
+  }
+  p.A_NameDescArticle {
+    font-size: 16px;
+    font-family: Manrope;
+    color: var(--darkGreen);
+  }
+  p.A_AuthorArticle {
+    font-size: 24px;
+    font-family: Manrope;
+    color: var(--darkGreen);
+  }
+  // ArticleHtml_TextBlock
+  .A_MainTextArticle {
+    font-size: 20px;
+  }
+  // ArticleHtml_BreakerText
+  h3.A_BreakerText {
+    font-size: 24px;
+  }
+  .A_BreakerLineText {
+    font-size: 20px;
+  }
+  // Footer
+  .A_FooterCategoryLink {
+    font-size: 16px;
+    font-family: Manrope;
+    color: var(--bezh);
+    text-decoration: none;
+  }
+}
