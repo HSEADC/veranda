@@ -72,6 +72,28 @@ header.O_Header {
   padding: 25px;
   justify-content: space-between;
   align-items: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+
+  .Q_QaIconArticle {
+    svg {
+      path {
+        fill: #f2f7da;
+        stroke: var(--darkGreen);
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+
+    .Q_QaIconArticle {
+      svg {
+        path {
+          stroke: cornflowerblue;
+        }
+      }
+    }
+  }
 }
 // Newarticle
 .O_NewArticle {

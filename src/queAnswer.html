@@ -48,12 +48,27 @@
       <a href="" class="O_QaCard" data-tags="эстетика">
         <div class="M_ArticleInfo">
           <div class="M_TagLine">
-            <div class="A_Tag">Эстетика</div>
+            <div class="A_Tag">эстетика</div>
           </div>
           <h2 class="A_SubCard">Лучшее время для съемки заката</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/Q_QAIconSun.png" alt="" />
+          <svg
+            width="350"
+            height="310"
+            viewBox="0 0 350 310"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M91.4793 40.2945C122.111 47.577 154.307 37.1145 174.83 13.1729C195.353 37.1145 227.55 47.577 258.181 40.2945C260.733 71.7372 280.663 99.1724 309.698 111.304C293.307 138.24 293.307 172.145 309.698 199.081C280.663 211.213 260.733 238.648 258.181 270.091C227.55 262.808 195.353 273.271 174.83 297.212C154.307 273.271 122.111 262.808 91.4793 270.091C88.9277 238.648 68.9974 211.213 39.9623 199.081C56.3536 172.145 56.3536 138.24 39.9623 111.304C68.9974 99.1724 88.9277 71.7372 91.4793 40.2945Z"
+              stroke-width="5.30919"
+            />
+            <path
+              d="M265.608 154.787C265.608 205.084 224.834 245.858 174.537 245.858C124.241 245.858 83.4671 205.084 83.4671 154.787C83.4671 104.491 124.241 63.7171 174.537 63.7171C224.834 63.7171 265.608 104.491 265.608 154.787Z"
+              stroke-width="5.30919"
+            />
+          </svg>
         </div>
       </a>
       <a href="" class="O_QaCard" data-tags="здоровье,сезоны">
@@ -212,43 +227,4 @@
       </div>
     </footer>
   </body>
-  <script>
-    // function filterCardsByTag(tag) {
-    //   // Получаем все карточки статей
-    //   const cards = document.querySelectorAll('.O_QaCard')
-
-    //   // Перебираем каждую карточку
-    //   cards.forEach((card) => {
-    //     // Получаем атрибут data-tags текущей карточки
-    //     const tags = card.getAttribute('data-tags')
-
-    //     // Проверяем, есть ли выбранный тег в списке тегов текущей карточки
-    //     if (tags && tags.split(',').includes(tag)) {
-    //       card.style.display = '' // Показываем карточку
-    //     } else {
-    //       card.style.display = 'none' // Скрываем карточку
-    //     }
-    //   })
-    // }
-
-    // document.addEventListener('DOMContentLoaded', function () {
-    //   // Получаем все теги для фильтрации
-    //   const filterTags = document.querySelectorAll('.A_FilterTag')
-
-    //   // Перебираем каждый тег для назначения обработчика события клика
-    //   filterTags.forEach((tag) => {
-    //     tag.addEventListener('click', function () {
-    //       // Получаем выбранный тег
-    //       const selectedTag = this.innerText.trim()
-
-    //       // Фильтруем карточки по выбранному тегу
-    //       filterCardsByTag(selectedTag)
-
-    //       // Удаляем активный класс у всех тегов и добавляем его текущему тегу
-    //       filterTags.forEach((tag) => tag.classList.remove('active'))
-    //       this.classList.add('active')
-    //     })
-    //   })
-    // })
-  </script>
 </html>
