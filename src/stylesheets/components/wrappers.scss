@@ -2,36 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  grid-column: 1/25;
+  width: 100%;
   border-bottom: 1px solid var(--darkGreen);
   padding-bottom: 20px;
 }
 // NewArticle
 .W_NewArticleHeading {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  .M_IconHeadingLeft {
+    margin: 0px 0px 25px;
+  }
 }
 // Advices
 .W_ArticleHeadingBig {
   display: flex;
-  row-gap: 30px;
   flex-direction: column;
-  grid-column: 1/25;
-}
-.W_AdvicesCards {
-  display: flex;
-  column-gap: 15px;
-  grid-column: 1/25;
-  position: relative;
-  margin-top: 15px;
-}
-// Question-Answers
-.W_QaCards {
-  grid-column: 1/25;
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
 }
 // Footer
 .W_FooterCategories {
@@ -54,4 +38,19 @@
 .W_FooterInfoForm {
   display: flex;
   gap: 50px;
+}
+// ---------------IdeasPage-----------------
+.W_ArticleSlider {
+  padding: 0px 7.813vw;
+  margin-top: 50px;
+}
+.W_TwoIdeasArticle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 41.471vw;
+}
+// ArticleHtml
+.W_HomeScreenArticle {
+  background-color: var(--darkerBezh);
 }

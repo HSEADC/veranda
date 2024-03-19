@@ -1,51 +1,64 @@
 body {
   background-color: var(--bezh);
 }
-section.S_HomeScreen {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 0px;
-  padding: 0px 150px 0px 150px;
-  margin: 50px 0px 100px 0px;
+section.S_FirstScreen {
+  display: flex;
+  width: 100%;
+  padding: 0 7.813vw;
+  margin-top: 50px;
 }
 section.S_ArticlesHeading {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 30px;
-  padding: 75px 150px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 75px 7.813vw;
   margin: 50px 0px 100px 0px;
   background-color: var(--primaryGreen);
   border-radius: 32px;
-  grid-row: 30px;
+
+  .M_HeadingLink {
+    width: 66.5%;
+  }
 }
 .S_NewArticle {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 15px;
-  padding: 150px 150px;
+  padding: 7.813vw 7.813vw;
   position: relative;
+  // Какой-то кринж?-----------------------------------
+  .A_IconDecoration {
+    position: absolute;
+    right: 42.656vw;
+    bottom: 1.677vw;
+    z-index: 2;
+  }
+  #sun {
+    bottom: 0;
+    position: absolute;
+    right: 3.125vw;
+    top: 2.083vw;
+    z-index: 0;
+  }
+  // Какой-то кринж?-----------------------------------
 }
 .S_AdvicesArticles {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  padding: 75px 150px;
+  // display: grid;
+  // grid-template-columns: repeat(24, 1fr);
+  // grid-template-rows: 1fr;
+  // grid-column-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 75px 7.813vw 7.813vw;
   position: relative;
   border-radius: 32px;
   background-color: var(--blue);
 }
 .S_QaCards {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  padding: 75px 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 75px 7.813vw;
   position: relative;
   border-radius: 32px;
 
@@ -55,8 +68,28 @@ section.S_ArticlesHeading {
 }
 .S_Footer {
   display: flex;
-  padding: 100px 150px;
+  height: 400px;
+  padding: 100px 7.813vw;
   background-color: var(--darkGreen);
   justify-content: space-between;
   border-radius: 32px 32px 0px 0px;
+  margin-top: 150px;
+}
+// ArticleHtml
+.S_ArticlePreview {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  padding: 0 7.813vw 75px;
+  border-radius: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+.S_WholeArticle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  padding: 0 7.813vw;
+  margin-top: 80px;
+  align-items: flex-end;
 }

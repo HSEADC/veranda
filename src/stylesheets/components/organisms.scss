@@ -1,32 +1,48 @@
 // Header
 header.O_Header {
-  width: 100%;
-  padding: 40px 150px 0px 150px;
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
+  display: flex;
   grid-row-gap: 0px;
+  padding: 20px 7.813vw 0px;
 }
 // HomeScreen
 .O_WelcomeScreen {
   position: relative;
-  grid-column: 1/25;
-  height: 800px;
-  background-color: var(--blue);
+  width: 100%;
+  height: 34.667vw;
   background-image: url('images/mainScreenPlaceholder.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 32px;
 }
 // ArticleCard
 .O_CardArticle {
   background-color: var(--bezh);
   display: flex;
-  width: 530px;
+  width: 33.5%;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
   border-radius: 16px;
   text-decoration: none;
   gap: 20px;
+
+  img {
+    border-radius: 16px;
+  }
+}
+.O_CardArticleBig {
+  width: 41.471vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 30px 10px;
+  border-radius: 16px;
+  text-decoration: none;
+  background-color: var(--primaryGreen);
+  gap: 20px;
+
+  img {
+    border-radius: 16px;
+  }
 }
 .O_ArticleCardLong {
   display: flex;
@@ -34,46 +50,163 @@ header.O_Header {
   align-items: flex-start;
   justify-content: space-between;
   background-color: var(--bezh);
-  height: 200px;
-  width: 33.5%;
+  row-gap: 30px;
+  width: 32.5%;
   border-radius: 12px;
   padding: 25px;
+  text-decoration: none;
 
   h2 {
-    text-align: left;
-    max-width: 380px;
+    max-width: 400px;
     max-height: 70px;
+    text-align: left;
   }
 }
 .O_QaCard {
   display: flex;
   flex-direction: column;
-  height: 512px;
-  width: 33.5%;
+  text-decoration: none;
   background-color: var(--darkerBezh);
+  row-gap: 25px;
   border-radius: 24px;
   padding: 25px;
   justify-content: space-between;
   align-items: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+
+  .Q_QaIconArticle {
+    svg {
+      path {
+        fill: #f2f7da;
+        stroke: var(--darkGreen);
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+
+    .Q_QaIconArticle {
+      svg {
+        path {
+          stroke: cornflowerblue;
+        }
+      }
+    }
+  }
 }
 // Newarticle
 .O_NewArticle {
   display: flex;
   flex-direction: column;
   gap: 70px;
-  grid-column: 1/13;
+  grid-column: 1/12;
   grid-row: 1/2;
 }
 // ArticleHeading
 .O_ArticleWide {
   display: flex;
-  height: 630px;
+  width: 100%;
+  height: 580px;
   padding-bottom: 30px;
   background-color: var(--primaryGreen);
   border-radius: 24px;
-  background-image: url('images/O_HeadingImagePlaceholder.png');
-  background-size: contain;
+  // background-image: url('images/O_HeadingImagePlaceholder.png');
   justify-content: center;
   align-items: flex-end;
   text-decoration: none;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+// IdeaCardBig
+.O_IdeaBigCard {
+  width: 49.3%;
+  height: 32.813vw;
+  background-color: var(--blue);
+  border-radius: 24px;
+  display: flex;
+  text-decoration: none;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 25px;
+  row-gap: 15px;
+  background-image: url('images/Q_BigArticleBicycle.png');
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+  background-position: bottom 0px right -110px;
+}
+
+.O_CardHigh {
+  width: 32.5%;
+  height: 26.615vw;
+  background-color: var(--primaryGreen);
+  border-radius: 16px;
+  padding: 25px;
+  text-decoration: none;
+
+  .M_LongArticleHeading {
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+.W_TwoIdeasArticle {
+  .O_CardHigh {
+    width: 100%;
+    height: 65%;
+    background-color: var(--blue);
+    background-image: url('images/Q_ArticleRyeArticle.png');
+    background-position: bottom 0 right -20px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  .O_ArticleCardLong {
+    width: 100%;
+    height: 35%;
+    align-items: center;
+    row-gap: 20px;
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+// ArticleHtml
+.O_HeadingArticle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.O_ArticleAuthorDescription {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.O_ArticleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 35px;
+}
+// Breaker
+.O_BreakerOpinion {
+  background-color: var(--primaryGreen);
+  display: flex;
+  border-radius: 24px;
+  padding: 30px;
+}
+.O_SocialMediaBreaker {
+  display: flex;
+  background-color: var(--primaryGreen);
+  border-radius: 16px;
+  padding: 25px 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+// Responsive
+@media only screen and (max-width: 1440px) {
+  .O_CardArticle {
+    width: 27.425vw;
+  }
 }

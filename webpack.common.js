@@ -8,7 +8,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    filterTag: './src/javascript/tagFilter.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -101,10 +102,6 @@ module.exports = {
     }),
 
     // Index
-    new HtmlWebpackPlugin({
-      template: './src/aboutUs.html',
-      filename: './aboutUs.html'
-    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html'
