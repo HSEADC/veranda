@@ -1,8 +1,8 @@
-function filterCardsByTag(tag) {
+function filterTag(tag) {
   const cards = document.querySelectorAll(
     '.O_QaCard, .O_CardArticle, .O_ArticleCardLong, .O_IdeaBigCard, .O_CardHigh, .O_ArticleWide, .O_CardArticleBig'
   )
-
+  console.log(cards)
   cards.forEach((card) => {
     const tags = card.getAttribute('data-tags')
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
           card.style.display = ''
         })
       } else {
-        filterCardsByTag(selectedTag)
+        filterTag(selectedTag)
         filterTags.forEach((tag) => tag.classList.remove('active'))
         this.classList.add('active')
       }

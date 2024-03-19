@@ -2,28 +2,7 @@
 header.O_Header {
   .M_HeaderCategories {
     display: flex;
-    column-gap: 30px;
-  }
-  form.M_SearchBar {
-    padding: 10px 15px 10px 20px;
-    border-radius: 600px;
-    border: 1px solid var(--darkGreen);
-    display: flex;
-
-    input {
-      font-size: 18px;
-      font-family: Manrope;
-      border: none;
-
-      &::placeholder {
-        color: var(--darkGreen);
-        opacity: 75%;
-        background-color: var(--bezh);
-      }
-      &::placeholder:focus {
-        border: none;
-      }
-    }
+    column-gap: 40px;
   }
 }
 // IconHeading
