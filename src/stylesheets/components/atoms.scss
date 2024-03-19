@@ -22,10 +22,28 @@ a.A_HeaderCategory {
     text-underline-offset: 4px;
   }
 }
-// IconHeading
+// Socials
+.A_YouTube {
+  width: 45px;
+  height: 45px;
+  background-image: url('images/Q_YouTube.svg');
+  background-size: cover;
+}
+.A_Telegram {
+  width: 45px;
+  height: 45px;
+  background-image: url('images/Q_Telegram.svg');
+  background-size: cover;
+}
+.A_Vk {
+  width: 45px;
+  height: 45px;
+  background-image: url('images/Q_Vk.svg');
+  background-size: cover;
+}
 // IconHeading
 h1.A_TitleManrope {
-  font-size: 72px;
+  font-size: 62px;
   font-family: Manrope;
   font-weight: 600px;
   text-align: center;
@@ -34,12 +52,12 @@ h1.A_TitleManrope {
 
   em.Accent {
     font-family: '_21_Cent';
-    font-size: 82px;
+    font-size: 70px;
     line-height: 85%;
   }
 }
 h1.A_TitleAccent {
-  font-size: 82px;
+  font-size: 72px;
   font-family: '_21_Cent';
   color: var(--darkGreen);
   font-weight: lighter;
@@ -58,6 +76,39 @@ a.A_LinkCategory {
   text-decoration: none;
   color: var(--darkGreen);
 }
+// Icons
+.A_IconMedium {
+  width: 80px;
+  height: 75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Glitter {
+  background-image: url('images/Q_GlitterMedium.svg');
+}
+.Citrus {
+  background-image: url('images/Q_CitrusMedium.svg');
+}
+.Clouds {
+  background-image: url('images/Q_CloudsMedium.svg');
+}
+.Snowflakes {
+  background-image: url('images/Q_SnowflakesMedium.svg');
+}
+.A_LeavesMedium {
+  background-image: url('images/A_LeavesMedium.png');
+}
+// IconsDecoration
+.A_IconDecoration {
+  width: 14.583vw;
+  height: 14.583vw;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+}
 // Tag
 .A_Tag {
   border: 2px solid var(--darkGreen);
@@ -65,21 +116,38 @@ a.A_LinkCategory {
   font-family: Manrope;
   font-size: 16px;
   padding: 10px;
+  display: inline-block;
   color: var(--darkGreen);
   width: auto;
 }
+// FilterTag
+.A_FilterTag {
+  border-radius: 8px;
+  font-family: Manrope;
+  font-size: 16px;
+  padding: 10px;
+  display: inline-block;
+  color: var(--darkGreen);
+  background-color: var(--darkerBezh);
+  width: auto;
+
+  &:hover {
+    background-color: var(--primaryGreen);
+    cursor: pointer;
+  }
+}
 // CardInfo
 .A_SubCard {
-  font-size: 30px;
+  font-size: 24px;
   font-family: Manrope;
   font-weight: 600px;
   color: var(--darkGreen);
   letter-spacing: -1px;
-  line-height: 110%;
+  line-height: 120%;
   text-align: center;
 
   em {
-    font-size: 34px;
+    font-size: 28px;
     font-family: '_21_Cent';
     color: var(--darkGreen);
     font-weight: lighter;
@@ -114,8 +182,10 @@ button.A_ButtonPrimary {
   font-family: Manrope;
   color: var(--bezh);
   text-decoration: none;
+  hyphens: none;
   &:hover {
     color: var(--primaryGreen);
+    cursor: pointer;
   }
 }
 .A_AuthorCategory {
@@ -127,23 +197,4 @@ button.A_ButtonPrimary {
   font-size: 18px;
   font-family: Manrope;
   color: var(--bezh);
-}
-// Socials
-.A_YouTube {
-  width: 45px;
-  height: 45px;
-  background-image: url('images/Q_YouTube.svg');
-  background-size: cover;
-}
-.A_Telegram {
-  width: 45px;
-  height: 45px;
-  background-image: url('images/Q_Telegram.svg');
-  background-size: cover;
-}
-.A_Vk {
-  width: 45px;
-  height: 45px;
-  background-image: url('images/Q_Vk.svg');
-  background-size: cover;
 }

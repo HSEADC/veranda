@@ -31,13 +31,14 @@ header.O_Header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1160px;
+  // max-width: 1160px;
   text-align: center;
   gap: 10px;
   align-items: baseline;
 
   &:nth-child(1) {
-    margin: 80px auto 0px;
+    margin: 30px auto 0px;
+    width: 69.444vw;
   }
 }
 .M_IconHeadingLeft {
@@ -47,7 +48,17 @@ header.O_Header {
   gap: 10px;
   align-items: baseline;
 }
+.M_LongArticleHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+  row-gap: 15px;
 
+  h2 {
+    text-align: left;
+  }
+}
 // Links
 .M_LinkArticleCategory {
   display: flex;
@@ -70,11 +81,4 @@ header.O_Header {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-// HeadingLinkMain
-.M_HeadingLink {
-  display: flex;
-  grid-column: 9/25;
-  justify-content: space-between;
-  align-items: flex-end;
 }

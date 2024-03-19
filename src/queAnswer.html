@@ -6,19 +6,225 @@
     <link rel="shortcut icon" href="images/favicon.svg" />
     <title>Q&A</title>
   </head>
-  <body class="queAnswer">
-    <div class="headerMenu">
-      <li><a href="../about.html">о проекте</a></li>
-      <li><a href="../index.html">заглушка</a></li>
-      <li><a href="../aboutUs.html">о нас</a></li>
-      <li><a href="../articles.html">статьи</a></li>
-      <li><a href="../ideas.html">идеи для отдыха</a></li>
-      <li><a href="../queAnswer.html">Q&A</a></li>
+  <body>
+    <!------------------------- Header----------------------->
+    <header class="O_Header">
+      <div class="W_Header">
+        <a href="index.html" class="A_NavigationLogo"></a>
+        <div class="M_HeaderCategories">
+          <a href="articles.html" class="A_HeaderCategory">Статьи</a
+          ><a href="ideas.html" class="A_HeaderCategory">Идеи для отдыха</a
+          ><a href="queAnswer.html" class="A_HeaderCategory">Вопрос-ответ</a>
+        </div>
+        <form action="" class="M_SearchBar">
+          <input type="search" placeholder="Найти" />
+          <div class="Q_SearhIconHeader"></div>
+        </form>
+      </div>
+    </header>
+    <!------------------------- FilterTags----------------------->
+    <div class="С_ArticleCategoryTags">
+      <div class="A_FilterTag">здоровье</div>
+      <div class="A_FilterTag">эстетика</div>
+      <div class="A_FilterTag">рецепты</div>
+      <div class="A_FilterTag">активный отдых</div>
+      <div class="A_FilterTag">участок</div>
+      <div class="A_FilterTag">сезоны</div>
     </div>
-    <div class="cardwrapper">
-      <div class="democard"><p>Карточка раз</p></div>
-      <div class="democard"><p>Карточка два</p></div>
-      <div class="democard"><p>Опа карточка</p></div>
+    <!------------------------- Articles----------------------->
+    <div class="C_AllQaCards">
+      <a href="" class="O_QaCard" data-tags="здоровье,сезоны">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">здоровье</div>
+            <div class="A_Tag">сезоны</div>
+          </div>
+          <h2 class="A_SubCard">Как не замерзнуть на даче в холода</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/Q_QAIconSnow.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard" data-tags="эстетика">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">эстетика</div>
+          </div>
+          <h2 class="A_SubCard">Лучшее время для съемки заката</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <svg
+            width="350"
+            height="310"
+            viewBox="0 0 350 310"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M91.4793 40.2945C122.111 47.577 154.307 37.1145 174.83 13.1729C195.353 37.1145 227.55 47.577 258.181 40.2945C260.733 71.7372 280.663 99.1724 309.698 111.304C293.307 138.24 293.307 172.145 309.698 199.081C280.663 211.213 260.733 238.648 258.181 270.091C227.55 262.808 195.353 273.271 174.83 297.212C154.307 273.271 122.111 262.808 91.4793 270.091C88.9277 238.648 68.9974 211.213 39.9623 199.081C56.3536 172.145 56.3536 138.24 39.9623 111.304C68.9974 99.1724 88.9277 71.7372 91.4793 40.2945Z"
+              stroke-width="5.30919"
+            />
+            <path
+              d="M265.608 154.787C265.608 205.084 224.834 245.858 174.537 245.858C124.241 245.858 83.4671 205.084 83.4671 154.787C83.4671 104.491 124.241 63.7171 174.537 63.7171C224.834 63.7171 265.608 104.491 265.608 154.787Z"
+              stroke-width="5.30919"
+            />
+          </svg>
+        </div>
+      </a>
+      <a href="" class="O_QaCard" data-tags="здоровье,сезоны">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">здоровье</div>
+            <div class="A_Tag">сезоны</div>
+          </div>
+          <h2 class="A_SubCard">Что лучше всего отпугивает комаров</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/Q_QAIconMosquito.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard" data-tags="участок">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">участок</div>
+          </div>
+          <h2 class="A_SubCard">Как организовать полив огорода</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/A_QAIconDrops.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard" data-tags="сезоны">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">сезоны</div>
+          </div>
+          <h2 class="A_SubCard">Когда лучше сажать морковку</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/A_QAIconCarrot.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard" data-tags="эстетика">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">эстетика</div>
+          </div>
+          <h2 class="A_SubCard">Где найти красивый декор</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/A_QAIconCarpet.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard" data-tags="здоровье">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">здоровье</div>
+          </div>
+          <h2 class="A_SubCard">Какие грибы можно собирать</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/A_QAIconMushrooms.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">участок</div>
+          </div>
+          <h2 class="A_SubCard">
+            Как оплачивать налог <br />
+            за дачу
+          </h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/Q_QAIconHome.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard" data-tags="участок">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">участок</div>
+          </div>
+          <h2 class="A_SubCard">
+            Какие цветы <br />
+            посадить
+          </h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/A_QAIconFlower.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard" data-tags="активный отдых">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">активный отдых</div>
+          </div>
+          <h2 class="A_SubCard">Лучшие активные игры на даче</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/A_QAIconPingPong.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">участок</div>
+          </div>
+          <h2 class="A_SubCard">Какой забор лучше выбрать</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/A_QAIconFence.png" alt="" />
+        </div>
+      </a>
+      <a href="" class="O_QaCard" data-tags="рецепты">
+        <div class="M_ArticleInfo">
+          <div class="M_TagLine">
+            <div class="A_Tag">рецепты</div>
+          </div>
+          <h2 class="A_SubCard">Лучший напиток <br />для лета</h2>
+        </div>
+        <div class="Q_QaIconArticle">
+          <img src="images/A_QAIconGlass.png" alt="" />
+        </div>
+      </a>
     </div>
+    <!------------------------- Footer----------------------->
+    <footer class="S_Footer">
+      <div class="W_FooterCategories">
+        <a href="" class="A_FooterCategoryLink">Главная</a>
+        <a href="" class="A_FooterCategoryLink">О медиа</a>
+        <a href="" class="A_FooterCategoryLink">Статьи</a>
+        <a href="" class="A_FooterCategoryLink">Идеи для отдыха</a>
+        <a href="" class="A_FooterCategoryLink">Вопрос-ответ</a>
+      </div>
+      <div class="W_FooterInfoForm">
+        <div class="W_Authors">
+          <div class="W_FooterNameList">
+            <h2 class="A_AuthorCategory">Дизайнеры</h2>
+            <p class="A_FooterAuthorName">Максим Кириллов</p>
+            <p class="A_FooterAuthorName">Злата Баева</p>
+            <p class="A_FooterAuthorName">Ева Баева</p>
+          </div>
+          <div class="W_FooterNameList">
+            <h2 class="A_AuthorCategory">Кураторы</h2>
+            <p class="A_FooterAuthorName">Анна Комкова</p>
+            <p class="A_FooterAuthorName">Софья Каем</p>
+          </div>
+          <div class="W_FooterNameList">
+            <h2 class="A_AuthorCategory">HSE ADC</h2>
+            <p class="A_FooterAuthorName">2023-2024</p>
+          </div>
+        </div>
+        <div class="M_FooterLogoSocial">
+          <div class="A_NavigationLogo A_NavigationLogoCream"></div>
+          <div class="W_Socials">
+            <a href="" class="Q_YouTube"></a>
+            <a href="" class="Q_Telegram"></a>
+            <a href="" class="Q_Vk"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
