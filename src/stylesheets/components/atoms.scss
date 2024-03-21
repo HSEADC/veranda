@@ -1,3 +1,7 @@
+body {
+  font-family: Manrope;
+  font-size: 16px;
+}
 // Header
 .A_NavigationLogo {
   display: block;
@@ -11,7 +15,6 @@
   background-image: url('images/A_NavigationLogoCream.svg');
 }
 a.A_HeaderCategory {
-  font-family: Manrope;
   font-weight: 500;
   text-decoration: none;
   font-size: 20px;
@@ -44,7 +47,6 @@ a.A_HeaderCategory {
 // IconHeading
 h1.A_TitleManrope {
   font-size: 62px;
-  font-family: Manrope;
   font-weight: 600px;
   text-align: center;
   color: var(--darkGreen);
@@ -72,7 +74,6 @@ h1.A_TitleAccent {
 // LinksCategories
 a.A_LinkCategory {
   font-size: 18px;
-  font-family: Manrope;
   text-decoration: none;
   color: var(--darkGreen);
 }
@@ -98,6 +99,12 @@ a.A_LinkCategory {
 .A_LeavesMedium {
   background-image: url('images/A_LeavesMedium.png');
 }
+.A_HomeMedium {
+  background-image: url('images/A_HouseMedium.png');
+}
+.A_SunMedium {
+  background-image: url('images/A_SunMedium.svg');
+}
 // IconsDecoration
 .A_IconDecoration {
   width: 14.583vw;
@@ -106,14 +113,13 @@ a.A_LinkCategory {
   img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    object-fit: cover;
   }
 }
 // Tag
 .A_Tag {
   border: 2px solid var(--darkGreen);
   border-radius: 8px;
-  font-family: Manrope;
   font-size: 16px;
   padding: 10px;
   display: inline-block;
@@ -123,7 +129,6 @@ a.A_LinkCategory {
 // FilterTag
 .A_FilterTag {
   border-radius: 8px;
-  font-family: Manrope;
   font-size: 16px;
   padding: 10px;
   display: inline-block;
@@ -139,11 +144,10 @@ a.A_LinkCategory {
 // CardInfo
 .A_SubCard {
   font-size: 24px;
-  font-family: Manrope;
   font-weight: 600px;
   color: var(--darkGreen);
   letter-spacing: -1px;
-  line-height: 120%;
+  line-height: 130%;
   text-align: center;
 
   em {
@@ -155,7 +159,6 @@ a.A_LinkCategory {
 }
 // TextMain
 p.A_TextMain {
-  font-family: Manrope;
   font-size: 22px;
   line-height: 130%;
   color: var(--darkGreen);
@@ -179,7 +182,6 @@ button.A_ButtonPrimary {
 // Footer
 .A_FooterCategoryLink {
   font-size: 24px;
-  font-family: Manrope;
   color: var(--bezh);
   text-decoration: none;
   hyphens: none;
@@ -195,25 +197,21 @@ button.A_ButtonPrimary {
 }
 .A_FooterAuthorName {
   font-size: 18px;
-  font-family: Manrope;
   color: var(--bezh);
 }
 // ArticleHtml
 p.A_AuthorArticle {
   font-size: 28px;
-  font-family: Manrope;
   color: var(--darkGreen);
 }
 p.A_NameDescArticle {
   font-size: 20px;
-  font-family: Manrope;
   color: var(--darkGreen);
 }
 .A_ArticleDescription {
   width: 69%;
   h3 {
     font-size: 32px;
-    font-family: Manrope;
     color: var(--darkGreen);
     line-height: 120%;
 
@@ -227,7 +225,6 @@ p.A_NameDescArticle {
 .A_SubHeadArticle {
   font-size: 32px;
   width: 30%;
-  font-family: Manrope;
   color: var(--darkGreen);
 
   em {
@@ -236,10 +233,15 @@ p.A_NameDescArticle {
 }
 .A_MainTextArticle {
   font-size: 24px;
-  font-family: Manrope;
   line-height: 140%;
   color: var(--darkGreen);
   width: 69%;
+}
+ol.A_MainTextArticle {
+  li {
+    list-style: auto;
+    margin-bottom: 1rem;
+  }
 }
 // ArticleHtml_BreakerText
 h3.A_BreakerText {
@@ -251,7 +253,6 @@ h3.A_BreakerText {
 }
 .A_BreakerLineText {
   font-size: 28px;
-  font-family: Manrope;
   color: var(--darkGreen);
   line-height: 120%;
 }
@@ -262,73 +263,91 @@ a.A_ActionArticle {
   padding: 15px;
   background-color: var(--darkGreen);
   color: var(--bezh);
-  font-family: Manrope;
   font-size: 20px;
   border-radius: 12px;
 }
-// -----------------Responsive Content-------------------
-@media only screen and (max-width: 1440px) {
-  h1.A_TitleManrope {
-    font-size: 50px;
-
-    em.Accent {
-      font-family: '_21_Cent';
-      font-size: 55px;
-      line-height: 85%;
-    }
+// IdeasArticle
+.A_AdviceDescriptionText {
+  font-size: 32px;
+  text-align: center;
+  line-height: 120%;
+  color: var(--darkGreen);
+}
+.A_AdviceIllustration {
+  width: 395px;
+  height: 320px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  h1.A_TitleAccent {
-    font-size: 55px;
+}
+.tall {
+  width: 395px;
+  height: 430px;
+}
+.A_AdviceHeading {
+  font-size: 3.75rem;
+  color: var(--darkGreen);
+
+  em {
     font-family: '_21_Cent';
-    color: var(--darkGreen);
-    font-weight: lighter;
+    font-size: 4.25rem;
   }
-  // Icons
-  .A_IconMedium {
-    width: 55px;
-    height: 50px;
-    background-size: contain;
-  }
-  // ArticleIndex
-  .A_ArticleDescription {
-    h3 {
-      font-size: 24px;
-      font-family: Manrope;
-      color: var(--darkGreen);
-      line-height: 120%;
+}
+.A_MainTextArticle {
+  font-size: 1.75rem;
+  color: var(--darkGreen);
+  width: 80%;
+}
+.A_AdviceImage {
+  width: 70%;
+  height: 600px;
 
-      em {
-        font-size: 28px;
-        font-family: '_21_Cent';
-      }
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
   }
-  p.A_NameDescArticle {
-    font-size: 16px;
-    font-family: Manrope;
-    color: var(--darkGreen);
+}
+.A_AdviceImageSquare {
+  width: 40%;
+  height: 600px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
   }
-  p.A_AuthorArticle {
-    font-size: 24px;
-    font-family: Manrope;
-    color: var(--darkGreen);
+}
+.A_DividerAdviceHeading {
+  font-size: 2.5rem;
+  color: var(--darkGreen);
+  text-align: center;
+  width: 60%;
+}
+.A_BreakerText {
+  font-size: 2rem;
+  line-height: 120%;
+  font-family: '_21_Cent';
+  color: var(--darkGreen);
+  text-align: center;
+  width: 60%;
+}
+// QAArticleHtml
+.A_QAArticleCover {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
   }
-  // ArticleHtml_TextBlock
-  .A_MainTextArticle {
-    font-size: 20px;
-  }
-  // ArticleHtml_BreakerText
-  h3.A_BreakerText {
-    font-size: 24px;
-  }
-  .A_BreakerLineText {
-    font-size: 20px;
-  }
-  // Footer
-  .A_FooterCategoryLink {
-    font-size: 16px;
-    font-family: Manrope;
-    color: var(--bezh);
-    text-decoration: none;
-  }
+}
+.A_QaArticleHeading {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--darkGreen);
 }

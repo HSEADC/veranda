@@ -14,11 +14,6 @@ header.O_Header {
   text-align: center;
   gap: 10px;
   align-items: baseline;
-
-  &:nth-child(1) {
-    margin: 30px auto 0px;
-    width: 69.444vw;
-  }
 }
 .M_IconHeadingLeft {
   display: flex;
@@ -55,9 +50,59 @@ header.O_Header {
   flex-direction: column;
   gap: 15px;
 }
+// Cards
+.M_AdviceCardCentered {
+  width: 580px;
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkerBezh);
+  row-gap: 30px;
+}
 // Footer
 .M_FooterLogoSocial {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+// IdeasArticleHtml
+.M_AdvideArticleBlock {
+  display: flex;
+  gap: 80px;
+}
+.M_AdviceTextHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 65%;
+}
+.M_AdviceImageColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+}
+.M_AdviceBreaker {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--primaryGreen);
+  align-items: center;
+  gap: 16px;
+  padding: 1.5rem;
+  border-radius: 1em;
+  margin-bottom: 150px;
+}
+// QA-ArticleHtml
+.M_QaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .A_MainTextArticle {
+    margin-bottom: 1.25rem;
+  }
 }

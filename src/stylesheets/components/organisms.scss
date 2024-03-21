@@ -8,18 +8,23 @@ header.O_Header {
 .O_WelcomeScreen {
   position: relative;
   width: 100%;
-  height: 34.667vw;
+  height: 550px;
   background-image: url('images/mainScreenPlaceholder.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 32px;
+
+  .M_IconHeading {
+    margin: 30px auto 0px;
+    width: 69.444vw;
+  }
 }
 // ArticleCard
 .O_CardArticle {
   background-color: var(--bezh);
   display: flex;
-  width: 33.5%;
+  width: 530px;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
   border-radius: 16px;
@@ -46,6 +51,7 @@ header.O_Header {
 }
 .O_ArticleCardLong {
   display: flex;
+  height: 200px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -76,6 +82,9 @@ header.O_Header {
 
   .Q_QaIconArticle {
     svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       path {
         fill: #f2f7da;
         stroke: var(--darkGreen);
@@ -100,8 +109,6 @@ header.O_Header {
   display: flex;
   flex-direction: column;
   gap: 70px;
-  grid-column: 1/12;
-  grid-row: 1/2;
 }
 // ArticleHeading
 .O_ArticleWide {
@@ -166,11 +173,12 @@ header.O_Header {
     background-repeat: no-repeat;
   }
   .O_ArticleCardLong {
-    width: 100%;
-    height: 35%;
+    width: 530px;
+    height: 200px;
     align-items: center;
     row-gap: 20px;
     justify-content: center;
+    border: 24px;
 
     h2 {
       text-align: center;
@@ -209,9 +217,10 @@ header.O_Header {
   width: 100%;
   justify-content: space-between;
 }
-// Responsive
-@media only screen and (max-width: 1440px) {
-  .O_CardArticle {
-    width: 27.425vw;
-  }
+// IdeasArticleHrml
+.O_AdviceContnetBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 8rem;
 }

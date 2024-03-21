@@ -4,29 +4,20 @@ body {
 section.S_FirstScreen {
   display: flex;
   width: 100%;
-  padding: 0 7.813vw;
-  margin-top: 50px;
+  width: 1260px;
+  margin: 30px auto 0px;
 }
 section.S_ArticlesHeading {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  padding: 75px 7.813vw;
-  margin: 50px 0px 100px 0px;
+  // padding: 75px 7.813vw;
+  margin: 50px 0px 50px 0px;
   background-color: var(--primaryGreen);
   border-radius: 32px;
-
-  .M_HeadingLink {
-    width: 66.5%;
-  }
 }
 .S_NewArticle {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  padding: 7.813vw 7.813vw;
+  display: flex;
+  width: 1620px;
   position: relative;
+  margin: 0 auto 100px;
   // Какой-то кринж?-----------------------------------
   .A_IconDecoration {
     position: absolute;
@@ -44,10 +35,6 @@ section.S_ArticlesHeading {
   // Какой-то кринж?-----------------------------------
 }
 .S_AdvicesArticles {
-  // display: grid;
-  // grid-template-columns: repeat(24, 1fr);
-  // grid-template-rows: 1fr;
-  // grid-column-gap: 15px;
   display: flex;
   flex-direction: column;
   padding: 75px 7.813vw 7.813vw;
@@ -73,7 +60,6 @@ section.S_ArticlesHeading {
   background-color: var(--darkGreen);
   justify-content: space-between;
   border-radius: 32px 32px 0px 0px;
-  margin-top: 150px;
 }
 // ArticleHtml
 .S_ArticlePreview {
@@ -92,4 +78,20 @@ section.S_ArticlesHeading {
   padding: 0 7.813vw;
   margin-top: 80px;
   align-items: flex-end;
+}
+.S_Phreference {
+  width: 100%;
+  padding: 4rem 0;
+  border-radius: 2rem 2rem 0 0;
+}
+// QAArticleHtml
+.S_QaArticle {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 4rem auto;
+  background-color: var(--darkerBezh);
+  width: 1040px;
+  border-radius: 2rem;
+  padding: 1.5rem 4rem 3rem;
 }

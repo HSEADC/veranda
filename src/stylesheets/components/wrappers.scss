@@ -6,6 +6,23 @@
   border-bottom: 1px solid var(--darkGreen);
   padding-bottom: 20px;
 }
+.W_TitleLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.W_HeadingArticles {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .W_TitleLink {
+    width: 69.5%;
+  }
+}
+
 // NewArticle
 .W_NewArticleHeading {
   .M_IconHeadingLeft {
@@ -53,4 +70,51 @@
 // ArticleHtml
 .W_HomeScreenArticle {
   background-color: var(--darkerBezh);
+}
+.W_WholeIdeaArticle {
+  display: flex;
+  flex-direction: column;
+  width: 1620px;
+  margin: 0 auto;
+}
+// ArticleIdeas
+.W_ArticleHead {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 7rem;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--darkGreen);
+  margin-bottom: 10rem;
+
+  .M_IconHeading,
+  .A_AdviceDescriptionText {
+    width: 1075px;
+  }
+}
+.W_ImageBlock {
+  display: flex;
+  gap: 1rem;
+  .A_AdviceImage {
+    width: 75%;
+  }
+}
+.W_Phreference {
+  width: 1240px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 2rem;
+}
+.W_PreferenceFooter {
+  background-color: var(--blue);
+  border-radius: 2rem 2rem 0 0;
+}
+.W_QaTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

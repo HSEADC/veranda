@@ -1,0 +1,140 @@
+@media only screen and (max-width: 1440px) {
+  .A_Tag {
+    font-size: 14px;
+  }
+  h1.A_TitleManrope {
+    font-size: 60px;
+
+    em.Accent {
+      font-family: '_21_Cent';
+      font-size: 66px;
+      line-height: 85%;
+    }
+  }
+  .A_SubCard {
+    font-size: 22px;
+    line-height: 120%;
+    em {
+      font-size: 26px;
+    }
+  }
+  h1.A_TitleAccent {
+    font-size: 64px;
+    font-family: '_21_Cent';
+    color: var(--darkGreen);
+    font-weight: lighter;
+  }
+  // Icons
+  .A_IconMedium {
+    width: 65px;
+    height: 60px;
+    background-size: contain;
+  }
+  // ArticleIndex
+  .A_ArticleDescription {
+    h3 {
+      font-size: 24px;
+      color: var(--darkGreen);
+      line-height: 120%;
+
+      em {
+        font-size: 28px;
+        font-family: '_21_Cent';
+      }
+    }
+  }
+  p.A_NameDescArticle {
+    font-size: 16px;
+    color: var(--darkGreen);
+  }
+  p.A_AuthorArticle {
+    font-size: 24px;
+    color: var(--darkGreen);
+  }
+  // ArticleHtml_TextBlock
+  .A_MainTextArticle {
+    font-size: 1.25rem;
+  }
+  // ArticleHtml_BreakerText
+  h3.A_BreakerText {
+    font-size: 24px;
+  }
+  .A_BreakerLineText {
+    font-size: 20px;
+  }
+  // Footer
+  .A_FooterCategoryLink {
+    font-size: 16px;
+    color: var(--bezh);
+    text-decoration: none;
+  }
+  .O_CardArticle {
+    width: 403px;
+  }
+  .S_ArticlesHeading {
+    padding: 3.125rem 0px;
+  }
+  .S_NewArticle {
+    width: 1240px;
+    background-color: blanchedalmond;
+    .Q_ImageArticleNew {
+      height: 400px;
+      width: 535px;
+    }
+    .O_NewArticle {
+      width: 700px;
+    }
+  }
+  .O_ArticleCardLong {
+    height: 170px;
+  }
+  .C_AllArticles {
+    width: 1240px;
+  }
+  //   IdeasArticle
+  .W_ArticleHead {
+    .M_IconHeading,
+    .A_AdviceDescriptionText {
+      width: 800px;
+    }
+  }
+  .W_WholeIdeaArticle {
+    width: 1240px;
+    .A_AdviceIllustration {
+      width: 300px;
+      height: 240px;
+    }
+    .tall {
+      width: 300px;
+      height: 320px;
+    }
+    .A_AdviceDescriptionText {
+      font-size: 28px;
+    }
+    .A_AdviceHeading {
+      font-size: 2.5rem;
+
+      em {
+        font-size: 3.125rem;
+      }
+    }
+  }
+  .M_AdviceBreaker {
+    .A_DividerAdviceHeading {
+      font-size: 2rem;
+    }
+    .A_BreakerText {
+      font-size: 1.5rem;
+    }
+  }
+  .A_AdviceImageSquare,
+  .A_AdviceImage {
+    height: 450px;
+  }
+  //   QA-ArticleHtml
+  .S_QaArticle {
+    .A_QaArticleHeading {
+      font-size: 2.5rem;
+    }
+  }
+}
