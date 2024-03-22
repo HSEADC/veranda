@@ -105,17 +105,7 @@ a.A_LinkCategory {
 .A_SunMedium {
   background-image: url('images/A_SunMedium.svg');
 }
-// IconsDecoration
-.A_IconDecoration {
-  width: 14.583vw;
-  height: 14.583vw;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
 // Tag
 .A_Tag {
   border: 2px solid var(--darkGreen);
@@ -143,15 +133,16 @@ a.A_LinkCategory {
 }
 // CardInfo
 .A_SubCard {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 600px;
   color: var(--darkGreen);
   letter-spacing: -1px;
-  line-height: 130%;
+  line-height: 120%;
+  width: 95%;
   text-align: center;
 
   em {
-    font-size: 28px;
+    font-size: 2.375rem;
     font-family: '_21_Cent';
     color: var(--darkGreen);
     font-weight: lighter;
@@ -159,7 +150,7 @@ a.A_LinkCategory {
 }
 // TextMain
 p.A_TextMain {
-  font-size: 22px;
+  font-size: 1.25rem;
   line-height: 130%;
   color: var(--darkGreen);
   width: 77%;
@@ -169,35 +160,39 @@ button.A_ButtonPrimary {
   border: none;
   color: var(--bezh);
   background-color: var(--darkGreen);
-  font-size: 24px;
-  padding: 25px 10px;
+  font-size: 1.25rem;
+  padding: 1.5rem 0.75rem;
   width: 225px;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   &:hover {
     color: var(--darkGreen);
     background-color: var(--primaryGreen);
-  }
-}
-// Footer
-.A_FooterCategoryLink {
-  font-size: 24px;
-  color: var(--bezh);
-  text-decoration: none;
-  hyphens: none;
-  &:hover {
-    color: var(--primaryGreen);
     cursor: pointer;
   }
 }
-.A_AuthorCategory {
-  font-size: 22px;
-  font-family: '_21_Cent';
-  color: var(--bezh);
+// SliderAdvices
+.A_SliderSwitcher {
+  display: flex;
+  gap: 0.4rem;
 }
-.A_FooterAuthorName {
-  font-size: 18px;
-  color: var(--bezh);
+.A_SliderArticle {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.SliderArticle.active {
+  display: block;
+  opacity: 1;
 }
 // ArticleHtml
 p.A_AuthorArticle {
@@ -220,6 +215,45 @@ p.A_NameDescArticle {
       font-family: '_21_Cent';
     }
   }
+}
+// -------------------------------------
+.A_FooterCategoryList {
+  font-size: 1.5rem;
+  color: var(--bezh);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--primaryGreen);
+    cursor: pointer;
+  }
+}
+.A_SubscriptionText {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.A_FormInput {
+  background-color: var(--bezh);
+  height: 100%;
+  color: var(--darkGreen);
+  font-size: 1.25rem;
+  padding: 1.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  min-width: 360px;
+}
+.A_SubscriptionText {
+  font-size: 1.25rem;
+  color: var(--bezh);
+  margin-bottom: 2rem;
+  line-height: 130%;
+}
+.AuthorName {
+  font-size: 1.2rem;
+}
+.A_SubscriptionForm {
+  display: flex;
+  flex-direction: column;
 }
 // ArticleHtml_Block
 .A_SubHeadArticle {

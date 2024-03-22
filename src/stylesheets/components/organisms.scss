@@ -8,7 +8,7 @@ header.O_Header {
 .O_WelcomeScreen {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 720px;
   background-image: url('images/mainScreenPlaceholder.png');
   background-position: bottom;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ header.O_Header {
 
   .M_IconHeading {
     margin: 30px auto 0px;
-    width: 69.444vw;
+    width: 920px;
   }
 }
 // ArticleCard
@@ -73,9 +73,10 @@ header.O_Header {
   flex-direction: column;
   text-decoration: none;
   background-color: var(--darkerBezh);
-  row-gap: 25px;
-  border-radius: 24px;
-  padding: 25px;
+  row-gap: 1.5rem;
+  width: 394px;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
   justify-content: space-between;
   align-items: center;
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -114,7 +115,7 @@ header.O_Header {
 .O_ArticleWide {
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 632px;
   padding-bottom: 30px;
   background-color: var(--primaryGreen);
   border-radius: 24px;
@@ -125,11 +126,33 @@ header.O_Header {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  .M_ArticleInfo {
+    width: 50%;
+  }
+}
+.O_ArticleIdeas {
+  display: flex;
+  width: 100%;
+  height: 632px;
+  padding-bottom: 30px;
+  background-color: var(--primaryGreen);
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  .M_ArticleInfo {
+    width: 70%;
+  }
 }
 .rainingBg {
   background-image: url('images/Q_Raining.png');
-  background-size: 102%;
-  background-position: bottom right -20px;
+  background-size: 103%;
+  background-position: bottom 15px right -5px;
 }
 // IdeaCardBig
 .O_IdeaBigCard {
@@ -148,7 +171,15 @@ header.O_Header {
   background-size: auto 75%;
   background-position: bottom 0px right -110px;
 }
-
+// SliderArticles
+.O_Slider {
+  width: 1240px;
+  height: 460px;
+  background-color: var(--blue);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
 .O_CardHigh {
   width: 32.5%;
   height: 26.615vw;
@@ -223,4 +254,11 @@ header.O_Header {
   flex-direction: column;
   gap: 50px;
   margin-bottom: 8rem;
+}
+// Footer
+.O_FooterCategoriesForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
 }

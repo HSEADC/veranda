@@ -19,14 +19,37 @@
   }
 }
 .Q_ImageArticleNew {
-  height: 400px;
-  width: 510px;
+  height: 520px;
+  width: 100%;
   z-index: 1;
+  position: relative;
 
   img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    object-fit: cover;
+  }
+  .Q_IconDecoration:nth-child(2) {
+    bottom: -5.556vw;
+    left: -6.25vw;
+  }
+  .Q_IconDecoration:nth-child(3) {
+    top: -6.25vw;
+    right: -5.556vw;
+    z-index: -1;
+  }
+}
+
+// IconsDecoration
+.Q_IconDecoration {
+  width: 14.583vw;
+  height: 14.583vw;
+  position: absolute;
+
+  img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 }
@@ -43,29 +66,6 @@
     object-fit: cover;
   }
 }
-// ArrowSlider
-.Q_ArrowSlider {
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background-image: url('images/Q_ArrowSlider.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &:hover {
-    opacity: 75%;
-    cursor: pointer;
-  }
-  &:nth-child(1) {
-    left: -50px;
-    top: 75px;
-  }
-  &:nth-child(2) {
-    right: -50px;
-    top: 75px;
-    transform: rotate(180deg);
-  }
-}
 // QAimagecards
 .Q_QaIconArticle {
   width: 16.667vw;
@@ -74,6 +74,18 @@
   img {
     width: 100%;
     height: auto;
+  }
+}
+// ArticleSlider
+// SliderAdvices
+.Q_SliderButton {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--darkGreen);
+  border-radius: 2rem;
+
+  &:hover {
+    cursor: pointer;
   }
 }
 // Socials

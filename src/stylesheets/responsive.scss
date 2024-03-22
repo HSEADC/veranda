@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1919px) {
   .A_Tag {
     font-size: 14px;
   }
@@ -19,7 +19,7 @@
     }
   }
   h1.A_TitleAccent {
-    font-size: 64px;
+    font-size: 4.25rem;
     font-family: '_21_Cent';
     color: var(--darkGreen);
     font-weight: lighter;
@@ -29,6 +29,46 @@
     width: 65px;
     height: 60px;
     background-size: contain;
+  }
+  //   Buttons
+  //   HomePage
+  .S_FirstScreen {
+    width: 1260px;
+
+    .O_WelcomeScreen {
+      height: 550px;
+    }
+  }
+  .W_NewArticleHeading {
+    width: 700px;
+  }
+  .W_HeadingArticles {
+    width: 1240px;
+  }
+  .W_AdvicesArticles {
+    width: 1240px;
+    margin: 0 auto;
+  }
+  .Q_ImageArticleNew {
+    height: 400px;
+  }
+  //   CardsResposnsive
+  .O_ArticleWide {
+    height: 480px;
+  }
+  .O_ArticleIdeas {
+    height: 480px;
+  }
+  .O_QaCard {
+    width: 300px;
+  }
+  .M_AdviceCard {
+    width: 403px;
+    height: 170px;
+  }
+  // QaArticles
+  .W_QaCards {
+    width: 1240px;
   }
   // ArticleIndex
   .A_ArticleDescription {
@@ -63,11 +103,21 @@
     font-size: 20px;
   }
   // Footer
-  .A_FooterCategoryLink {
-    font-size: 16px;
-    color: var(--bezh);
-    text-decoration: none;
+  .W_FooterWithout {
+    width: 1240px;
   }
+
+  .W_Authors {
+    gap: 1.2rem;
+  }
+  p.AuthorName {
+    font-size: 1rem;
+  }
+
+  .A_FooterCategoryList {
+    font-size: 1.2rem;
+  }
+
   .O_CardArticle {
     width: 403px;
   }
@@ -76,7 +126,6 @@
   }
   .S_NewArticle {
     width: 1240px;
-    background-color: blanchedalmond;
     .Q_ImageArticleNew {
       height: 400px;
       width: 535px;
@@ -89,6 +138,9 @@
     height: 170px;
   }
   .C_AllArticles {
+    width: 1240px;
+  }
+  .C_AllIdeasArticles {
     width: 1240px;
   }
   //   IdeasArticle

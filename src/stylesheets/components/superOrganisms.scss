@@ -8,17 +8,17 @@ section.S_FirstScreen {
   margin: 30px auto 0px;
 }
 section.S_ArticlesHeading {
-  // padding: 75px 7.813vw;
-  margin: 50px 0px 50px 0px;
   background-color: var(--primaryGreen);
   border-radius: 32px;
+  margin-top: 4rem;
+  padding: 6rem 0px;
 }
 .S_NewArticle {
   display: flex;
   width: 1620px;
   position: relative;
-  margin: 0 auto 100px;
-  // Какой-то кринж?-----------------------------------
+  margin: 13rem auto 13rem;
+
   .A_IconDecoration {
     position: absolute;
     right: 42.656vw;
@@ -37,7 +37,7 @@ section.S_ArticlesHeading {
 .S_AdvicesArticles {
   display: flex;
   flex-direction: column;
-  padding: 75px 7.813vw 7.813vw;
+  padding: 4rem 0px 6rem;
   position: relative;
   border-radius: 32px;
   background-color: var(--blue);
@@ -45,9 +45,9 @@ section.S_ArticlesHeading {
 .S_QaCards {
   display: flex;
   flex-direction: column;
-  padding: 75px 7.813vw;
   position: relative;
   border-radius: 32px;
+  margin: 6rem 0;
 
   .M_HeadingLink {
     grid-column: 1/25;
@@ -55,8 +55,9 @@ section.S_ArticlesHeading {
 }
 .S_Footer {
   display: flex;
-  height: 400px;
-  padding: 100px 7.813vw;
+  height: 340px;
+  padding: 3rem 0 1.5rem;
+  align-items: center;
   background-color: var(--darkGreen);
   justify-content: space-between;
   border-radius: 32px 32px 0px 0px;
