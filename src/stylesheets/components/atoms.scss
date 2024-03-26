@@ -290,15 +290,20 @@ a.A_ActionArticle {
 .A_AdviceIllustration {
   width: 395px;
   height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
   }
 }
 .tall {
   width: 395px;
-  height: 430px;
+  height: 435px;
+  display: flex;
 }
 .A_AdviceHeading {
   font-size: 3.75rem;
@@ -336,7 +341,7 @@ a.A_ActionArticle {
   font-size: 2.5rem;
   color: var(--darkGreen);
   text-align: center;
-  width: 60%;
+  width: 65%;
 }
 .A_BreakerText {
   font-size: 2rem;

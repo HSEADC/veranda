@@ -118,6 +118,14 @@
   flex-direction: column;
   width: 1620px;
   margin: 0 auto;
+  gap: 8rem;
+  margin-bottom: 8rem;
+  .M_AdviceTextHeading {
+    width: 60%;
+    .A_AdviceHeading {
+      width: 90%;
+    }
+  }
 }
 .W_WholeArticle {
   display: flex;
@@ -127,9 +135,6 @@
   margin: 0 auto;
   align-items: flex-end;
   margin-bottom: 12rem;
-  // .A_MainTextArticle {
-  //   width: 65%;
-  // }
   .W_MainTexts:nth-child(3) {
     width: 70%;
   }
@@ -163,11 +168,10 @@
   margin-top: 7rem;
   padding-bottom: 50px;
   border-bottom: 1px solid var(--darkGreen);
-  margin-bottom: 10rem;
 
   .M_IconHeading,
   .A_AdviceDescriptionText {
-    width: 1075px;
+    width: 1200px;
   }
 }
 .W_ImageBlock {

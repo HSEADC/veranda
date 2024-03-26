@@ -250,8 +250,16 @@ module.exports = {
       filename: './ideas/sports.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/ideas/vegetables.html',
-      filename: './ideas/vegetables.html'
+      template: './src/ideas/rainday.html',
+      filename: './ideas/rainday.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/banya.html',
+      filename: './ideas/banya.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/herbs.html',
+      filename: './ideas/herbs.html'
     }),
 
     // Article

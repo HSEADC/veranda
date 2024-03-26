@@ -75,7 +75,7 @@ section.S_ArticlesHeading {
 
 .S_Phreference {
   width: 100%;
-  padding: 4rem 0;
+  padding: 4rem 0 12rem;
   border-radius: 2rem 2rem 0 0;
 }
 // QAArticleHtml
@@ -88,4 +88,12 @@ section.S_ArticlesHeading {
   width: 1040px;
   border-radius: 2rem;
   padding: 1.5rem 4rem 3rem;
+  margin-bottom: 8rem;
+  .M_IconHeading {
+    width: 78%;
+    margin: 0 auto;
+  }
+  .M_QaContent {
+    width: 800px;
+  }
 }
