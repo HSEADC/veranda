@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1919px) {
+@media only screen and (max-width: 1440px) {
   .A_Tag {
     font-size: 14px;
   }
@@ -12,7 +12,7 @@
     }
   }
   .A_SubCard {
-    font-size: 22px;
+    font-size: 1.5rem;
     line-height: 120%;
     em {
       font-size: 26px;
@@ -25,14 +25,14 @@
     font-weight: lighter;
   }
   // Icons
-  .A_IconMedium {
+  .Q_IconMedium {
     width: 65px;
     height: 60px;
     background-size: contain;
   }
   //   Buttons
   //   HomePage
-  .S_FirstScreen {
+  section.S_FirstScreen {
     width: 1260px;
 
     .O_WelcomeScreen {
@@ -62,6 +62,9 @@
   .O_QaCard {
     width: 300px;
   }
+  .O_CardArticleBig {
+    width: 612px;
+  }
   .M_AdviceCard {
     width: 403px;
     height: 170px;
@@ -71,6 +74,13 @@
     width: 1240px;
   }
   // ArticleIndex
+  .Q_PersonArticlePic {
+    width: 72px;
+    height: 72px;
+  }
+  .S_ArticlePreview {
+    width: 1240px;
+  }
   .A_ArticleDescription {
     h3 {
       font-size: 24px;
@@ -149,6 +159,12 @@
     .A_AdviceDescriptionText {
       width: 800px;
     }
+  }
+  .W_Phreference {
+    width: 1240px;
+  }
+  .W_WholeArticle {
+    width: 1240px;
   }
   .W_WholeIdeaArticle {
     width: 1240px;

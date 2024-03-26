@@ -77,34 +77,6 @@ a.A_LinkCategory {
   text-decoration: none;
   color: var(--darkGreen);
 }
-// Icons
-.A_IconMedium {
-  width: 80px;
-  height: 75px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.Glitter {
-  background-image: url('images/Q_GlitterMedium.svg');
-}
-.Citrus {
-  background-image: url('images/Q_CitrusMedium.svg');
-}
-.Clouds {
-  background-image: url('images/Q_CloudsMedium.svg');
-}
-.Snowflakes {
-  background-image: url('images/Q_SnowflakesMedium.svg');
-}
-.A_LeavesMedium {
-  background-image: url('images/A_LeavesMedium.png');
-}
-.A_HomeMedium {
-  background-image: url('images/A_HouseMedium.png');
-}
-.A_SunMedium {
-  background-image: url('images/A_SunMedium.svg');
-}
 
 // Tag
 .A_Tag {
@@ -156,7 +128,7 @@ p.A_TextMain {
   width: 77%;
 }
 // Button
-button.A_ButtonPrimary {
+.A_ButtonPrimary {
   border: none;
   color: var(--bezh);
   background-color: var(--darkGreen);
@@ -164,6 +136,8 @@ button.A_ButtonPrimary {
   padding: 1.5rem 0.75rem;
   width: 225px;
   border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
 
   &:hover {
     color: var(--darkGreen);
@@ -198,13 +172,14 @@ button.A_ButtonPrimary {
 p.A_AuthorArticle {
   font-size: 28px;
   color: var(--darkGreen);
+  margin-bottom: 0.5rem;
 }
 p.A_NameDescArticle {
   font-size: 20px;
   color: var(--darkGreen);
 }
 .A_ArticleDescription {
-  width: 69%;
+  width: 65%;
   h3 {
     font-size: 32px;
     color: var(--darkGreen);
@@ -228,25 +203,25 @@ p.A_NameDescArticle {
   }
 }
 .A_SubscriptionText {
-  text-align: center;
-  font-size: 1.25rem;
+  text-align: left;
+  font-size: 1rem;
 }
 .A_FormInput {
   background-color: var(--bezh);
   height: 100%;
   color: var(--darkGreen);
   font-size: 1.25rem;
-  padding: 1.5rem 0.75rem;
+  padding: 1rem 0.5rem;
   border-radius: 0.5rem;
   border: none;
   width: 100%;
   min-width: 360px;
 }
 .A_SubscriptionText {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--bezh);
-  margin-bottom: 2rem;
-  line-height: 130%;
+  margin-bottom: 1.2rem;
+  line-height: 125%;
 }
 .AuthorName {
   font-size: 1.2rem;
@@ -257,19 +232,23 @@ p.A_NameDescArticle {
 }
 // ArticleHtml_Block
 .A_SubHeadArticle {
-  font-size: 32px;
+  font-size: 2rem;
   width: 30%;
   color: var(--darkGreen);
 
   em {
     font-family: '_21_Cent';
+    font-size: 2.2rem;
   }
 }
 .A_MainTextArticle {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 140%;
   color: var(--darkGreen);
-  width: 69%;
+}
+.A_MainTextArticleList {
+  font-size: 1.5rem;
+  color: var(--darkGreen);
 }
 ol.A_MainTextArticle {
   li {
@@ -283,7 +262,8 @@ h3.A_BreakerText {
   font-family: '_21_Cent';
   color: var(--darkGreen);
   line-height: 120%;
-  width: 69%;
+  width: 70%;
+  text-align: left;
 }
 .A_BreakerLineText {
   font-size: 28px;
@@ -329,11 +309,7 @@ a.A_ActionArticle {
     font-size: 4.25rem;
   }
 }
-.A_MainTextArticle {
-  font-size: 1.75rem;
-  color: var(--darkGreen);
-  width: 80%;
-}
+
 .A_AdviceImage {
   width: 70%;
   height: 600px;

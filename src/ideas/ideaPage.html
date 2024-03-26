@@ -79,7 +79,7 @@
         </div>
         <div class="M_IconHeading">
           <h1 class="A_TitleManrope">Чем можно заняться</h1>
-          <div class="A_IconMedium A_HomeMedium"></div>
+          <div class="Q_IconMedium Q_HomeMedium"></div>
           <h1 class="A_TitleAccent">
             <span class="A_TitleSuperAccent">одному на даче</span>
           </h1>
@@ -288,37 +288,70 @@
       </div>
       <!------------------------- Footer----------------------->
       <footer class="S_Footer">
-        <div class="W_FooterCategories">
-          <a href="" class="A_FooterCategoryLink">Главная</a>
-          <a href="" class="A_FooterCategoryLink">О медиа</a>
-          <a href="" class="A_FooterCategoryLink">Статьи</a>
-          <a href="" class="A_FooterCategoryLink">Идеи для отдыха</a>
-          <a href="" class="A_FooterCategoryLink">Вопрос-ответ</a>
-        </div>
-        <div class="W_FooterInfoForm">
-          <div class="W_Authors">
-            <div class="W_FooterNameList">
-              <h2 class="A_AuthorCategory">Дизайнеры</h2>
-              <p class="A_FooterAuthorName">Максим Кириллов</p>
-              <p class="A_FooterAuthorName">Злата Баева</p>
-              <p class="A_FooterAuthorName">Ева Баева</p>
+        <div class="W_FooterWithout">
+          <div class="O_FooterCategoriesForm">
+            <div class="W_FooterCategories">
+              <a href="../index.html" class="A_FooterCategoryList">Главная</a>
+              <a href="../index.html" class="A_FooterCategoryList">О медиа</a>
+              <a href="../articles.html" class="A_FooterCategoryList">Статьи</a>
+              <a href="../ideas.html" class="A_FooterCategoryList"
+                >Идеи для отдыха</a
+              >
+              <a href="queAnswer.html" class="A_FooterCategoryList"
+                >Вопрос-ответ</a
+              >
             </div>
-            <div class="W_FooterNameList">
-              <h2 class="A_AuthorCategory">Кураторы</h2>
-              <p class="A_FooterAuthorName">Анна Комкова</p>
-              <p class="A_FooterAuthorName">Софья Каем</p>
-            </div>
-            <div class="W_FooterNameList">
-              <h2 class="A_AuthorCategory">HSE ADC</h2>
-              <p class="A_FooterAuthorName">2023-2024</p>
+            <div class="A_SubscriptionForm">
+              <div class="M_SubmitEmail">
+                <p class="A_SubscriptionText">
+                  Подпишись на свежие новости и будь в курсе <br />нового
+                  душевного материала!
+                </p>
+              </div>
+              <form
+                class="M_SubmitEmail"
+                id="my-form"
+                action="https://formspree.io/f/xaygvkzy"
+                method="POST"
+              >
+                <input
+                  class="A_FormInput"
+                  type="email"
+                  name="email"
+                  placeholder="Введите свой e-mail"
+                />
+                <button class="A_ButtonPrimary" id="my-form-button">
+                  Отправить
+                </button>
+                <p id="my-form-status"></p>
+              </form>
             </div>
           </div>
-          <div class="M_FooterLogoSocial">
-            <div class="A_NavigationLogo A_NavigationLogoCream"></div>
-            <div class="W_Socials">
-              <a href="" class="A_YouTube"></a>
-              <a href="" class="A_Telegram"></a>
-              <a href="" class="A_Vk"></a>
+          <div class="W_FooterNamesSocialLogo">
+            <div class="W_Authors">
+              <div class="W_FooterNamesList">
+                <p class="AuthorName">Кураторы</p>
+                <p class="AuthorName">Софья Каем</p>
+                <p class="AuthorName">Анна Комкова</p>
+              </div>
+              <div class="W_FooterNamesList">
+                <p class="AuthorName">Дизайнеры</p>
+                <p class="AuthorName">Киприанова Ева</p>
+                <p class="AuthorName">Баева Злата</p>
+                <p class="AuthorName">Кириллов Максим</p>
+              </div>
+              <div class="W_FooterNamesList">
+                <p class="AuthorName">HSE ADC</p>
+                <p class="AuthorName">2023-2024</p>
+              </div>
+            </div>
+            <div class="M_FooterLogoSocial">
+              <div class="A_NavigationLogo A_NavigationLogoCream"></div>
+              <div class="C_Socials">
+                <a class="A_Telegram" href=""></a>
+                <a class="A_Vk" href=""></a>
+                <a class="A_YouTube" href=""></a>
+              </div>
             </div>
           </div>
         </div>

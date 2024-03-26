@@ -36,7 +36,7 @@ header.O_Header {
   }
 }
 .O_CardArticleBig {
-  width: 41.471vw;
+  width: 800px;
   display: flex;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
@@ -95,14 +95,6 @@ header.O_Header {
 
   &:hover {
     transform: translateY(-10px);
-
-    .Q_QaIconArticle {
-      svg {
-        path {
-          stroke: var(--primaryGreen);
-        }
-      }
-    }
   }
 }
 // Newarticle
@@ -159,13 +151,13 @@ header.O_Header {
   width: 49.3%;
   height: 32.813vw;
   background-color: var(--blue);
-  border-radius: 24px;
+  border-radius: 1.5rem;
   display: flex;
   text-decoration: none;
   align-items: flex-start;
   flex-direction: column;
-  padding: 25px;
-  row-gap: 15px;
+  padding: 1.5rem;
+  row-gap: 1rem;
   background-image: url('images/Q_BigArticleBicycle.png');
   background-repeat: no-repeat;
   background-size: auto 75%;
@@ -185,7 +177,7 @@ header.O_Header {
   height: 26.615vw;
   background-color: var(--primaryGreen);
   border-radius: 16px;
-  padding: 25px;
+  padding: 1.5rem;
   text-decoration: none;
 
   .M_LongArticleHeading {
@@ -207,9 +199,9 @@ header.O_Header {
     width: 530px;
     height: 200px;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 1.25rem;
     justify-content: center;
-    border: 24px;
+    border: 1.5rem;
 
     h2 {
       text-align: center;
@@ -221,11 +213,13 @@ header.O_Header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  .M_IconHeadingLeft {
+    width: 69%;
+  }
 }
 .O_ArticleAuthorDescription {
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
 }
 .O_ArticleBlock {
   display: flex;
@@ -237,8 +231,8 @@ header.O_Header {
 .O_BreakerOpinion {
   background-color: var(--primaryGreen);
   display: flex;
-  border-radius: 24px;
-  padding: 30px;
+  border-radius: 1.5rem;
+  padding: 2rem;
 }
 .O_SocialMediaBreaker {
   display: flex;

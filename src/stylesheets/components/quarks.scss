@@ -88,6 +88,50 @@
     cursor: pointer;
   }
 }
+// Icons
+// Icons
+.Q_IconMedium {
+  width: 80px;
+  height: 75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Glitter {
+  background-image: url('images/Q_GlitterMedium.svg');
+}
+.Citrus {
+  background-image: url('images/Q_CitrusMedium.svg');
+}
+.Clouds {
+  background-image: url('images/Q_CloudsMedium.svg');
+}
+.Snowflakes {
+  background-image: url('images/Q_SnowflakesMedium.svg');
+}
+.Q_LeavesMedium {
+  background-image: url('images/A_LeavesMedium.png');
+}
+.Q_HomeMedium {
+  background-image: url('images/A_HouseMedium.png');
+}
+.Q_SunMedium {
+  background-image: url('images/A_SunMedium.svg');
+}
+.Q_CarrotMedium {
+  background-image: url('images/Q_CarrotMedium.png');
+}
+.Q_CupMedium {
+  background-image: url('images/Q_CupMedium.png');
+}
+.Q_FlowerMedium {
+  background-image: url('images/Q_FlowerMedium.png');
+}
+.Q_СarpetMedium {
+  background-image: url('images/Q_CarpetMedium.png');
+}
+.Q_WheelMedium {
+  background-image: url('images/Q_WheelMedium.png');
+}
 // Socials
 .Q_YouTube {
   width: 45px;
@@ -108,8 +152,20 @@
   background-size: cover;
 }
 // ArticleHtml_BlockText
+.Q_PersonArticlePic {
+  width: 96px;
+  height: 96px;
+  background-image: url('images/Q_PersonArticlePic.png');
+  background-size: cover;
+}
+.Q_Evsenia {
+  background-image: url('images/Q_Evsenia.png');
+}
+.Q_Lilia {
+  background-image: url('images/Q_Lilia.png');
+}
 .Q_ArticlePicture {
-  width: 67%;
+  width: 70%;
   height: 27.604vw;
 
   img {
@@ -119,9 +175,11 @@
     border-radius: 24px;
   }
   figcaption.A_PhotoDescprition {
-    font-size: 16px;
+    font-size: 1.25rem;
+    width: 85%;
+    line-height: 140%;
     color: var(--darkGreen);
     font-family: Manrope;
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 }

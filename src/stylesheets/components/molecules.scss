@@ -84,11 +84,26 @@ header.O_Header {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: -1rem 0 0 1rem;
+}
+// ArticleHtml
+.M_BreakerIconText {
+  display: flex;
+  gap: 1rem;
 }
 // IdeasArticleHtml
+.M_PersonProfileArticle {
+  display: flex;
+  gap: 1rem;
+  width: 30%;
+}
+.M_SubheadText {
+  display: flex;
+}
 .M_AdvideArticleBlock {
   display: flex;
   gap: 80px;
+  align-items: center;
 }
 form.M_SubmitEmail {
   display: flex;
@@ -97,6 +112,7 @@ form.M_SubmitEmail {
     background-color: var(--primaryGreen);
     color: var(--darkGreen);
     border: none;
+    padding: 0;
   }
 }
 .M_AdviceTextHeading {
