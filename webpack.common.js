@@ -9,7 +9,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    filterTag: './src/javascript/tagFilter.js'
+    filterTag: './src/javascript/tagFilter.js',
+    addNone: './src/javascript/addNone.js'
   },
   output: {
     filename: '[name].js',
@@ -104,162 +105,201 @@ module.exports = {
     // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
-      filename: './about.html'
+      filename: './about.html',
+      chunks: ['index', 'filterTag']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles.html',
-      filename: './articles.html'
+      filename: './articles.html',
+      chunks: ['index', 'filterTag', 'addNone']
     }),
     new HtmlWebpackPlugin({
       template: './src/queAnswer.html',
-      filename: './queAnswer.html'
+      filename: './queAnswer.html',
+      chunks: ['index', 'filterTag']
     }),
     new HtmlWebpackPlugin({
       template: './src/styleGuide.html',
-      filename: './styleGuide.html'
+      filename: './styleGuide.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas.html',
-      filename: './ideas.html'
+      filename: './ideas.html',
+      chunks: ['index', 'filterTag']
     }),
     // Articles
     new HtmlWebpackPlugin({
       template: './src/articles/ecoHobby.html',
-      filename: './articles/ecoHobby.html'
+      filename: './articles/ecoHobby.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/cultureCode.html',
-      filename: './articles/cultureCode.html'
+      filename: './articles/cultureCode.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/cherryJam.html',
-      filename: './articles/cherryJam.html'
+      filename: './articles/cherryJam.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/creativeCountryside.html',
-      filename: './articles/creativeCountryside.html'
+      filename: './articles/creativeCountryside.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/decoration.html',
-      filename: './articles/decoration.html'
+      filename: './articles/decoration.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/flowersForYou.html',
-      filename: './articles/flowersForYou.html'
+      filename: './articles/flowersForYou.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/mayChillOut.html',
-      filename: './articles/mayChillOut.html'
+      filename: './articles/mayChillOut.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/nutriciolog.html',
-      filename: './articles/nutriciolog.html'
+      filename: './articles/nutriciolog.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/picnicCountry.html',
-      filename: './articles/picnicCountry.html'
+      filename: './articles/picnicCountry.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/restzone.html',
-      filename: './articles/restzone.html'
+      filename: './articles/restzone.html',
+      chunks: ['index']
     }),
     // Question-Answers
     new HtmlWebpackPlugin({
       template: './src/QA/queAns.html',
-      filename: './QA/queAns.html'
+      filename: './QA/queAns.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/activeGames.html',
-      filename: './QA/activeGames.html'
+      filename: './QA/activeGames.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/carrot.html',
-      filename: './QA/carrot.html'
+      filename: './QA/carrot.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/fence.html',
-      filename: './QA/fence.html'
+      filename: './QA/fence.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/findDecor.html',
-      filename: './QA/findDecor.html'
+      filename: './QA/findDecor.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/komari.html',
-      filename: './QA/komari.html'
+      filename: './QA/komari.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/mushrooms.html',
-      filename: './QA/mushrooms.html'
+      filename: './QA/mushrooms.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/notFreeze.html',
-      filename: './QA/notFreeze.html'
+      filename: './QA/notFreeze.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/summerDrinks.html',
-      filename: './QA/summerDrinks.html'
+      filename: './QA/summerDrinks.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/taxes.html',
-      filename: './QA/taxes.html'
+      filename: './QA/taxes.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/watering.html',
-      filename: './QA/watering.html'
+      filename: './QA/watering.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/QA/whichFlowers.html',
-      filename: './QA/whichFlowers.html'
+      filename: './QA/whichFlowers.html',
+      chunks: ['index']
     }),
     // IdeasPage
     new HtmlWebpackPlugin({
       template: './src/ideas/ideaPage.html',
-      filename: './ideas/ideaPage.html'
+      filename: './ideas/ideaPage.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/kite.html',
-      filename: './ideas/kite.html'
+      filename: './ideas/kite.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/collectingFlowers.html',
-      filename: './ideas/collectingFlowers.html'
+      filename: './ideas/collectingFlowers.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/drinks.html',
-      filename: './ideas/drinks.html'
+      filename: './ideas/drinks.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/rainwalker.html',
-      filename: './ideas/rainwalker.html'
+      filename: './ideas/rainwalker.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/rayPhoto.html',
-      filename: './ideas/rayPhoto.html'
+      filename: './ideas/rayPhoto.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/romantice.html',
-      filename: './ideas/romantice.html'
+      filename: './ideas/romantice.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/sports.html',
-      filename: './ideas/sports.html'
+      filename: './ideas/sports.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/rainday.html',
-      filename: './ideas/rainday.html'
+      filename: './ideas/rainday.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/banya.html',
-      filename: './ideas/banya.html'
+      filename: './ideas/banya.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/ideas/herbs.html',
-      filename: './ideas/herbs.html'
+      filename: './ideas/herbs.html',
+      chunks: ['index']
     }),
 
     // Article
