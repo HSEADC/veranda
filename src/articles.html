@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Статьи</title>
   </head>
   <body>
@@ -20,7 +26,16 @@
     </header>
     <!-- -----------------Slider-------------------- -->
     <div class="W_ArticleSlider">
-      <a href="" class="O_ArticleWide">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="O_ArticleWide"></div></div>
+          <div class="swiper-slide"><div class="O_ArticleWide"></div></div>
+          <div class="swiper-slide"><div class="O_ArticleWide"></div></div>
+          <div class="swiper-slide"><div class="O_ArticleWide"></div></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- <a href="" class="O_ArticleWide">
         <div class="M_ArticleInfo">
           <div class="M_TagLine">
             <div class="A_Tag">сезоны</div>
@@ -31,7 +46,7 @@
             и запускаем воздушного змея
           </h2>
         </div>
-      </a>
+      </a> -->
     </div>
     <!-- -----------------FilterTags-------------------- -->
     <div class="С_ArticleCategoryTags">
@@ -285,5 +300,23 @@
         </div>
       </div>
     </footer>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      })
+    </script>
   </body>
 </html>
