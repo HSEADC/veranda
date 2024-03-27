@@ -77,6 +77,10 @@ header.O_Header {
   h2 {
     text-align: left;
   }
+  &.wrapper {
+    width: 612px;
+    height: 170px;
+  }
 }
 // Footer
 .M_FooterLogoSocial {

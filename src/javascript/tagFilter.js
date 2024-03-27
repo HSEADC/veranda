@@ -10,18 +10,8 @@ function filterTag(tag) {
 
     if (tags && tags.split(',').includes(tag)) {
       card.style.display = ''
-      if (card.parentElement.classList.contains('W_TwoIdeasArticle')) {
-        card.parentElement.style.display = 'none'
-        card.classList.add('copy')
-        block.append(card)
-      } else {
-        card.parentElement.style.display = 'flex'
-      }
     } else {
       card.style.display = 'none'
-      if (card.classList.contains('copy')) {
-        document.querySelector('.copy').remove()
-      }
     }
   })
 }
