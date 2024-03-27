@@ -2,7 +2,9 @@
 header.O_Header {
   display: flex;
   grid-row-gap: 0px;
-  padding: 20px 7.813vw 0px;
+  width: 1620px;
+  padding-top: 3rem;
+  margin: 0 auto;
 }
 // HomeScreen
 .O_WelcomeScreen {
@@ -73,7 +75,7 @@ header.O_Header {
   flex-direction: column;
   text-decoration: none;
   background-color: var(--darkerBezh);
-  row-gap: 1.5rem;
+  row-gap: 1O_IdeaBigCard.5rem;
   width: 393px;
   border-radius: 1.5rem;
   padding: 1.5rem;
@@ -148,8 +150,8 @@ header.O_Header {
 }
 // IdeaCardBig
 .O_IdeaBigCard {
-  width: 49.3%;
-  height: 32.813vw;
+  width: 803px;
+  height: 603px;
   background-color: var(--blue);
   border-radius: 1.5rem;
   display: flex;
@@ -173,8 +175,8 @@ header.O_Header {
   position: relative;
 }
 .O_CardHigh {
-  width: 32.5%;
-  height: 26.615vw;
+  width: 529px;
+  height: 415px;
   background-color: var(--primaryGreen);
   border-radius: 16px;
   padding: 1.5rem;
@@ -211,11 +213,12 @@ header.O_Header {
 // ArticleHtml
 .O_HeadingArticle {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: flex-end;
 
   .M_IconHeadingLeft {
-    width: 69%;
+    width: 65%;
   }
 }
 .O_ArticleAuthorDescription {

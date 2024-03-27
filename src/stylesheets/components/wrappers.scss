@@ -19,13 +19,13 @@
   flex-direction: column;
   align-items: flex-end;
   .W_TitleLink {
-    width: 69.5%;
+    width: 65.5%;
   }
 }
 
 // NewArticle
 .W_NewArticleHeading {
-  width: 870px;
+  max-width: 720px;
   .M_IconHeadingLeft {
     margin: 0px 0px 25px;
   }
@@ -56,7 +56,6 @@
 .W_FooterWithout {
   display: flex;
   justify-content: space-between;
-  width: 1620px;
   margin: 0 auto;
 }
 .W_FooterCategories {
@@ -90,13 +89,13 @@
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  width: 612px;
+  width: 801px;
   .O_CardHigh {
-    width: 613px;
-    height: 294px;
+    width: 801px;
+    height: 415px;
   }
   .M_AdviceCard {
-    width: 613px;
+    width: 801px;
     align-items: center;
     h2 {
       text-align: center;
@@ -136,15 +135,23 @@
   align-items: flex-end;
   margin-bottom: 12rem;
   .W_MainTexts:nth-child(3) {
-    width: 70%;
+    width: 65%;
+    margin-right: 5rem;
   }
-  .O_ArticleBlock:nth-child(1) {
-    margin-bottom: 2rem;
-  }
+  // .O_ArticleBlock:nth-child(1) {
+  //   margin-bottom: 2rem;
+  //   .A_MainTextArticle {
+  //     width: 65%;
+  //   }
+  // }
   .O_ArticleBlock:nth-child(6) {
     .A_MainTextArticle {
       width: 65%;
     }
+  }
+  .A_MainTextArticle:nth-child(3) {
+    width: 65%;
+    margin-right: 4rem;
   }
 
   .Q_ImageWide {
@@ -166,7 +173,8 @@
   align-items: center;
   gap: 30px;
   margin-top: 7rem;
-  padding-bottom: 50px;
+  margin-bottom: 8rem;
+  padding-bottom: 5rem;
   border-bottom: 1px solid var(--darkGreen);
 
   .M_IconHeading,
@@ -196,4 +204,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1 rem;
 }

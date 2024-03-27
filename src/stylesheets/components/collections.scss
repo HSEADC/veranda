@@ -15,7 +15,7 @@
 }
 .C_SmallArticleCards {
   display: flex;
-  column-gap: 15px;
+  gap: 15px;
   position: relative;
   margin-top: 15px;
 }
@@ -84,13 +84,8 @@
   .M_AdviceCard {
     background-color: var(--darkerBezh);
   }
-  .O_CardHigh:nth-child(5) {
-    width: 40.971vw;
-    height: 250px;
-  }
   .O_CardHigh:nth-child(6) {
     background-image: url('images/Q_DrinksArticle.png');
-    background-size: 65%;
     background-repeat: no-repeat;
     background-position: right 60px;
   }
@@ -98,12 +93,12 @@
     background-image: url('images/Q_VegetablesArticle.png');
     background-repeat: no-repeat;
     background-size: 95%;
-    background-position: right 60px;
+    background-position: right 45px;
   }
   .O_CardHigh:nth-child(8) {
     background-image: url('images/Q_RaindropsArticle.png');
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 66%;
     background-position: top 39px right -78px;
   }
 }

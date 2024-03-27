@@ -33,11 +33,7 @@ header.O_Header {
     text-align: left;
   }
 }
-// Links
-.M_LinkArticleCategory {
-  display: flex;
-  grid-column: 22/25;
-}
+
 // TagLineCard
 .M_TagLine {
   display: flex;
@@ -69,7 +65,7 @@ header.O_Header {
   justify-content: space-between;
   background-color: var(--bezh);
   row-gap: 1rem;
-  width: 530px;
+  width: 529px;
   height: 200px;
   border-radius: 12px;
   padding: 25px;
@@ -102,6 +98,10 @@ header.O_Header {
 }
 .M_SubheadText {
   display: flex;
+
+  // .A_MainTextArticle {
+  //   width: 65%;
+  // }
 }
 .M_AdvideArticleBlock {
   display: flex;
