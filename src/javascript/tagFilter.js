@@ -22,13 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
   filterTags.forEach((tag) => {
     tag.addEventListener('click', function () {
       const selectedTag = this.innerText.trim()
-      if (
-        document
-          .querySelector('.O_ArticleWide')
-          .classList.contains('O_ArticleWide')
-      ) {
-        document.querySelector('.select').style.display = 'none'
-      }
       if (this.classList.contains('active')) {
         filterTags.forEach((tag) => tag.classList.remove('active'))
         const cards = document.querySelectorAll(

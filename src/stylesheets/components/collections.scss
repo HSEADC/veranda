@@ -73,11 +73,18 @@
   margin: 0 auto 10rem;
 }
 // IdeasCards
+.C_AllIdeasArticles > * {
+  margin: 1rem 0.5rem;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+}
 .C_AllIdeasArticles {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 2rem;
-  column-gap: 1rem;
+  // display: flex;
+  // flex-wrap: wrap;
+  // row-gap: 2rem;
+  // column-gap: 1rem;
+  display: block;
   width: 1620px;
   margin: 0 auto 10rem;
 
