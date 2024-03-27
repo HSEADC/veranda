@@ -81,10 +81,12 @@
   gap: 2rem;
 }
 // ---------------IdeasPage-----------------
-// .W_ArticleSlider {
-//   padding: 0px 7.813vw;
-//   margin-top: 50px;
-// }
+.W_ArticleSlider {
+  width: 1620px;
+  margin-top: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 .W_TwoIdeasArticle {
   display: flex;
   flex-direction: column;

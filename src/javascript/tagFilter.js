@@ -1,6 +1,6 @@
 function filterTag(tag) {
   const cards = document.querySelectorAll(
-    '.O_QaCard, .O_CardArticle, .M_AdviceCard, .O_IdeaBigCard,.O_ArticleWide, .O_CardHigh, .O_CardArticleBig'
+    '.O_QaCard, .O_CardArticle, .M_AdviceCard, .O_IdeaBigCard, .O_CardHigh, .O_CardArticleBig'
   )
   const block = document.querySelector('.C_AllIdeasArticles')
 
@@ -22,11 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
   filterTags.forEach((tag) => {
     tag.addEventListener('click', function () {
       const selectedTag = this.innerText.trim()
-
+      if (
+        document
+          .querySelector('.O_ArticleWide')
+          .classList.contains('O_ArticleWide')
+      ) {
+        document.querySelector('.select').style.display = 'none'
+      }
       if (this.classList.contains('active')) {
         filterTags.forEach((tag) => tag.classList.remove('active'))
         const cards = document.querySelectorAll(
-          '.O_QaCard, .O_CardArticle, .M_AdviceCard,.O_ArticleWide, .O_IdeaBigCard, .O_CardHigh,  .O_CardArticleBig'
+          '.O_QaCard, .O_CardArticle, .M_AdviceCard, .O_IdeaBigCard, .O_CardHigh,  .O_CardArticleBig'
         )
         cards.forEach((card) => {
           card.style.display = ''

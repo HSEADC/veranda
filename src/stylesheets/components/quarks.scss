@@ -1,35 +1,3 @@
-:root {
-  --swiper-pagination-color: var(--darkGreen);
-  --swiper-pagination-bullet-size: 12px;
-  --swiper-pagination-bullet-width: 12px;
-  --swiper-pagination-bullet-height: 12px;
-  --swiper-pagination-bullet-inactive-color: #000;
-  --swiper-pagination-bullet-inactive-opacity: 0.2;
-  --swiper-pagination-bullet-opacity: 1;
-  --swiper-pagination-bullet-horizontal-gap: 4px;
-  --swiper-pagination-bullet-vertical-gap: 6px;
-}
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -227,4 +195,60 @@
     font-family: Manrope;
     margin-top: 1rem;
   }
+}
+// ---------------Swiper-----------------
+:root {
+  --swiper-pagination-color: var(--darkGreen);
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-inactive-color: #f9ffea;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .O_ArticleWide {
+    .M_ArticleInfo {
+      margin-bottom: 2rem;
+      color: var(--bezh);
+
+      .M_TagLine {
+        .A_Tag {
+          color: var(--bezh);
+          border-color: var(--bezh);
+        }
+      }
+      .A_SubCard {
+        color: var(--bezh);
+
+        em {
+          color: var(--bezh);
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.culture_slider {
+  background-image: url('images/culter_cover.png');
 }
