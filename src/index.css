@@ -15,3 +15,5 @@
 @import 'stylesheets/components/atoms.scss';
 @import 'stylesheets/components/wrappers.scss';
 @import 'stylesheets/components/collections.scss';
+/* Resposive */
+@import 'stylesheets/responsive.scss';

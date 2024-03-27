@@ -1,8 +1,8 @@
-function filterCardsByTag(tag) {
+function filterTag(tag) {
   const cards = document.querySelectorAll(
-    '.O_QaCard, .O_CardArticle, .O_ArticleCardLong, .O_IdeaBigCard, .O_CardHigh, .O_ArticleWide, .O_CardArticleBig'
+    '.O_QaCard, .O_CardArticle, .M_AdviceCard, .O_IdeaBigCard,.O_ArticleWide, .O_CardHigh, .O_CardArticleBig'
   )
-
+  console.log(cards)
   cards.forEach((card) => {
     const tags = card.getAttribute('data-tags')
 
@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
       if (this.classList.contains('active')) {
         filterTags.forEach((tag) => tag.classList.remove('active'))
         const cards = document.querySelectorAll(
-          '.O_QaCard, .O_CardArticle, .O_ArticleCardLong, .O_IdeaBigCard, .O_CardHigh, .O_ArticleWide, .O_CardArticleBig'
+          '.O_QaCard, .O_CardArticle, .M_AdviceCard,.O_ArticleWide, .O_IdeaBigCard, .O_CardHigh,  .O_CardArticleBig'
         )
         cards.forEach((card) => {
           card.style.display = ''
         })
       } else {
-        filterCardsByTag(selectedTag)
+        filterTag(selectedTag)
         filterTags.forEach((tag) => tag.classList.remove('active'))
         this.classList.add('active')
       }

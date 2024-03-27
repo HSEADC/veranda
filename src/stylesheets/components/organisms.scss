@@ -2,24 +2,31 @@
 header.O_Header {
   display: flex;
   grid-row-gap: 0px;
-  padding: 20px 7.813vw 0px;
+  width: 1620px;
+  padding-top: 3rem;
+  margin: 0 auto;
 }
 // HomeScreen
 .O_WelcomeScreen {
   position: relative;
   width: 100%;
-  height: 34.667vw;
+  height: 720px;
   background-image: url('images/mainScreenPlaceholder.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 32px;
+
+  .M_IconHeading {
+    margin: 30px auto 0px;
+    width: 920px;
+  }
 }
 // ArticleCard
 .O_CardArticle {
   background-color: var(--bezh);
   display: flex;
-  width: 33.5%;
+  width: 530px;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
   border-radius: 16px;
@@ -31,7 +38,7 @@ header.O_Header {
   }
 }
 .O_CardArticleBig {
-  width: 41.471vw;
+  width: 800px;
   display: flex;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
@@ -46,6 +53,7 @@ header.O_Header {
 }
 .O_ArticleCardLong {
   display: flex;
+  height: 200px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -67,15 +75,19 @@ header.O_Header {
   flex-direction: column;
   text-decoration: none;
   background-color: var(--darkerBezh);
-  row-gap: 25px;
-  border-radius: 24px;
-  padding: 25px;
+  row-gap: 1O_IdeaBigCard.5rem;
+  width: 393px;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
   justify-content: space-between;
   align-items: center;
   transition: transform 0.5s ease, opacity 0.5s ease;
 
   .Q_QaIconArticle {
     svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       path {
         fill: #f2f7da;
         stroke: var(--darkGreen);
@@ -85,14 +97,6 @@ header.O_Header {
 
   &:hover {
     transform: translateY(-10px);
-
-    .Q_QaIconArticle {
-      svg {
-        path {
-          stroke: cornflowerblue;
-        }
-      }
-    }
   }
 }
 // Newarticle
@@ -100,49 +104,82 @@ header.O_Header {
   display: flex;
   flex-direction: column;
   gap: 70px;
-  grid-column: 1/12;
-  grid-row: 1/2;
 }
 // ArticleHeading
 .O_ArticleWide {
   display: flex;
   width: 100%;
-  height: 580px;
+  height: 632px;
   padding-bottom: 30px;
   background-color: var(--primaryGreen);
   border-radius: 24px;
-  // background-image: url('images/O_HeadingImagePlaceholder.png');
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: flex-end;
   text-decoration: none;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  .M_ArticleInfo {
+    width: 50%;
+  }
+}
+.O_ArticleIdeas {
+  display: flex;
+  width: 100%;
+  height: 632px;
+  padding-bottom: 30px;
+  background-color: var(--primaryGreen);
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  .M_ArticleInfo {
+    width: 70%;
+  }
+}
+.rainingBg {
+  background-image: url('images/Q_Raining.png');
+  background-size: 103%;
+  background-position: bottom 15px right -5px;
 }
 // IdeaCardBig
 .O_IdeaBigCard {
-  width: 49.3%;
-  height: 32.813vw;
+  width: 803px;
+  height: 603px;
   background-color: var(--blue);
-  border-radius: 24px;
+  border-radius: 1.5rem;
   display: flex;
   text-decoration: none;
   align-items: flex-start;
   flex-direction: column;
-  padding: 25px;
-  row-gap: 15px;
+  padding: 1.5rem;
+  row-gap: 1rem;
   background-image: url('images/Q_BigArticleBicycle.png');
   background-repeat: no-repeat;
   background-size: auto 75%;
   background-position: bottom 0px right -110px;
 }
-
+// SliderArticles
+.O_Slider {
+  width: 1240px;
+  height: 460px;
+  background-color: var(--blue);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
 .O_CardHigh {
-  width: 32.5%;
-  height: 26.615vw;
+  width: 529px;
+  height: 415px;
   background-color: var(--primaryGreen);
   border-radius: 16px;
-  padding: 25px;
+  padding: 1.5rem;
   text-decoration: none;
 
   .M_LongArticleHeading {
@@ -161,11 +198,12 @@ header.O_Header {
     background-repeat: no-repeat;
   }
   .O_ArticleCardLong {
-    width: 100%;
-    height: 35%;
+    width: 530px;
+    height: 200px;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 1.25rem;
     justify-content: center;
+    border: 1.5rem;
 
     h2 {
       text-align: center;
@@ -175,13 +213,16 @@ header.O_Header {
 // ArticleHtml
 .O_HeadingArticle {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: flex-end;
+
+  .M_IconHeadingLeft {
+    width: 65%;
+  }
 }
 .O_ArticleAuthorDescription {
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
 }
 .O_ArticleBlock {
   display: flex;
@@ -193,8 +234,8 @@ header.O_Header {
 .O_BreakerOpinion {
   background-color: var(--primaryGreen);
   display: flex;
-  border-radius: 24px;
-  padding: 30px;
+  border-radius: 1.5rem;
+  padding: 2rem;
 }
 .O_SocialMediaBreaker {
   display: flex;
@@ -204,9 +245,16 @@ header.O_Header {
   width: 100%;
   justify-content: space-between;
 }
-// Responsive
-@media only screen and (max-width: 1440px) {
-  .O_CardArticle {
-    width: 27.425vw;
-  }
+// IdeasArticleHrml
+.O_AdviceContnetBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+// Footer
+.O_FooterCategoriesForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
 }

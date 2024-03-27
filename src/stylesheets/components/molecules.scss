@@ -2,28 +2,7 @@
 header.O_Header {
   .M_HeaderCategories {
     display: flex;
-    column-gap: 30px;
-  }
-  form.M_SearchBar {
-    padding: 10px 15px 10px 20px;
-    border-radius: 600px;
-    border: 1px solid var(--darkGreen);
-    display: flex;
-
-    input {
-      font-size: 18px;
-      font-family: Manrope;
-      border: none;
-
-      &::placeholder {
-        color: var(--darkGreen);
-        opacity: 75%;
-        background-color: var(--bezh);
-      }
-      &::placeholder:focus {
-        border: none;
-      }
-    }
+    column-gap: 40px;
   }
 }
 // IconHeading
@@ -35,11 +14,6 @@ header.O_Header {
   text-align: center;
   gap: 10px;
   align-items: baseline;
-
-  &:nth-child(1) {
-    margin: 30px auto 0px;
-    width: 69.444vw;
-  }
 }
 .M_IconHeadingLeft {
   display: flex;
@@ -59,11 +33,7 @@ header.O_Header {
     text-align: left;
   }
 }
-// Links
-.M_LinkArticleCategory {
-  display: flex;
-  grid-column: 22/25;
-}
+
 // TagLineCard
 .M_TagLine {
   display: flex;
@@ -76,9 +46,107 @@ header.O_Header {
   flex-direction: column;
   gap: 15px;
 }
+// Cards
+.M_AdviceCardCentered {
+  width: 580px;
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkerBezh);
+  row-gap: 30px;
+}
+.M_AdviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--bezh);
+  row-gap: 1rem;
+  width: 529px;
+  height: 200px;
+  border-radius: 12px;
+  padding: 25px;
+  text-decoration: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+  h2 {
+    text-align: left;
+  }
+}
 // Footer
 .M_FooterLogoSocial {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: -1rem 0 0 1rem;
+}
+// ArticleHtml
+.M_BreakerIconText {
+  display: flex;
+  gap: 1rem;
+}
+// IdeasArticleHtml
+.M_PersonProfileArticle {
+  display: flex;
+  gap: 1rem;
+  width: 30%;
+}
+.M_SubheadText {
+  display: flex;
+
+  // .A_MainTextArticle {
+  //   width: 65%;
+  // }
+}
+.M_AdvideArticleBlock {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+form.M_SubmitEmail {
+  display: flex;
+  gap: 1rem;
+  button.A_ButtonPrimary {
+    background-color: var(--primaryGreen);
+    color: var(--darkGreen);
+    border: none;
+    padding: 0;
+  }
+}
+.M_AdviceTextHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 65%;
+}
+.M_AdviceImageColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+}
+.M_AdviceBreaker {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--primaryGreen);
+  align-items: center;
+  gap: 16px;
+  padding: 1.5rem;
+  border-radius: 1em;
+}
+// QA-ArticleHtml
+.M_QaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .A_MainTextArticle {
+    margin-bottom: 1.25rem;
+  }
 }

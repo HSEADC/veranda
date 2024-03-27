@@ -6,38 +6,79 @@
   border-bottom: 1px solid var(--darkGreen);
   padding-bottom: 20px;
 }
+.W_TitleLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.W_HeadingArticles {
+  width: 1620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .W_TitleLink {
+    width: 65.5%;
+  }
+}
+
 // NewArticle
 .W_NewArticleHeading {
+  max-width: 720px;
   .M_IconHeadingLeft {
     margin: 0px 0px 25px;
   }
+}
+// IdeasSlider
+.W_Slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 // Advices
 .W_ArticleHeadingBig {
   display: flex;
   flex-direction: column;
 }
-// Footer
+.W_AdvicesArticles {
+  width: 1620px;
+  margin: 0 auto;
+}
+// QaArticles
+.W_QaCards {
+  display: flex;
+  width: 1620px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+// Footer---------------------------------------
+.W_FooterWithout {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 .W_FooterCategories {
   display: flex;
-  gap: 25px;
-}
-.W_FooterNameList {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+  gap: 1.5rem;
 }
 .W_Authors {
   display: flex;
-  column-gap: 30px;
+  gap: 2.5rem;
 }
-.W_Socials {
+.W_FooterNamesList {
   display: flex;
-  gap: 10px;
+  color: var(--bezh);
+  flex-direction: column;
+  gap: 0.5rem;
+  .AuthorName:nth-child(1) {
+    font-family: '_21_Cent';
+    font-size: 1.4rem;
+  }
 }
-.W_FooterInfoForm {
+.W_FooterNamesSocialLogo {
   display: flex;
-  gap: 50px;
+  gap: 2rem;
 }
 // ---------------IdeasPage-----------------
 .W_ArticleSlider {
@@ -48,9 +89,120 @@
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  width: 41.471vw;
+  width: 801px;
+  .O_CardHigh {
+    width: 801px;
+    height: 415px;
+  }
+  .M_AdviceCard {
+    width: 801px;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+  }
 }
 // ArticleHtml
 .W_HomeScreenArticle {
   background-color: var(--darkerBezh);
+}
+.W_MainTexts {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  gap: 1.5rem;
+}
+.W_WholeIdeaArticle {
+  display: flex;
+  flex-direction: column;
+  width: 1620px;
+  margin: 0 auto;
+  gap: 8rem;
+  margin-bottom: 8rem;
+  .M_AdviceTextHeading {
+    width: 60%;
+    .A_AdviceHeading {
+      width: 90%;
+    }
+  }
+}
+.W_WholeArticle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.375rem;
+  width: 1620px;
+  margin: 0 auto;
+  align-items: flex-end;
+  margin-bottom: 12rem;
+  .W_MainTexts:nth-child(3) {
+    width: 65%;
+    margin-right: 5rem;
+  }
+  // .O_ArticleBlock:nth-child(1) {
+  //   margin-bottom: 2rem;
+  //   .A_MainTextArticle {
+  //     width: 65%;
+  //   }
+  // }
+  .O_ArticleBlock:nth-child(6) {
+    .A_MainTextArticle {
+      width: 65%;
+    }
+  }
+  .A_MainTextArticle:nth-child(3) {
+    width: 65%;
+    margin-right: 4rem;
+  }
+
+  .Q_ImageWide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // img {
+    //   width: 93%;
+    // }
+  }
+}
+// ArticleIdeas
+.W_ArticleHead {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid var(--darkGreen);
+
+  .M_IconHeading,
+  .A_AdviceDescriptionText {
+    width: 1200px;
+  }
+}
+.W_ImageBlock {
+  display: flex;
+  gap: 1rem;
+  .A_AdviceImage {
+    width: 75%;
+  }
+}
+.W_Phreference {
+  width: 1620px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 2rem;
+}
+.W_PreferenceFooter {
+  background-color: var(--blue);
+  border-radius: 2rem 2rem 0 0;
+}
+.W_QaTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1 rem;
 }

@@ -12,7 +12,7 @@ module.exports = {
     filterTag: './src/javascript/tagFilter.js'
   },
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'docs')
   },
   module: {
@@ -97,8 +97,8 @@ module.exports = {
     }),
 
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-      chunkFilename: '[id].[contenthash].css'
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     }),
 
     // Index
@@ -126,17 +126,140 @@ module.exports = {
       template: './src/ideas.html',
       filename: './ideas.html'
     }),
+    // Articles
     new HtmlWebpackPlugin({
       template: './src/articles/ecoHobby.html',
       filename: './articles/ecoHobby.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/articles/cultureCode.html',
+      filename: './articles/cultureCode.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/cherryJam.html',
+      filename: './articles/cherryJam.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/creativeCountryside.html',
+      filename: './articles/creativeCountryside.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/decoration.html',
+      filename: './articles/decoration.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/flowersForYou.html',
+      filename: './articles/flowersForYou.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/mayChillOut.html',
+      filename: './articles/mayChillOut.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/nutriciolog.html',
+      filename: './articles/nutriciolog.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/picnicCountry.html',
+      filename: './articles/picnicCountry.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/restzone.html',
+      filename: './articles/restzone.html'
+    }),
+    // Question-Answers
+    new HtmlWebpackPlugin({
       template: './src/QA/queAns.html',
       filename: './QA/queAns.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/QA/activeGames.html',
+      filename: './QA/activeGames.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/carrot.html',
+      filename: './QA/carrot.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/fence.html',
+      filename: './QA/fence.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/findDecor.html',
+      filename: './QA/findDecor.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/komari.html',
+      filename: './QA/komari.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/mushrooms.html',
+      filename: './QA/mushrooms.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/notFreeze.html',
+      filename: './QA/notFreeze.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/summerDrinks.html',
+      filename: './QA/summerDrinks.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/taxes.html',
+      filename: './QA/taxes.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/watering.html',
+      filename: './QA/watering.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/QA/whichFlowers.html',
+      filename: './QA/whichFlowers.html'
+    }),
+    // IdeasPage
+    new HtmlWebpackPlugin({
       template: './src/ideas/ideaPage.html',
       filename: './ideas/ideaPage.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/kite.html',
+      filename: './ideas/kite.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/collectingFlowers.html',
+      filename: './ideas/collectingFlowers.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/drinks.html',
+      filename: './ideas/drinks.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/rainwalker.html',
+      filename: './ideas/rainwalker.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/rayPhoto.html',
+      filename: './ideas/rayPhoto.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/romantice.html',
+      filename: './ideas/romantice.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/sports.html',
+      filename: './ideas/sports.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/rainday.html',
+      filename: './ideas/rainday.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/banya.html',
+      filename: './ideas/banya.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ideas/herbs.html',
+      filename: './ideas/herbs.html'
     }),
 
     // Article

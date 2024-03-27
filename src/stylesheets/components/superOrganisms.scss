@@ -4,30 +4,22 @@ body {
 section.S_FirstScreen {
   display: flex;
   width: 100%;
-  padding: 0 7.813vw;
-  margin-top: 50px;
+  width: 1620px;
+  margin: 30px auto 0px auto;
 }
 section.S_ArticlesHeading {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  padding: 75px 7.813vw;
-  margin: 50px 0px 100px 0px;
   background-color: var(--primaryGreen);
   border-radius: 32px;
-
-  .M_HeadingLink {
-    width: 66.5%;
-  }
+  margin-top: 4rem;
+  padding: 6rem 0px;
 }
 .S_NewArticle {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  padding: 7.813vw 7.813vw;
+  display: flex;
+  width: 1620px;
   position: relative;
-  // Какой-то кринж?-----------------------------------
+  margin: 13rem auto 13rem;
+  gap: 5rem;
+
   .A_IconDecoration {
     position: absolute;
     right: 42.656vw;
@@ -44,13 +36,9 @@ section.S_ArticlesHeading {
   // Какой-то кринж?-----------------------------------
 }
 .S_AdvicesArticles {
-  // display: grid;
-  // grid-template-columns: repeat(24, 1fr);
-  // grid-template-rows: 1fr;
-  // grid-column-gap: 15px;
   display: flex;
   flex-direction: column;
-  padding: 75px 7.813vw 7.813vw;
+  padding: 4rem 0px 6rem;
   position: relative;
   border-radius: 32px;
   background-color: var(--blue);
@@ -58,9 +46,9 @@ section.S_ArticlesHeading {
 .S_QaCards {
   display: flex;
   flex-direction: column;
-  padding: 75px 7.813vw;
   position: relative;
   border-radius: 32px;
+  margin: 6rem 0;
 
   .M_HeadingLink {
     grid-column: 1/25;
@@ -68,28 +56,45 @@ section.S_ArticlesHeading {
 }
 .S_Footer {
   display: flex;
-  height: 400px;
-  padding: 100px 7.813vw;
+  height: 340px;
+  padding: 3rem 0 1.5rem;
+  align-items: center;
   background-color: var(--darkGreen);
   justify-content: space-between;
   border-radius: 32px 32px 0px 0px;
-  margin-top: 150px;
 }
 // ArticleHtml
 .S_ArticlePreview {
   display: flex;
   flex-direction: column;
   row-gap: 35px;
-  padding: 0 7.813vw 75px;
   border-radius: 0;
-  width: 100%;
-  margin-top: 50px;
+  width: 1620px;
+  margin: 4rem auto;
+  padding-bottom: 4rem;
 }
-.S_WholeArticle {
+
+.S_Phreference {
+  width: 100%;
+  padding: 4rem 0 12rem;
+  border-radius: 2rem 2rem 0 0;
+}
+// QAArticleHtml
+.S_QaArticle {
   display: flex;
   flex-direction: column;
-  row-gap: 80px;
-  padding: 0 7.813vw;
-  margin-top: 80px;
-  align-items: flex-end;
+  gap: 2rem;
+  margin: 4rem auto;
+  background-color: var(--darkerBezh);
+  width: 1040px;
+  border-radius: 2rem;
+  padding: 1.5rem 4rem 3rem;
+  margin-bottom: 8rem;
+  .M_IconHeading {
+    width: 78%;
+    margin: 0 auto;
+  }
+  .M_QaContent {
+    width: 800px;
+  }
 }
