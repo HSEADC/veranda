@@ -1,3 +1,4 @@
+// Desktop
 @media only screen and (max-width: 1720px) and (min-width: 1300px) {
   .A_Tag {
     font-size: 14px;
@@ -62,6 +63,10 @@
   .O_ArticleWide {
     height: 480px;
   }
+  .O_ArticleSlider {
+    height: 480px;
+    width: 100%;
+  }
   .O_IdeaBigCard {
     width: 612px;
     height: 490px;
@@ -74,6 +79,7 @@
   }
   .O_CardArticleBig {
     width: 620px;
+    height: 240px;
   }
   .O_CardHigh {
     width: 402px;
@@ -160,6 +166,7 @@
 
   .O_CardArticle {
     width: 403px;
+    min-height: 460px;
   }
   .S_ArticlesHeading {
     padding: 3.125rem 0px;
@@ -250,6 +257,7 @@
     }
   }
 }
+// Laptop
 @media only screen and (max-width: 1919px) and (min-width: 1721px) {
   header.O_Header {
     width: 1440px;
@@ -261,6 +269,7 @@
     width: 1440px;
   }
 }
+// Mobile
 @media only screen and (max-width: 428px) {
   //  Typography
   h1.A_TitleManrope {
@@ -302,14 +311,20 @@
     height: 8.889vw;
   }
   // Header
+  .A_NavigationLogo {
+    width: 147px;
+    height: 38px;
+  }
   header.O_Header {
     width: 100%;
     padding: 3rem 0.45rem 0rem;
+    border: 0;
 
     .W_Header {
       flex-direction: column;
       align-items: center;
-      gap: 2rem;
+      gap: 1.5rem;
+      border-bottom: 0px;
       .M_HeaderCategories {
         justify-content: space-between;
       }
@@ -522,6 +537,20 @@
     gap: 0.3rem;
   }
   // MobileCards
+  .W_ArticleSlider {
+    width: 100%;
+    padding: 1rem;
+    height: 100vw;
+  }
+  .swiper-slide {
+    .O_ArticleSlider {
+      height: 100vw;
+      .M_ArticleInfo {
+        width: 100%;
+        color: red;
+      }
+    }
+  }
 
   .O_CardArticleBig {
     width: 100%;
@@ -556,7 +585,9 @@
   }
   .O_QaCard {
     width: 48.7%;
-    height: 268px;
+    height: 312px;
+    border-radius: 8px;
+    padding: 3.8vw 0;
     border-radius: 8px;
     padding: 0.8rem 0;
 
@@ -581,7 +612,7 @@
   }
   .M_AdviceCard {
     width: 100%;
-    height: 130px;
+    height: 150px;
 
     .A_SubCard {
       width: 83%;
@@ -634,7 +665,7 @@
       .O_CardHigh {
         width: 100%;
         height: 300px;
-        background-size: 90%;
+        background-size: 80%;
 
         .M_LongArticleHeading {
           height: auto;
@@ -746,7 +777,7 @@
     gap: 1rem;
   }
   .A_MainTextArticle {
-    font-size: 3.889vw;
+    font-size: 3.289vw;
   }
   .W_WholeArticle {
     width: 100%;
@@ -902,5 +933,405 @@
         height: 60.222vw;
       }
     }
+  }
+  // QaArticle
+  .S_QaArticle {
+    gap: 1rem;
+    margin-bottom: 3rem;
+    .M_IconHeading {
+      width: 100%;
+    }
+    .A_QAArticleCover {
+      height: 40vw;
+
+      img {
+        border-radius: 12px;
+      }
+    }
+    width: 100%;
+    padding: 2rem;
+    .M_QaContent {
+      width: 100%;
+    }
+    .A_QaArticleHeading {
+      font-size: 24px;
+      margin-bottom: 0.7rem;
+    }
+  }
+}
+// Tablet
+@media only screen and (max-width: 1380px) and (min-width: 428px) {
+  header.O_Header {
+    width: 88.477vw;
+    .A_HeaderCategory {
+      font-size: 1.958vw;
+    }
+  }
+  .Q_IconMedium {
+    width: 6.348vw;
+    height: 5.859vw;
+  }
+  section.S_FirstScreen {
+    width: 88.477vw;
+
+    .O_WelcomeScreen {
+      height: 42.969vw;
+      .M_IconHeading {
+        width: 75%;
+      }
+    }
+  }
+  //  Typography
+  .A_FooterCategoryList {
+    font-size: 1.953vw;
+  }
+  .AuthorName {
+    font-size: 2.188vw;
+  }
+  h1.A_TitleManrope {
+    font-size: 4.195vw;
+
+    em.Accent {
+      font-size: 4.883vw;
+    }
+  }
+  h1.A_TitleAccent {
+    font-size: 4.883vw;
+  }
+  .M_ArticleInfo {
+    align-items: center;
+    gap: 1vw;
+  }
+  .A_SubCard {
+    font-size: 1.753vw;
+    width: 90%;
+
+    em {
+      font-size: 2vw;
+    }
+  }
+  .A_Tag {
+    font-size: 1.367vw;
+    padding: 8px;
+  }
+  .C_ArticlesRow {
+    gap: 1.465vw;
+  }
+  .A_NavigationLogo {
+    width: 17.406vw;
+    height: 4.492vw;
+  }
+  .O_CardArticle {
+    width: 29.686vw;
+    min-width: 1px;
+
+    img {
+      height: 23vw;
+      object-fit: cover;
+    }
+    .M_articleInfo {
+      gap: 1.563vw;
+    }
+  }
+  .S_ArticlesHeading {
+    .W_HeadingArticles {
+      width: 88.477vw;
+      .W_TitleLink {
+        width: 70%;
+      }
+    }
+  }
+  // LaptopNewArticle
+  .S_NewArticle {
+    width: 88.477vw;
+    justify-content: space-between;
+    margin: 12.5vw auto 12.5vw;
+
+    .O_NewArticle {
+      gap: 4vw;
+    }
+    .W_NewArticleHeading {
+      width: 90%;
+
+      .M_IconHeadingLeft {
+        width: 47vw;
+      }
+    }
+    .Q_ImageArticleNew {
+      height: 33vw;
+      width: 55%;
+    }
+    .A_TextMain {
+      font-size: 1.753vw;
+      width: 100%;
+    }
+  }
+  .A_LinkArticleNavigation {
+    border: none;
+    // :nth-child(1) {
+    //   display: none;
+    // }
+    .Q_ArrowForward {
+      width: 2.344vw;
+      height: 2.344vw;
+    }
+  }
+  .S_AdvicesArticles {
+    .W_AdvicesArticles {
+      width: 88.477vw;
+    }
+  }
+  .S_QaCards {
+    .W_QaCards {
+      width: 88.477vw;
+    }
+  }
+  .A_Tag {
+    border: 1px solid;
+  }
+  .M_AdviceCard {
+    width: 28.516vw;
+    height: 14.531vw;
+    padding: 1rem;
+  }
+  .O_ArticleWide {
+    height: 35.156vw;
+  }
+  .O_QaCard {
+    width: 21.477vw;
+  }
+
+  footer.S_Footer {
+    padding: 4.688vw 0 2.344vw;
+    .W_FooterWithout {
+      justify-content: flex-start;
+      padding: 3vw;
+      width: 100%;
+    }
+    .W_Authors {
+      .W_FooterNamesList:nth-child(1) {
+        display: none;
+      }
+      .W_FooterNamesList:nth-child(2) {
+        display: none;
+      }
+    }
+    .O_FooterCategoriesForm {
+      width: 58%;
+    }
+    .W_FooterNamesSocialLogo {
+      gap: 1vw;
+    }
+  }
+  .A_FormInput {
+    width: 38.086vw;
+  }
+  .W_FooterCategories {
+    gap: 3vw;
+  }
+  .C_Socials {
+    gap: 1.5vw;
+    a {
+      width: 4.395vw;
+      height: 4.395vw;
+    }
+  }
+  // TabletArticles----------------------
+  .W_ArticleSlider {
+    width: 88.477vw;
+    .O_ArticleSlider {
+      height: 40.527vw;
+    }
+  }
+  .C_AllArticles {
+    width: 93.477vw;
+  }
+  .O_CardArticleBig {
+    width: 46vw;
+    width: 45.5vw;
+  }
+  .С_ArticleCategoryTags {
+    width: 80%;
+  }
+  // IdeasTablet
+  .O_ArticleIdeas {
+    height: 40.527vw;
+  }
+  .C_AllIdeasArticles {
+    width: 89.477vw;
+    row-gap: 1.5vw;
+    .O_CardHigh:nth-child(6) {
+      background-size: 57%;
+      background-position: right 44px;
+    }
+    .O_CardHigh:nth-child(7) {
+      background-size: 89%;
+      background-position: right 44px;
+    }
+    .O_CardHigh {
+      width: 28.7vw;
+      height: 25.195vw;
+    }
+  }
+  .O_IdeaBigCard {
+    width: 44.168vw;
+    height: 37.109vw;
+  }
+  .W_TwoIdeasArticle {
+    width: 43.168vw;
+    .M_AdviceCard {
+      width: 100%;
+      height: 14.531vw;
+    }
+    .O_CardHigh {
+      width: 43.168vw;
+      height: 20.996vw;
+
+      .M_LongArticleHeading {
+        width: 100%;
+      }
+    }
+  }
+  .C_AllQaCards {
+    width: 91.477vw;
+    gap: 1vw;
+  }
+
+  // ArticleHtmlTablet
+
+  .S_ArticlePreview {
+    width: 91.477vw;
+
+    .O_HeadingArticle {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .M_IconHeadingLeft {
+        width: 84%;
+        order: 2;
+      }
+      .M_TagLine {
+        order: 1;
+      }
+    }
+  }
+  .Q_ImageWide {
+    height: 39.25vw;
+  }
+  p.A_AuthorArticle {
+    font-size: 1.953vw;
+  }
+  p.A_NameDescArticle {
+    font-size: 1.367vw;
+  }
+  .Q_PersonArticlePic {
+    width: 5.859vw;
+    height: 5.859vw;
+  }
+  .O_ArticleAuthorDescription {
+    .A_ArticleDescription {
+      h3 {
+        font-size: 1.953vw;
+
+        em {
+          font-size: 2.344vw;
+        }
+      }
+    }
+  }
+  .A_MainTextArticle {
+    font-size: 1.66vw;
+  }
+  .W_WholeArticle {
+    width: 91.477vw;
+
+    .W_MainTexts:nth-child(3) {
+      margin-right: 2rem;
+    }
+
+    figcaption.A_PhotoDescprition {
+      font-size: 1.367vw;
+    }
+    .O_BreakerOpinion {
+      .A_BreakerText {
+        font-size: 1.66vw;
+      }
+    }
+    .O_SocialMediaBreaker {
+      .A_BreakerLineText {
+        font-size: 20px;
+      }
+    }
+  }
+  .S_Phreference {
+    padding: 4.688vw 0 10.938vw;
+  }
+  .W_Phreference {
+    width: 91.477vw;
+  }
+  // QaCardTablet
+  .S_QaArticle {
+    width: 91.477vw;
+    margin-bottom: 3rem;
+    padding: 5vw;
+    .A_QaArticleHeading {
+      font-size: 3.516vw;
+      margin-bottom: 1rem;
+    }
+    .A_QAArticleCover {
+      height: 32.156vw;
+    }
+    .M_QaContent {
+      width: 75%;
+    }
+  }
+  // IdeaHtmlArticle
+  .W_WholeIdeaArticle {
+    width: 91.477vw;
+    gap: 6vw;
+
+    .W_ArticleHead {
+      width: 80%;
+      margin-bottom: 10vw;
+      padding-bottom: 2vw;
+      .M_IconHeading {
+        width: 100%;
+      }
+      .A_AdviceDescriptionText {
+        font-size: 2.539vw;
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+    }
+    .O_AdviceContnetBlock {
+      .A_AdviceHeading {
+        font-size: 3.206vw;
+        width: 103%;
+        em {
+          font-size: 3.9vw;
+        }
+      }
+    }
+    .A_AdviceImage {
+      width: 51%;
+      height: 31.738vw;
+    }
+  }
+  .M_AdviceBreaker {
+    .A_DividerAdviceHeading {
+      width: 80%;
+      font-size: 2.734vw;
+    }
+    .A_BreakerText {
+      width: 80%;
+      font-size: 22px;
+    }
+  }
+  .A_AdviceImageSquare {
+    height: 31.738vw;
+  }
+  .A_ButtonPrimary {
+    width: 21vw;
+    font-size: 2vw;
   }
 }

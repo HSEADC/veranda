@@ -55,6 +55,7 @@
 // Footer---------------------------------------
 .W_FooterWithout {
   display: flex;
+  width: 1620px;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -119,7 +120,7 @@
   flex-direction: column;
   width: 1620px;
   margin: 0 auto;
-  gap: 8rem;
+  gap: 6rem;
   margin-bottom: 8rem;
   .M_AdviceTextHeading {
     width: 60%;
@@ -206,5 +207,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1 rem;
+  gap: 1rem;
+}
+.W_ErrorText {
+  width: 505px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

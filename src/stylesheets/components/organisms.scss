@@ -27,6 +27,8 @@ header.O_Header {
   background-color: var(--bezh);
   display: flex;
   width: 530px;
+  // min-height: 560px;
+  // max-height: 460px;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
   border-radius: 16px;
@@ -124,6 +126,21 @@ header.O_Header {
     width: 50%;
   }
 }
+.O_ArticleSlider {
+  display: flex;
+  width: 100%;
+  height: 632px;
+  padding-bottom: 30px;
+  background-color: var(--primaryGreen);
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
 .O_ArticleIdeas {
   display: flex;
   width: 100%;
@@ -140,13 +157,13 @@ header.O_Header {
   background-repeat: no-repeat;
 
   .M_ArticleInfo {
-    width: 70%;
+    width: 37%;
   }
 }
 .rainingBg {
   background-image: url('images/Q_Raining.png');
   background-size: 103%;
-  background-position: bottom 15px right -5px;
+  background-position: bottom 15px right -27px;
 }
 // IdeaCardBig
 .O_IdeaBigCard {
@@ -219,7 +236,7 @@ header.O_Header {
   align-items: flex-end;
 
   .M_IconHeadingLeft {
-    width: 65%;
+    width: 72%;
   }
 }
 .O_ArticleAuthorDescription {
@@ -258,4 +275,7 @@ header.O_Header {
   flex-direction: column;
   justify-content: space-between;
   gap: 4rem;
+}
+.O_ErrorTextNumber {
+  margin: auto auto;
 }

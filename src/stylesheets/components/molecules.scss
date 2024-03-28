@@ -70,10 +70,6 @@ header.O_Header {
   border-radius: 12px;
   padding: 25px;
   text-decoration: none;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  &:hover {
-    transform: translateY(-10px);
-  }
   h2 {
     text-align: left;
   }
@@ -114,7 +110,12 @@ header.O_Header {
 }
 form.M_SubmitEmail {
   display: flex;
+  outline: none;
   gap: 1rem;
+  &:focus,
+  input:focus {
+    outline: none;
+  }
   button.A_ButtonPrimary {
     background-color: var(--primaryGreen);
     color: var(--darkGreen);

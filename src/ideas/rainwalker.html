@@ -229,31 +229,32 @@
             <em class="Accent">Это вам понравится!</em>
           </h1>
           <div class="C_ArticlesRow">
-            <a class="O_CardArticle" href="articles/ecoHobby.html">
+            <a
+              class="O_CardArticle"
+              data-tags="здоровье,участок"
+              href="../articles/nutriciolog.html"
+            >
               <div class="Q_Image">
-                <img src="../images/Q_ImageArticleTest.png" alt="" />
+                <img src="../images/Q_NutriciologArticle.png" alt="" />
               </div>
               <div class="M_ArticleInfo">
                 <div class="M_TagLine">
-                  <div class="A_Tag">впечатление</div>
-                  <div class="A_Tag">природа</div>
-                  <div class="A_Tag">кайфар</div>
+                  <div class="A_Tag">здоровье</div>
+                  <div class="A_Tag">участок</div>
                 </div>
                 <h2 class="A_SubCard">
-                  <em>Модно и полезно!</em> <br />Как современный мир сделал
-                  <br />садоводство своим хобби
+                  Все <em>о продуктах,</em> которые советуют нутрициологи для
+                  здоровья
                 </h2>
               </div>
             </a>
-            <a class="O_CardArticle" href="articles/ecoHobby.html">
+            <a class="O_CardArticle" href="../articles/cherryJam.html">
               <div class="Q_Image">
                 <img src="../images/Q_CherryJamArticle.png" alt="" />
               </div>
               <div class="M_ArticleInfo">
                 <div class="M_TagLine">
-                  <div class="A_Tag">впечатление</div>
-                  <div class="A_Tag">природа</div>
-                  <div class="A_Tag">кайфар</div>
+                  <div class="A_Tag">рецепты</div>
                 </div>
                 <h2 class="A_SubCard">
                   <em>Как в детстве!</em> Делимся <br />рецептом вкуснейшего
@@ -261,15 +262,14 @@
                 </h2>
               </div>
             </a>
-            <a class="O_CardArticle" href="">
+            <a class="O_CardArticle" href="../articles/flowersForYou.html">
               <div class="Q_Image">
                 <img src="../images/Q_FlowersForYou.png" alt="" />
               </div>
               <div class="M_ArticleInfo">
                 <div class="M_TagLine">
-                  <div class="A_Tag">впечатление</div>
-                  <div class="A_Tag">природа</div>
-                  <div class="A_Tag">кайфар</div>
+                  <div class="A_Tag">сезоны</div>
+                  <div class="A_Tag">участок</div>
                 </div>
                 <h2 class="A_SubCard">
                   Собрали для вас подборку
@@ -285,13 +285,12 @@
         <div class="W_FooterWithout">
           <div class="O_FooterCategoriesForm">
             <div class="W_FooterCategories">
-              <a href="../index.html" class="A_FooterCategoryList">Главная</a>
-              <a href="../index.html" class="A_FooterCategoryList">О медиа</a>
+              <a href="\" class="A_FooterCategoryList">Главная</a>
               <a href="../articles.html" class="A_FooterCategoryList">Статьи</a>
               <a href="../ideas.html" class="A_FooterCategoryList"
                 >Идеи для отдыха</a
               >
-              <a href="queAnswer.html" class="A_FooterCategoryList"
+              <a href="../queAnswer.html" class="A_FooterCategoryList"
                 >Вопрос-ответ</a
               >
             </div>
@@ -342,14 +341,54 @@
             <div class="M_FooterLogoSocial">
               <div class="A_NavigationLogo A_NavigationLogoCream"></div>
               <div class="C_Socials">
-                <a class="A_Telegram" href=""></a>
-                <a class="A_Vk" href=""></a>
-                <a class="A_YouTube" href=""></a>
+                <a class="A_Telegram" href="https://t.me/+KqICHv7p-fM1M2Ey"></a>
+                <a class="A_Vk" href="https://vk.com/public223193055"></a>
+                <a
+                  class="A_YouTube"
+                  href="https://www.youtube.com/@veranda2023"
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
+    <script>
+      var form = document.getElementById('my-form')
+
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'Thanks for your submission!'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML =
+                    'Oops! There was a problem submitting your form'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Oops! There was a problem submitting your form'
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
   </body>
 </html>
