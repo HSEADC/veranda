@@ -1,7 +1,8 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 function filterTag(tag) {
-  var cards = document.querySelectorAll('.O_QaCard, .O_CardArticle, .M_AdviceCard, .O_IdeaBigCard,.O_ArticleWide, .O_CardHigh, .O_CardArticleBig');
+  var cards = document.querySelectorAll('.O_QaCard, .O_CardArticle, .M_AdviceCard, .O_IdeaBigCard, .O_CardHigh, .O_CardArticleBig');
+  var block = document.querySelector('.C_AllIdeasArticles');
   console.log(cards);
   cards.forEach(function (card) {
     var tags = card.getAttribute('data-tags');
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         filterTags.forEach(function (tag) {
           return tag.classList.remove('active');
         });
-        var cards = document.querySelectorAll('.O_QaCard, .O_CardArticle, .M_AdviceCard,.O_ArticleWide, .O_IdeaBigCard, .O_CardHigh,  .O_CardArticleBig');
+        var cards = document.querySelectorAll('.O_QaCard, .O_CardArticle, .M_AdviceCard, .O_IdeaBigCard, .O_CardHigh,  .O_CardArticleBig');
         cards.forEach(function (card) {
           card.style.display = '';
         });
