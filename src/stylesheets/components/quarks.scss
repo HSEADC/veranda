@@ -7,6 +7,7 @@
 .Q_ArrowForward {
   height: 18px;
   width: 18px;
+  background-repeat: no-repeat;
   background-image: url('images/Q_ArrowForward.svg');
 }
 // Images
@@ -195,4 +196,69 @@
     font-family: Manrope;
     margin-top: 1rem;
   }
+}
+// ---------------Swiper-----------------
+:root {
+  --swiper-pagination-color: var(--bezh);
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-inactive-color: #f9ffea;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .O_ArticleSlider {
+    .M_ArticleInfo {
+      margin-bottom: 1rem;
+      color: var(--bezh);
+      width: 40%;
+      .M_TagLine {
+        .A_Tag {
+          color: var(--bezh);
+          border-color: var(--bezh);
+        }
+      }
+      .A_SubCard {
+        color: var(--bezh);
+
+        em {
+          color: var(--bezh);
+        }
+      }
+    }
+  }
+}
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+.culture_slider {
+  background-image: url('images/culter_cover.png');
+}
+.flowers_slider {
+  background-image: url('images/flowerDarker.jpg');
+}
+.picnic_slider {
+  background-image: url('images/jepega.jpg');
+}
+.remont_slider {
+  background-image: url('images/remont_slider.png');
 }

@@ -55,6 +55,7 @@
 // Footer---------------------------------------
 .W_FooterWithout {
   display: flex;
+  width: 1620px;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -82,8 +83,10 @@
 }
 // ---------------IdeasPage-----------------
 .W_ArticleSlider {
-  padding: 0px 7.813vw;
+  width: 1620px;
   margin-top: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 .W_TwoIdeasArticle {
   display: flex;
@@ -117,7 +120,7 @@
   flex-direction: column;
   width: 1620px;
   margin: 0 auto;
-  gap: 8rem;
+  gap: 4rem;
   margin-bottom: 8rem;
   .M_AdviceTextHeading {
     width: 60%;
@@ -136,7 +139,7 @@
   margin-bottom: 12rem;
   .W_MainTexts:nth-child(3) {
     width: 65%;
-    margin-right: 5rem;
+    margin-right: 4rem;
   }
   // .O_ArticleBlock:nth-child(1) {
   //   margin-bottom: 2rem;
@@ -172,7 +175,7 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  margin-top: 7rem;
+  margin-top: 4rem;
   margin-bottom: 8rem;
   padding-bottom: 5rem;
   border-bottom: 1px solid var(--darkGreen);
@@ -204,5 +207,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1 rem;
+  gap: 1rem;
+}
+.W_ErrorText {
+  width: 505px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

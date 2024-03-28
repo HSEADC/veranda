@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon.svg" />
-    <title>Q&A</title>
+    <title>Вопрос-ответ</title>
+    <analytics></analytics>
   </head>
   <body>
     <!------------------------- Header----------------------->
@@ -172,7 +173,7 @@
           <div class="M_TagLine">
             <div class="A_Tag">рецепты</div>
           </div>
-          <h2 class="A_SubCard">Лучший напиток <br />для лета</h2>
+          <h2 class="A_SubCard">Лучший напиток для лета</h2>
         </div>
         <div class="Q_QaIconArticle">
           <img src="images/A_QAIconGlass.png" alt="" />
@@ -185,7 +186,6 @@
         <div class="O_FooterCategoriesForm">
           <div class="W_FooterCategories">
             <a href="../index.html" class="A_FooterCategoryList">Главная</a>
-            <a href="../index.html" class="A_FooterCategoryList">О медиа</a>
             <a href="../articles.html" class="A_FooterCategoryList">Статьи</a>
             <a href="../ideas.html" class="A_FooterCategoryList"
               >Идеи для отдыха</a
@@ -241,13 +241,53 @@
           <div class="M_FooterLogoSocial">
             <div class="A_NavigationLogo A_NavigationLogoCream"></div>
             <div class="C_Socials">
-              <a class="A_Telegram" href=""></a>
-              <a class="A_Vk" href=""></a>
-              <a class="A_YouTube" href=""></a>
+              <a class="A_Telegram" href="https://t.me/+KqICHv7p-fM1M2Ey"></a>
+              <a class="A_Vk" href="https://vk.com/public223193055"></a>
+              <a
+                class="A_YouTube"
+                href="https://www.youtube.com/@veranda2023"
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <script>
+      var form = document.getElementById('my-form')
+
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'Thanks for your submission!'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML =
+                    'Oops! There was a problem submitting your form'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Oops! There was a problem submitting your form'
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
   </body>
 </html>
