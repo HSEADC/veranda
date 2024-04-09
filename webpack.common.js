@@ -10,7 +10,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     filterTag: './src/javascript/tagFilter.js',
-    addNone: './src/javascript/addNone.js'
+    addNone: './src/javascript/addNone.js',
+    search_vanila: './src/search-vanila.js'
   },
   output: {
     filename: '[name].js',
@@ -107,6 +108,11 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
       chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/search-vanila.html',
+      filename: './search-vanila.html',
+      chunks: ['search_vanila']
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
