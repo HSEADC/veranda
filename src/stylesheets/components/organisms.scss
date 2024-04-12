@@ -123,7 +123,7 @@ header.O_Header {
   background-position: bottom;
   background-repeat: no-repeat;
   .M_ArticleInfo {
-    width: 50%;
+    width: 45%;
   }
 }
 .O_ArticleSlider {
@@ -236,7 +236,13 @@ header.O_Header {
   align-items: flex-end;
 
   .M_IconHeadingLeft {
-    width: 73%;
+    width: 100%;
+  }
+  .M_TagLine {
+    width: 20%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 0.5rem;
   }
 }
 .O_ArticleAuthorDescription {

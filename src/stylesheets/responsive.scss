@@ -208,7 +208,7 @@
   .W_ArticleHead {
     .M_IconHeading,
     .A_AdviceDescriptionText {
-      width: 800px;
+      width: 80%;
     }
   }
   .W_Phreference {
@@ -770,6 +770,8 @@
       }
       .M_TagLine {
         order: 1;
+        width: 100%;
+        justify-content: left;
       }
     }
   }
