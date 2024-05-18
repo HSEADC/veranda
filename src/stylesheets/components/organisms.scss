@@ -2,9 +2,14 @@
 header.O_Header {
   display: flex;
   grid-row-gap: 0px;
-  width: 1620px;
-  padding-top: 3rem;
+  width: 100%;
+  padding: 3rem 5rem 0rem;
   margin: 0 auto;
+  transition: transform 0.4s ease-out;
+  position: sticky;
+  background-color: inherit;
+  top: 0;
+  z-index: 5;
 }
 // HomeScreen
 .O_WelcomeScreen {
@@ -166,9 +171,10 @@ header.O_Header {
   background-position: bottom 15px right -27px;
 }
 // IdeaCardBig
+
 .O_IdeaBigCard {
-  width: 803px;
-  height: 603px;
+  width: 802px;
+  height: 415px;
   background-color: var(--blue);
   border-radius: 1.5rem;
   display: flex;
@@ -179,8 +185,13 @@ header.O_Header {
   row-gap: 1rem;
   background-image: url('images/Q_BigArticleBicycle.png');
   background-repeat: no-repeat;
-  background-size: auto 75%;
-  background-position: bottom 0px right -110px;
+  background-size: auto 70%;
+  background-position: 128% 100%;
+}
+.ray_Bg {
+  background-image: url('images/Q_ArticleRyeArticle.png');
+  background-size: 65%;
+  background-position: 90% 100%;
 }
 // SliderArticles
 .O_Slider {
@@ -213,6 +224,23 @@ header.O_Header {
     background-size: 60%;
     background-repeat: no-repeat;
   }
+}
+.Q_DrinksIdeas {
+  background-image: url('images/Q_DrinksArticle.png');
+  background-repeat: no-repeat;
+  background-position: right 60px;
+}
+.Q_VegetablesIdeas {
+  background-image: url('images/Q_VegetablesArticle.png');
+  background-repeat: no-repeat;
+  background-size: 92%;
+  background-position: right 45px;
+}
+.Q_RaindropsIdeas {
+  background-image: url('images/Q_RaindropsArticle.png');
+  background-repeat: no-repeat;
+  background-size: 66%;
+  background-position: top 39px right -78px;
 }
 .W_TwoIdeasArticle {
   .O_ArticleCardLong {

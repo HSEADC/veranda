@@ -60,6 +60,12 @@
           <a href="ideas.html" class="A_HeaderCategory">Идеи для отдыха</a>
           <a href="queAnswer.html" class="A_HeaderCategory">Вопрос-ответ</a>
         </div>
+        <input
+          class="M_Searchbar"
+          type="search"
+          name="search"
+          placeholder="Найти"
+        />
       </div>
     </header>
     <!-- HomeScreen -->
@@ -373,6 +379,35 @@
       </div>
     </footer>
   </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('.O_Header')
+      const wHeader = document.querySelector('.W_Header')
+      let lastScrollY = window.scrollY
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+          // Скролл вниз
+          header.style.transform = 'translateY(-100%)'
+          wHeader.classList.remove('with-border')
+        } else {
+          // Скролл вверх
+          header.style.transform = 'translateY(0)'
+          if (window.scrollY === 0) {
+            wHeader.classList.add('with-border')
+          } else {
+            wHeader.classList.remove('with-border')
+          }
+        }
+        lastScrollY = window.scrollY
+      })
+
+      // Устанавливаем начальное состояние
+      if (window.scrollY === 0) {
+        wHeader.classList.add('with-border')
+      }
+    })
+  </script>
   <script>
     var form = document.getElementById('my-form')
 

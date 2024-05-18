@@ -3,8 +3,10 @@
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  border-bottom: 1px solid var(--darkGreen);
   padding-bottom: 20px;
+}
+.W_Header.with-border {
+  border-bottom: 1.5px solid var(--darkGreen);
 }
 .W_TitleLink {
   display: flex;

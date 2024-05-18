@@ -5,6 +5,32 @@ header.O_Header {
     column-gap: 40px;
   }
 }
+
+.M_Searchbar {
+  padding: 0.7rem 15px 0.7rem 20px;
+  font-size: 18px;
+  border-radius: 10rem;
+  border: 1.5px solid var(--darkGreen);
+  background-color: transparent;
+  color: var(--darkGreen);
+  background-image: url('images/Q_SearchIcon.svg');
+  background-repeat: no-repeat;
+  background-position: 95% 52%;
+  width: 20%;
+
+  &::placeholder {
+    color: rgba($color: #26734e, $alpha: 0.75);
+  }
+}
+input.M_Searchbar:focus {
+  outline: none;
+  border: 1.5px solid darken($color: #26734e, $amount: 10%);
+  background-image: none;
+
+  &::placeholder {
+    color: rgba($color: #26734e, $alpha: 1);
+  }
+}
 // IconHeading
 .M_IconHeading {
   display: flex;
@@ -74,8 +100,15 @@ header.O_Header {
     text-align: left;
   }
   &.wrapper {
-    width: 612px;
+    width: 66%;
     height: 170px;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+
+    .A_SubCard {
+      text-align: center;
+    }
   }
 }
 // Footer

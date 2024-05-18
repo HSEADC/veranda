@@ -4,7 +4,7 @@
     font-size: 14px;
   }
   header.O_Header {
-    width: 1260px;
+    // width: 1260px;
   }
   .W_ArticleSlider {
     width: 1260px;
@@ -70,7 +70,7 @@
   }
   .O_IdeaBigCard {
     width: 612px;
-    height: 490px;
+    height: 415px;
   }
   .O_ArticleIdeas {
     height: 480px;
@@ -261,7 +261,7 @@
 // Laptop
 @media only screen and (max-width: 1919px) and (min-width: 1721px) {
   header.O_Header {
-    width: 1440px;
+    // width: 1440px;
   }
   .S_ArticlePreview {
     width: 1440px;
@@ -963,10 +963,22 @@
     }
   }
 }
+// BreakPointHeader
+@media only screen and (max-width: 1150px) and (min-width: 428px) {
+  header.O_Header {
+    padding: 3vw 3vw 0vw;
+    .M_HeaderCategories {
+      column-gap: 2vw;
+    }
+    .A_HeaderCategory {
+      font-size: 1.958vw;
+    }
+  }
+}
 // Tablet
 @media only screen and (max-width: 1380px) and (min-width: 428px) {
   header.O_Header {
-    width: 88.477vw;
+    // width: 88.477vw;
     .A_HeaderCategory {
       font-size: 1.958vw;
     }
