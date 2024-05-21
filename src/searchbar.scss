@@ -1,0 +1,14 @@
+.S_MenuBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: inherit;
+  border-bottom: 1px solid black;
+
+  .C_MainMenu {
+    display: flex;
+    gap: 20px;
+  }
+}
