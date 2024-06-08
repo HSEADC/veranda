@@ -109,7 +109,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'searchBar', 'scrollNavbar']
+      chunks: ['index', 'searchBar']
     }),
     new HtmlWebpackPlugin({
       template: './src/search-vanila.html',

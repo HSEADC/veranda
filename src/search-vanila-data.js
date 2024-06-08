@@ -1,9 +1,9 @@
-import Airtable from 'airtable'
+// patwrAk6UV3MCu9k6.ffb941cbed52585800fc41fe696b973a2c292f368197eae119421cde989f97b7
+import Airtable, { Record } from 'airtable'
 
 const token =
-  'patQBveeQl0ifLo6i.b90574f7e9dbc913fb2df7c01be79b1be75b2e2af8fb484d3a5f773064caf851'
+  'patwrAk6UV3MCu9k6.ffb941cbed52585800fc41fe696b973a2c292f368197eae119421cde989f97b7'
 
-let Airtable = require('airtable')
 Airtable.configure({
   endpointUrl: 'https://api.airtable.com',
   apiKey: token
@@ -11,20 +11,26 @@ Airtable.configure({
 
 let base = Airtable.base('app6xXNrXQb1jG82N')
 
-base('Projects')
-  .select({ maxRecords: 100 })
-  .eachPage(
-    function page(records, fetchNextPage) {
-      records.forEach(function (record) {
-        console.log('Retrieved', record.get('Title'))
-      })
+function getPostTeasures() {
+  return new Promise((resolve, reject) => {
+    const content = []
 
-      fetchNextPage()
-    },
-    function done(err) {
-      if (err) {
-        console.error(err)
-        return
-      }
-    }
-  )
+    base('veranda-data')
+      .select({ maxRecords: 30 })
+      .firstPage()
+      .then((result) => {
+        result.forEach((record) => {
+          content.push({
+            id: record.id,
+            title: record.fields['Title'],
+            description: record.fields['description'],
+            tags: record.fields['Tags'],
+            url: record.fields['Url']
+          })
+        })
+        resolve(content)
+      })
+    console.log(content)
+  })
+}
+export { getPostTeasures }

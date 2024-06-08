@@ -1,0 +1,15 @@
+.A_Button {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 0.5rem;
+  user-select: none;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.4;
+  }
+}
