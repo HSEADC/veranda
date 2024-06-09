@@ -23,7 +23,7 @@ function getPostTeasures() {
           content.push({
             id: record.id,
             title: record.fields['Title'],
-            description: record.fields['description'],
+            description: record.fields['Description'],
             tags: record.fields['Tags'],
             url: record.fields['Url']
           })
