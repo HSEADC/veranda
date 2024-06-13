@@ -13,7 +13,7 @@ export default class M_SearchForm extends React.Component {
     const { handleSearchInput } = this.props
     return (
       <A_Button
-        text="X"
+        text="✕"
         type="resetField"
         disabled={false}
         handleClick={() => handleSearchInput('')}

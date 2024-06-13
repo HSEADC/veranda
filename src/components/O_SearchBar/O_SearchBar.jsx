@@ -47,7 +47,7 @@ export default class O_SearchBar extends React.Component {
       // const separator = '.adc.ac/'
       const url = window.location.href.split(separator)[0]
       window.location.href =
-        url + separator + 'search-vanilla.html?request=' + searchInputValue
+        url + separator + 'search-vanila.html?request=' + searchInputValue
     }
   }
 

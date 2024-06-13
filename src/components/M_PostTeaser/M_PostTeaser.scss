@@ -1,15 +1,19 @@
 .M_PostTeaser {
-  margin: 10px;
-  color: black;
+  margin: 1.25rem;
+  width: 320px;
   text-decoration: none;
-
+  display: flex;
+  flex-direction: column;
   .A_Text {
     &.h3 {
       font-weight: bold;
+      font-size: 1.15rem;
+      color: var(--darkGreen);
     }
 
     &.p {
       margin-top: 4px;
+      color: var(--darkGreen);
     }
   }
 }

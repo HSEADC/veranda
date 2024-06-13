@@ -12,4 +12,12 @@
   &.disabled {
     opacity: 0.4;
   }
+  &.resetField {
+    width: 24px;
+    height: 16px;
+    left: 120px;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+  }
 }
