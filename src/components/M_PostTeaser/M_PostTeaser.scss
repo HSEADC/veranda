@@ -4,16 +4,33 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  background-color: white;
   .A_Text {
     &.h3 {
       font-weight: bold;
       font-size: 1.15rem;
       color: var(--darkGreen);
     }
+    &.h3:first-letter {
+      text-transform: uppercase;
+    }
 
     &.p {
-      margin-top: 4px;
       color: var(--darkGreen);
+    }
+    &.tag {
+      background-color: red;
+      font-size: 12px;
+      line-height: 12px;
+      padding: 2px 5px;
+      border-radius: 1rem;
+    }
+
+    .C_PostTeaserTags {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      padding: 0 10px 10px;
     }
   }
 }

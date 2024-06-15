@@ -18,4 +18,4 @@ function getSearchRequest() {
 const root = ReactDOM.createRoot(
   document.querySelector('.W_ContentReactModule')
 )
-root.render(<S_SearchContent requestText={this.props.getSearchRequest()} />)
+root.render(<S_SearchContent searchInputValue={getSearchRequest()} />)

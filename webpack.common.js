@@ -110,18 +110,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'searchBar']
+      chunks: ['index', 'searchBar', 'search']
     }),
     new HtmlWebpackPlugin({
       template: './src/search-vanila.html',
       filename: './search-vanila.html',
       chunks: ['search_vanila']
     }),
-    // search
+    // searchPage
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['search,searchBar']
+      chunks: ['search', 'searchBar']
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
