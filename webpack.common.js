@@ -13,7 +13,8 @@ module.exports = {
     addNone: './src/javascript/addNone.js',
     search_vanila: './src/search-vanila.js',
     scrollNavbar: './src/javascript/scrollNavbar.js',
-    searchBar: './src/searchBar.jsx'
+    searchBar: './src/searchBar.jsx',
+    search: './src/search.jsx'
   },
   output: {
     filename: '[name].js',
@@ -115,6 +116,12 @@ module.exports = {
       template: './src/search-vanila.html',
       filename: './search-vanila.html',
       chunks: ['search_vanila']
+    }),
+    // search
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['search,searchBar']
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',

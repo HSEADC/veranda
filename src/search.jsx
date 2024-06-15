@@ -2,7 +2,7 @@ import './search.css'
 import React from 'react'
 import * as ReactDOM from 'react-dom/client'
 
-import S_SeachContent from './components/S_SeachContent/S_SeachContent.jsx'
+import S_SearchContent from './components/S_SearchContent/S_SearchContent.jsx'
 
 console.clear()
 
@@ -18,4 +18,4 @@ function getSearchRequest() {
 const root = ReactDOM.createRoot(
   document.querySelector('.W_ContentReactModule')
 )
-root.render(<S_SeachContent requestText={this.props.getSearchRequest()} />)
+root.render(<S_SearchContent requestText={this.props.getSearchRequest()} />)
