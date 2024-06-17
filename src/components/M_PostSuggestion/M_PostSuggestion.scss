@@ -1,19 +1,25 @@
 .M_PostSuggestion {
   margin: 1.25rem;
-  width: 320px;
+  // width: 320px;
+  width: 92%;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   .A_Text {
+    &::first-letter {
+      text-transform: uppercase;
+    }
     &.h3 {
       font-weight: bold;
-      font-size: 1.15rem;
+      font-size: 16px;
+
       color: var(--darkGreen);
     }
 
     &.p {
       margin-top: 4px;
       color: var(--darkGreen);
+      font-size: 14px;
     }
   }
 }

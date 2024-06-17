@@ -1,14 +1,18 @@
 .M_PostTeaser {
-  margin: 1.25rem;
-  width: 320px;
+  width: 50%;
   text-decoration: none;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
-  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--darkGreen);
   .A_Text {
     &.h3 {
       font-weight: bold;
-      font-size: 1.15rem;
+      width: 80%;
+      line-height: 120%;
+      font-size: 1.5rem;
       color: var(--darkGreen);
     }
     &.h3:first-letter {
@@ -19,18 +23,17 @@
       color: var(--darkGreen);
     }
     &.tag {
-      background-color: red;
-      font-size: 12px;
+      border-radius: 0.4rem;
+      padding: 8px 12px;
+      border: 1px solid var(--darkGreen);
+      color: var(--darkGreen);
+      font-size: 14px;
       line-height: 12px;
-      padding: 2px 5px;
-      border-radius: 1rem;
     }
-
-    .C_PostTeaserTags {
-      display: flex;
-      flex-direction: row;
-      gap: 0.5rem;
-      padding: 0 10px 10px;
-    }
+  }
+  .C_PostTeaserTags {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
   }
 }

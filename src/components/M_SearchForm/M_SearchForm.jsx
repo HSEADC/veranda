@@ -33,7 +33,7 @@ export default class M_SearchForm extends React.Component {
       <div className="M_SearchForm">
         <A_Input
           value={searchInputValue}
-          placeholder="Найти пост"
+          placeholder="Искать статьи"
           handleInput={handleSearchInput}
           handleSubmit={handleSearchSubmit}
         />

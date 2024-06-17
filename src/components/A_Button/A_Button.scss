@@ -1,9 +1,9 @@
 .A_Button {
-  width: 100px;
-  height: 40px;
+  display: flex;
   line-height: 40px;
   text-align: center;
-  background-color: cornflowerblue;
+  padding: 0.3rem 1.5rem;
+  background-color: var(--darkGreen);
   color: white;
   border-radius: 0.5rem;
   user-select: none;
@@ -15,7 +15,7 @@
   &.resetField {
     width: 24px;
     height: 16px;
-    left: 120px;
+    right: 105px;
     background-color: transparent;
     color: black;
     position: absolute;

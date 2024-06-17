@@ -63,7 +63,7 @@ export default class O_SearchBar extends React.Component {
 
     postTeasers.forEach((teaser) => {
       const nbspRegex = /[\u202F\u00A0]/gm
-      const punctuationRegex = /[.,\/#!$%\^&\*;:{}=\-_`~()]/gm
+      const punctuationRegex = /[.\/#$%\^\*{}=\_`~()]/gm
 
       const title = teaser.title
         .replaceAll(nbspRegex, ' ')

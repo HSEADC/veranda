@@ -51,24 +51,9 @@
     <title>verānda</title>
   </head>
   <body>
-    <searchbar></searchbar>
     <!------------------------- Header----------------------->
-    <header class="O_Header">
-      <!-- <div class="W_Header">
-        <a href="index.html" class="A_NavigationLogo"></a>
-        <div class="M_HeaderCategories">
-          <a href="articles.html" class="A_HeaderCategory">Статьи</a>
-          <a href="ideas.html" class="A_HeaderCategory">Идеи для отдыха</a>
-          <a href="queAnswer.html" class="A_HeaderCategory">Вопрос-ответ</a>
-        </div>
-        <input
-          class="M_Searchbar"
-          type="search"
-          name="search"
-          placeholder="Найти"
-        />
-      </div> -->
-    </header>
+    <div class="wrap"><searchbar class="S_Header"></searchbar></div>
+
     <!-- HomeScreen -->
     <section class="S_FirstScreen">
       <div class="O_WelcomeScreen">
@@ -380,7 +365,8 @@
       </div>
     </footer>
   </body>
-  <script>
+
+  <!-- <script>
     var form = document.getElementById('my-form')
 
     async function handleSubmit(event) {
@@ -416,6 +402,36 @@
         })
     }
     form.addEventListener('submit', handleSubmit)
+  </script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sHeader = document.querySelector('.wrap')
+
+      if (!sHeader) {
+        console.error('Element with class "wrap" not found.')
+        return
+      }
+
+      let lastScrollY = window.scrollY
+      let isScrollingDown = false
+      let delta = 5 // Минимальное расстояние для скролла, чтобы сработал эффект
+
+      window.addEventListener('scroll', () => {
+        let currentScrollY = window.scrollY
+
+        if (Math.abs(currentScrollY - lastScrollY) >= delta) {
+          isScrollingDown = currentScrollY > lastScrollY
+        }
+
+        if (isScrollingDown && currentScrollY > delta) {
+          sHeader.style.transform = 'translateY(-100%)'
+        } else {
+          sHeader.style.transform = 'translateY(0)'
+        }
+
+        lastScrollY = currentScrollY
+      })
+    })
   </script>
 </html>
 <!-- update -->
