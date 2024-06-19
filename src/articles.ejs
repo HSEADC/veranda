@@ -1,9 +1,11 @@
+<% const {menubar} = require ('./menubar.js') %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="<%=require('./images/favicon.svg')%>" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -15,22 +17,7 @@
   </head>
   <body>
     <!------------------------- Header----------------------->
-    <header class="O_Header">
-      <div class="W_Header">
-        <a href="index.html" class="A_NavigationLogo"></a>
-        <div class="M_HeaderCategories">
-          <a href="articles.html" class="A_HeaderCategory">Статьи</a
-          ><a href="ideas.html" class="A_HeaderCategory">Идеи для отдыха</a
-          ><a href="queAnswer.html" class="A_HeaderCategory">Вопрос-ответ</a>
-        </div>
-        <input
-          class="M_Searchbar"
-          type="search"
-          name="search"
-          placeholder="Найти"
-        />
-      </div>
-    </header>
+    <div class="S_MenuBar"><%= menubar %></div>
     <!-- -----------------Slider-------------------- -->
     <div class="W_ArticleSlider">
       <div class="swiper mySwiper">
@@ -126,7 +113,7 @@
         data-tags="эстетика,участок"
       >
         <div class="Q_Image">
-          <img src="images/comfot_zone_article.png" alt="" />
+          <img src="<%=require('./images/comfot_zone_article.png')%>" alt="" />
         </div>
         <div class="M_ArticleInfo">
           <div class="M_TagLine">
@@ -145,7 +132,7 @@
         data-tags="впечатление,релакс,сезоны"
       >
         <div class="Q_Image">
-          <img src="images/Q_EcoHobbyArticle.png" alt="" />
+          <img src="<%=require('./images/Q_EcoHobbyArticle.png')%>" alt="" />
         </div>
         <div class="M_ArticleInfo">
           <div class="M_TagLine">
@@ -165,7 +152,7 @@
         href="articles/nutriciolog.html"
       >
         <div class="Q_Image">
-          <img src="images/Q_NutriciologArticle.png" alt="" />
+          <img src="<%=require('./images/Q_NutriciologArticle.png')%>" alt="" />
         </div>
         <div class="M_ArticleInfo">
           <div class="M_TagLine">
@@ -195,7 +182,7 @@
         data-tags="рецепты"
       >
         <div class="Q_Image">
-          <img src="images/Q_CherryJamArticle.png" alt="" />
+          <img src="<%=require('./images/Q_CherryJamArticle.png')%>" alt="" />
         </div>
         <div class="M_ArticleInfo">
           <div class="M_TagLine">
@@ -213,7 +200,7 @@
         data-tags="сезоны"
       >
         <div class="Q_Image">
-          <img src="images/Q_FlowersForYou.png" alt="" />
+          <img src="<%=require('./images/Q_FlowersForYou.png')%>" alt="" />
         </div>
         <div class="M_ArticleInfo">
           <div class="M_TagLine">
@@ -236,7 +223,7 @@
         href="articles/decoration.html"
       >
         <div class="Q_Image">
-          <img src="images/remonting.png" alt="" />
+          <img src="<%=require('./images/remonting.png')%>" alt="" />
         </div>
         <div class="M_ArticleInfo">
           <div class="M_TagLine">
@@ -254,7 +241,7 @@
         href="articles/creativeCountryside.html"
       >
         <div class="Q_Image">
-          <img src="images/Q_CreativeArticle.png" alt="" />
+          <img src="<%=require('./images/Q_CreativeArticle.png')%>" alt="" />
         </div>
         <div class="M_ArticleInfo">
           <div class="M_TagLine">
@@ -272,7 +259,7 @@
         data-tags="время с любимыми,эстетика"
       >
         <div class="Q_Image">
-          <img src="images/picnic_article.png" alt="" />
+          <img src="<%=require('./images/picnic_article.png')%>" alt="" />
         </div>
         <div class="M_ArticleInfo">
           <div class="M_TagLine">

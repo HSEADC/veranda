@@ -3,8 +3,12 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const SitemapPlugin = require('sitemap-webpack-plugin').default
+
 const webpack = require('webpack')
 const path = require('path')
+
+const paths = ['/', '/articles.html', 'ideas.html', 'index.html']
 
 module.exports = {
   entry: {
@@ -13,7 +17,7 @@ module.exports = {
     addNone: './src/javascript/addNone.js',
     search_vanila: './src/search-vanila.js',
     scrollNavbar: './src/javascript/scrollNavbar.js',
-    searchBar: './src/searchBar.jsx',
+    menubar: './src/menubar.jsx',
     search: './src/search.jsx'
   },
   output: {
@@ -88,6 +92,8 @@ module.exports = {
     ]
   },
   plugins: [
+    new SitemapPlugin({ base: 'https://veranda-adc.ac', paths }),
+
     new CopyPlugin({
       patterns: [
         {
@@ -108,9 +114,9 @@ module.exports = {
 
     // Index
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.ejs',
       filename: './index.html',
-      chunks: ['index', 'searchBar']
+      chunks: ['index', 'menubar']
     }),
     new HtmlWebpackPlugin({
       template: './src/search-vanila.html',
@@ -121,7 +127,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['search', 'searchBar']
+      chunks: ['search', 'menubar']
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
@@ -129,14 +135,14 @@ module.exports = {
       chunks: ['index', 'filterTag']
     }),
     new HtmlWebpackPlugin({
-      template: './src/articles.html',
+      template: './src/articles.ejs',
       filename: './articles.html',
-      chunks: ['index', 'filterTag', 'addNone']
+      chunks: ['index', 'menubar', 'filterTag', 'addNone']
     }),
     new HtmlWebpackPlugin({
-      template: './src/queAnswer.html',
+      template: './src/queAnswer.ejs',
       filename: './queAnswer.html',
-      chunks: ['index', 'filterTag']
+      chunks: ['index', 'menubar', 'filterTag']
     }),
     new HtmlWebpackPlugin({
       template: './src/styleGuide.html',
@@ -144,9 +150,9 @@ module.exports = {
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
-      template: './src/ideas.html',
+      template: './src/ideas.ejs',
       filename: './ideas.html',
-      chunks: ['index', 'filterTag']
+      chunks: ['index', 'menubar', 'filterTag']
     }),
     new HtmlWebpackPlugin({
       template: './src/404.html',

@@ -1,30 +1,16 @@
+<% const {menubar} = require ('./menubar.js') %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon.svg" />
     <title>Вопрос-ответ</title>
     <analytic></analytic>
   </head>
   <body>
     <!------------------------- Header----------------------->
-    <header class="O_Header">
-      <div class="W_Header">
-        <a href="index.html" class="A_NavigationLogo"></a>
-        <div class="M_HeaderCategories">
-          <a href="articles.html" class="A_HeaderCategory">Статьи</a
-          ><a href="ideas.html" class="A_HeaderCategory">Идеи для отдыха</a
-          ><a href="queAnswer.html" class="A_HeaderCategory">Вопрос-ответ</a>
-        </div>
-        <input
-          class="M_Searchbar"
-          type="search"
-          name="search"
-          placeholder="Найти"
-        />
-      </div>
-    </header>
+    <div class="wrap"><searchbar></searchbar></div>
     <!------------------------- FilterTags----------------------->
     <div class="С_ArticleCategoryTags">
       <div class="A_FilterTag">здоровье</div>
@@ -45,7 +31,7 @@
           <h2 class="A_SubCard">Как не замерзнуть на даче в холода</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/Q_QAIconSnow.png" alt="" />
+          <img src="<%=require('./images/Q_QAIconSnow.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/queAns.html" class="O_QaCard" data-tags="эстетика">
@@ -83,7 +69,7 @@
           <h2 class="A_SubCard">Что лучше всего отпугивает комаров</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/Q_QAIconMosquito.png" alt="" />
+          <img src="<%=require('./images/Q_QAIconMosquito.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/watering.html" class="O_QaCard" data-tags="участок">
@@ -94,7 +80,7 @@
           <h2 class="A_SubCard">Как организовать полив огорода</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/A_QAIconDrops.png" alt="" />
+          <img src="<%=require('./images/A_QAIconDrops.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/carrot.html" class="O_QaCard" data-tags="сезоны">
@@ -105,7 +91,7 @@
           <h2 class="A_SubCard">Когда лучше сажать морковку</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/A_QAIconCarrot.png" alt="" />
+          <img src="<%=require('./images/A_QAIconCarrot.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/findDecor.html" class="O_QaCard" data-tags="эстетика">
@@ -116,7 +102,7 @@
           <h2 class="A_SubCard">Где найти красивый декор</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/A_QAIconCarpet.png" alt="" />
+          <img src="<%=require('./images/A_QAIconCarpet.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/mushrooms.html" class="O_QaCard" data-tags="здоровье">
@@ -127,7 +113,7 @@
           <h2 class="A_SubCard">Какие грибы можно собирать</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/A_QAIconMushrooms.png" alt="" />
+          <img src="<%=require('./images/A_QAIconMushrooms.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/taxes.html" class="O_QaCard">
@@ -138,7 +124,7 @@
           <h2 class="A_SubCard">Как оплачивать налог за дачу</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/Q_QAIconHome.png" alt="" />
+          <img src="<%=require('./images/Q_QAIconHome.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/whichFlowers.html" class="O_QaCard" data-tags="участок">
@@ -149,7 +135,7 @@
           <h2 class="A_SubCard">Какие цветы посадить</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/A_QAIconFlower.png" alt="" />
+          <img src="<%=require('./images/A_QAIconFlower.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/activeGames.html" class="O_QaCard" data-tags="активный отдых">
@@ -160,7 +146,7 @@
           <h2 class="A_SubCard">Лучшие активные игры на даче</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/A_QAIconPingPong.png" alt="" />
+          <img src="<%=require('./images/A_QAIconPingPong.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/fence.html" class="O_QaCard">
@@ -171,7 +157,7 @@
           <h2 class="A_SubCard">Какой забор лучше выбрать</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/A_QAIconFence.png" alt="" />
+          <img src="<%=require('./images/A_QAIconFence.png')%>" alt="" />
         </div>
       </a>
       <a href="QA/summerDrinks.html" class="O_QaCard" data-tags="рецепты">
@@ -182,7 +168,7 @@
           <h2 class="A_SubCard">Лучший напиток для лета</h2>
         </div>
         <div class="Q_QaIconArticle">
-          <img src="images/A_QAIconGlass.png" alt="" />
+          <img src="<%=require('./images/A_QAIconGlass.png')%>" alt="" />
         </div>
       </a>
     </div>

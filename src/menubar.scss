@@ -1,0 +1,127 @@
+.S_MenuBar {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1260px;
+  padding: 3rem 0rem 2rem;
+  align-items: center;
+  background-color: var(--bezh);
+  // border-bottom: 1px solid var(--darkGreen);
+  border-collapse: collapse;
+  .menubarLogo {
+    // display: block;
+    width: 168px;
+    height: 56px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('images/A_NavigationLogoGreen.svg');
+  }
+  .C_MainMenu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: var(--darkGreen);
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  .O_SearchBar {
+    .C_PostSuggestions {
+      position: absolute;
+      z-index: 10;
+      background-color: var(--bezh);
+      overflow-y: scroll;
+      overflow-x: hidden;
+      max-width: 340px;
+      margin-top: 8px;
+      height: 200px;
+      border-radius: 0.5rem;
+      border-collapse: collapse;
+      border: 1px solid var(--darkGreen);
+
+      .M_PostSuggestion {
+        &:hover {
+          opacity: 75%;
+        }
+
+        margin: 1.25rem;
+        // width: 320px;
+        width: 90%;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        .A_Text {
+          &::first-letter {
+            text-transform: uppercase;
+          }
+          &.h3 {
+            font-weight: bold;
+            font-size: 16px;
+            width: 75%;
+
+            color: var(--darkGreen);
+          }
+
+          &.p {
+            margin-top: 8px;
+            color: var(--darkGreen);
+            font-size: 14px;
+            line-height: 120%;
+          }
+        }
+      }
+    }
+    .M_SearchForm {
+      display: flex;
+      gap: 0.5rem;
+      position: relative;
+
+      .A_Input {
+        background-color: var(--bezh);
+        color: var(--darkGreen);
+        border: 1px solid var(--darkGreen);
+        border-radius: 0.5rem;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        width: 236px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      .A_Button {
+        display: flex;
+        line-height: 40px;
+        text-align: center;
+        padding: 0.3rem 1.5rem;
+        background-color: var(--darkGreen);
+        color: white;
+        border-radius: 0.5rem;
+        user-select: none;
+        cursor: pointer;
+
+        &.disabled {
+          opacity: 0.4;
+        }
+        &.resetField {
+          width: 24px;
+          height: 16px;
+          right: 105px;
+          background-color: transparent;
+          color: var(--darkGreen);
+          position: absolute;
+        }
+      }
+    }
+  }
+}

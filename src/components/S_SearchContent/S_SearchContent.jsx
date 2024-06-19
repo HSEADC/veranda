@@ -1,4 +1,4 @@
-import './S_SearchContent.scss'
+// import './S_SearchContent.scss'
 import React from 'react'
 import { getPostTeasures } from '../../search-vanila-data.js'
 import M_PostTeaser from '../M_PostTeaser/M_PostTeaser.jsx'

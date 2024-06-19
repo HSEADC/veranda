@@ -1,7 +1,8 @@
 @import 'stylesheets/reset.scss';
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/vars.scss';
-@import './searchbar.scss';
+@import './menubar.scss';
+@import 'stylesheets/search-page.scss';
 /* Components */
 @import 'stylesheets/components/quarks.scss';
 @import 'stylesheets/components/superOrganisms.scss';
