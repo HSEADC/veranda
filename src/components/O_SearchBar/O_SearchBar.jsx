@@ -9,9 +9,6 @@ export default class O_SearchBar extends React.Component {
     const { postTeasers } = this.props
     let posts = []
     const searchInputValue = this.props.searchInputValue.toLowerCase()
-    // postTeasers.forEach((teaser) => {
-    //   posts.push(teaser.title)
-    // })
 
     postTeasers.forEach((teaser) => {
       const nbspRegex = /[\u202F\u00A0]/gm
@@ -41,8 +38,16 @@ export default class O_SearchBar extends React.Component {
         )
       }
     })
-    // Через classnames сделать проверку на len posts == 0
-    return <div className="C_PostSuggestions">{posts}</div>
+
+    const postSuggestionsStyle = {
+      display: posts.length === 0 ? 'none' : 'block'
+    }
+
+    return (
+      <div className="C_PostSuggestions" style={postSuggestionsStyle}>
+        {posts}
+      </div>
+    )
   }
 
   render() {
