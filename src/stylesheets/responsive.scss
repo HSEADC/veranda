@@ -994,11 +994,16 @@
   }
   //  Typography
   .A_FooterCategoryList {
-    font-size: 1.953vw;
+    font-size: 1.453vw;
   }
   .AuthorName {
-    font-size: 2.188vw;
+    font-size: 1.288vw;
+
+    &:first-child {
+      font-size: 1.6vw;
+    }
   }
+
   h1.A_TitleManrope {
     font-size: 4.195vw;
 
@@ -1029,8 +1034,8 @@
     gap: 1.465vw;
   }
   .A_NavigationLogo {
-    width: 17.406vw;
-    height: 4.492vw;
+    width: 14.406vw;
+    height: 3.792vw;
   }
   .O_CardArticle {
     width: 30.4vw;
@@ -1114,7 +1119,7 @@
   .M_AdviceCard {
     width: 28.516vw;
     height: auto;
-    padding: 1rem;
+    padding: 1.25rem 1.25rem 1.5rem;
   }
   .O_ArticleWide {
     height: 37.156vw;
@@ -1128,8 +1133,8 @@
   footer.S_Footer {
     padding: 4.688vw 0 2.344vw;
     .W_FooterWithout {
-      justify-content: flex-start;
-      padding: 3vw;
+      justify-content: space-between;
+      padding: 3vw 5.5vw;
       width: 100%;
     }
     .W_Authors {
@@ -1140,24 +1145,29 @@
         display: none;
       }
     }
-    .O_FooterCategoriesForm {
-      width: 58%;
+    .M_FooterLogoSocial {
+      gap: 1.8vw;
     }
+    // .O_FooterCategoriesForm {
+    //   width: 58%;
+    // }
     .W_FooterNamesSocialLogo {
       gap: 1vw;
     }
   }
   .A_FormInput {
-    width: 38.086vw;
+    width: 22.086vw;
+    padding: 1.5vw;
+    font-size: 1.4vw;
   }
   .W_FooterCategories {
-    gap: 3vw;
+    gap: 2vw;
   }
   .C_Socials {
-    gap: 1.5vw;
+    gap: 1vw;
     a {
-      width: 4.395vw;
-      height: 4.395vw;
+      width: 3.395vw;
+      height: 3.395vw;
     }
   }
   // TabletArticles----------------------
@@ -1167,6 +1177,7 @@
       height: 40.527vw;
     }
   }
+
   .C_AllArticles {
     width: 93.477vw;
     gap: 1.1vw;
@@ -1326,17 +1337,20 @@
         width: 100%;
       }
       .A_AdviceDescriptionText {
-        font-size: 2.539vw;
+        font-size: 2.339vw;
         width: 100%;
         margin-bottom: 3rem;
       }
     }
     .O_AdviceContnetBlock {
+      .M_AdviceTextHeading {
+        gap: 1.5vw;
+      }
       .A_AdviceHeading {
         font-size: 3.206vw;
         width: 103%;
         em {
-          font-size: 3.9vw;
+          font-size: 3.6vw;
         }
       }
     }
@@ -1359,6 +1373,7 @@
     height: 31.738vw;
   }
   .A_ButtonPrimary {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
+    width: 10vw;
   }
 }
