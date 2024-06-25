@@ -13,29 +13,43 @@
   margin-bottom: 10rem;
 
   .M_PostTeaser {
-    width: 50%;
+    width: 700px;
     text-decoration: none;
     display: flex;
-    gap: 1rem;
+    // gap: 1rem;
     flex-direction: column;
     padding: 1.5rem 2rem;
     border-radius: 1rem;
     border: 1px solid var(--darkGreen);
+
+    &:hover {
+      opacity: 80%;
+    }
+
     .A_Text {
+      // Загололвок
       &.h3 {
         font-weight: bold;
-        width: 80%;
+        width: 85%;
         line-height: 120%;
         font-size: 1.5rem;
         color: var(--darkGreen);
+        margin-bottom: 0.5rem;
       }
       &.h3:first-letter {
         text-transform: uppercase;
       }
-
+      // Текст
       &.p {
         color: var(--darkGreen);
+        line-height: 125%;
+        margin-bottom: 1.3rem;
+        width: 70%;
       }
+      &.p::first-letter {
+        text-transform: uppercase;
+      }
+      // Теги
       &.tag {
         border-radius: 0.4rem;
         padding: 8px 12px;

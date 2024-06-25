@@ -45,7 +45,7 @@ export default class O_SearchBar extends React.Component {
 
     return (
       <div className="C_PostSuggestions" style={postSuggestionsStyle}>
-        {posts}
+        <div className="A_ScrollSearch">{posts}</div>
       </div>
     )
   }

@@ -3,13 +3,11 @@
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  // max-width: 1260px;
+  max-width: 1620px;
   padding: 3rem 0rem 2rem;
   align-items: center;
-  background-color: cornflowerblue;
 
   .menubarLogo {
-    // display: block;
     width: 168px;
     height: 56px;
     background-size: contain;
@@ -39,43 +37,56 @@
       position: absolute;
       z-index: 10;
       background-color: var(--bezh);
-      overflow-y: scroll;
+      overflow-y: hidden;
       overflow-x: hidden;
-      max-width: 340px;
+      width: 340px;
       margin-top: 8px;
       height: 200px;
       border-radius: 0.5rem;
       border-collapse: collapse;
       border: 1px solid var(--darkGreen);
 
-      .M_PostSuggestion {
-        &:hover {
-          opacity: 75%;
-        }
+      // Добавить ширину скролла 30px
+      .A_ScrollSearch {
+        display: block;
+        overflow-x: hidden;
+        padding-right: 30px;
+        position: absolute;
+        height: 200px;
+        width: 370px;
+        left: 0;
+        top: 0;
+        overflow-y: scroll;
 
-        margin: 1.25rem;
-        // width: 320px;
-        width: 90%;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        .A_Text {
-          &::first-letter {
-            text-transform: uppercase;
-          }
-          &.h3 {
-            font-weight: bold;
-            font-size: 16px;
-            width: 75%;
-
-            color: var(--darkGreen);
+        .M_PostSuggestion {
+          &:hover {
+            opacity: 75%;
           }
 
-          &.p {
-            margin-top: 8px;
-            color: var(--darkGreen);
-            font-size: 14px;
-            line-height: 120%;
+          margin: 1.25rem;
+          // width: 320px;
+          width: 90%;
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          .A_Text {
+            &::first-letter {
+              text-transform: uppercase;
+            }
+            &.h3 {
+              font-weight: bold;
+              font-size: 16px;
+              width: 75%;
+
+              color: var(--darkGreen);
+            }
+
+            &.p {
+              margin-top: 8px;
+              color: var(--darkGreen);
+              font-size: 14px;
+              line-height: 120%;
+            }
           }
         }
       }
@@ -119,6 +130,46 @@
           background-color: transparent;
           color: var(--darkGreen);
           position: absolute;
+        }
+      }
+    }
+  }
+}
+// resposive header
+
+@media only screen and (max-width: 1720px) and (min-width: 1300px) {
+  .S_MenuBar {
+    max-width: 1260px;
+  }
+}
+@media only screen and (max-width: 1380px) and (min-width: 428px) {
+  .S_MenuBar {
+    padding-bottom: 0;
+    width: 88.477vw;
+    .menubarLogo {
+      width: 100px;
+      height: 36px;
+    }
+
+    .C_MainMenu {
+      width: 100%;
+      column-gap: 1.5rem;
+      a {
+        font-size: 1.567vw;
+      }
+    }
+    .O_SearchBar {
+      .M_SearchForm {
+        .A_Input {
+          height: 2.5rem;
+          width: 16vw;
+          font-size: 14px;
+        }
+        .A_Button {
+          display: flex;
+          height: 2.5rem;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
