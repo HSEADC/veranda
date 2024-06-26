@@ -205,7 +205,7 @@
 
     .C_MainMenu {
       width: 100%;
-      column-gap: 1.087vw;
+      column-gap: 2.087vw;
 
       a {
         font-size: 1.448vw;
@@ -242,6 +242,7 @@
       }
 
       .M_SearchForm {
+        border-radius: 4px;
         .A_Input {
           height: 2.899vw; // 40px to vw
           width: 17.391vw; // 240px to vw

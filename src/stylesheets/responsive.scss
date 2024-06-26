@@ -965,10 +965,11 @@
   // Background images
   .rainingBg {
     background-size: 108%;
+    background-position: bottom;
   }
   .Q_IconMedium {
-    width: 6.348vw;
-    height: 5.859vw;
+    width: 5.348vw;
+    height: 4.859vw;
   }
 
   a.A_LinkCategory {
@@ -981,6 +982,7 @@
       height: 42.969vw;
       .M_IconHeading {
         width: 75%;
+        gap: 1vw;
       }
     }
   }
@@ -1052,6 +1054,7 @@
   }
   section.S_ArticlesHeading {
     padding: 5vw 0vw 7vw;
+    margin-top: 4vw;
     .W_HeadingArticles {
       width: 88.477vw;
       .W_TitleLink {
@@ -1132,6 +1135,8 @@
 
   footer.S_Footer {
     padding: 4.688vw 0 2.344vw;
+    height: 22.5vw;
+    border-radius: 1rem 1rem 0 0;
     .W_FooterWithout {
       justify-content: space-between;
       padding: 3vw 5.5vw;
