@@ -3,8 +3,10 @@
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  border-bottom: 1px solid var(--darkGreen);
   padding-bottom: 20px;
+}
+.W_Header.with-border {
+  border-bottom: 1.5px solid var(--darkGreen);
 }
 .W_TitleLink {
   display: flex;
@@ -19,7 +21,7 @@
   flex-direction: column;
   align-items: flex-end;
   .W_TitleLink {
-    width: 65.5%;
+    width: 69%;
   }
 }
 
@@ -137,6 +139,7 @@
   margin: 0 auto;
   align-items: flex-end;
   margin-bottom: 12rem;
+  margin-top: 4vw;
   .W_MainTexts:nth-child(3) {
     width: 65%;
     margin-right: 4rem;

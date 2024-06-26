@@ -1,0 +1,46 @@
+// .M_PostTeaser {
+//   width: 650px;
+//   text-decoration: none;
+//   display: flex;
+//   gap: 1rem;
+//   flex-direction: column;
+//   padding: 1.5rem 2rem;
+//   border-radius: 1rem;
+//   border: 1px solid var(--darkGreen);
+//   .A_Text {
+//     // Заголовки
+//     &.h3 {
+//       font-weight: bold;
+//       width: 80%;
+//       line-height: 120%;
+//       font-size: 1.5rem;
+//       color: var(--darkGreen);
+//     }
+//     &.h3:first-letter {
+//       text-transform: uppercase;
+//     }
+//     // Текст
+//     &.p {
+//       color: var(--darkGreen);
+//       line-height: 120%;
+//       width: 80%;
+//     }
+//     &.p:first-letter {
+//       text-transform: uppercase;
+//     }
+// // Теги
+//     &.tag {
+//       border-radius: 0.4rem;
+//       padding: 8px 12px;
+//       border: 1px solid var(--darkGreen);
+//       color: var(--darkGreen);
+//       font-size: 14px;
+//       line-height: 12px;
+//     }
+//   }
+//   .C_PostTeaserTags {
+//     display: flex;
+//     flex-direction: row;
+//     gap: 0.5rem;
+//   }
+// }

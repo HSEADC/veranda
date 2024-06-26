@@ -9,6 +9,7 @@
   width: 18px;
   background-repeat: no-repeat;
   background-image: url('images/Q_ArrowForward.svg');
+  background-size: cover;
 }
 // Images
 .Q_Image {
@@ -191,6 +192,7 @@
   figcaption.A_PhotoDescprition {
     font-size: 1.25rem;
     width: 85%;
+    padding-left: 2rem;
     line-height: 140%;
     color: var(--darkGreen);
     font-family: Manrope;
@@ -251,14 +253,14 @@
 //   object-fit: cover;
 // }
 .culture_slider {
-  background-image: url('images/culter_cover.png');
-}
-.flowers_slider {
-  background-image: url('images/flowerDarker.jpg');
+  background-image: url('images/culter_cover.webp');
 }
 .picnic_slider {
-  background-image: url('images/jepega.jpg');
+  background-image: url('images/picnic_darken.webp');
+}
+.flowers_slider {
+  background-image: url('images/flowers_darken.webp');
 }
 .remont_slider {
-  background-image: url('images/remont_slider.png');
+  background-image: url('images/remont_slider.webp');
 }

@@ -1,0 +1,12 @@
+.A_Input {
+  background-color: var(--bezh);
+  color: var(--darkGreen);
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  width: 236px;
+
+  &:focus {
+    outline: none;
+  }
+}

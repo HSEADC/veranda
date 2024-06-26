@@ -1,10 +1,12 @@
 // Desktop
 @media only screen and (max-width: 1720px) and (min-width: 1300px) {
+  // Header
+  .S_MenuBar {
+    max-width: 1260px;
+  }
+
   .A_Tag {
     font-size: 14px;
-  }
-  header.O_Header {
-    width: 1260px;
   }
   .W_ArticleSlider {
     width: 1260px;
@@ -21,7 +23,7 @@
   .A_SubCard {
     font-size: 1.5rem;
     line-height: 120%;
-    width: 100%;
+    width: 94%;
     em {
       font-size: 26px;
     }
@@ -70,7 +72,22 @@
   }
   .O_IdeaBigCard {
     width: 612px;
-    height: 490px;
+    height: 415px;
+    background-size: 85%;
+    background-position: 120% 100%;
+  }
+  .ray_Bg {
+    background-size: 65%;
+    background-position: 90% 100%;
+  }
+  .Q_DrinksIdeas {
+    background-size: 52%;
+  }
+  .Q_VegetablesIdeas {
+    background-size: 80%;
+  }
+  .Q_RaindropsIdeas {
+    background-size: 60%;
   }
   .O_ArticleIdeas {
     height: 480px;
@@ -167,7 +184,7 @@
 
   .O_CardArticle {
     width: 403px;
-    height: 460px;
+    // height: 460px;
   }
   .S_ArticlesHeading {
     padding: 3.125rem 0px;
@@ -260,9 +277,6 @@
 }
 // Laptop
 @media only screen and (max-width: 1919px) and (min-width: 1721px) {
-  header.O_Header {
-    width: 1440px;
-  }
   .S_ArticlePreview {
     width: 1440px;
   }
@@ -271,7 +285,7 @@
   }
 }
 // Mobile
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 490px) {
   //  Typography
   h1.A_TitleManrope {
     font-size: 6.542vw;
@@ -310,29 +324,6 @@
   .Q_IconMedium {
     width: 8.889vw;
     height: 8.889vw;
-  }
-  // Header
-  .A_NavigationLogo {
-    width: 147px;
-    height: 38px;
-  }
-  header.O_Header {
-    width: 100%;
-    padding: 3rem 0.45rem 0rem;
-    border: 0;
-
-    .W_Header {
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-      border-bottom: 0px;
-      .M_HeaderCategories {
-        justify-content: space-between;
-      }
-      .A_HeaderCategory {
-        font-size: 3.738vw;
-      }
-    }
   }
   section.S_FirstScreen {
     width: 94%;
@@ -963,20 +954,28 @@
     }
   }
 }
-// Tablet
-@media only screen and (max-width: 1380px) and (min-width: 428px) {
+// --------------------------------------Tablet--------------------------------------------------------
+@media only screen and (max-width: 1380px) and (min-width: 490px) {
   header.O_Header {
-    width: 88.477vw;
+    // width: 88.477vw;
     .A_HeaderCategory {
       font-size: 1.958vw;
     }
+  }
+  // Background images
+  .rainingBg {
+    background-size: 108%;
   }
   .Q_IconMedium {
     width: 6.348vw;
     height: 5.859vw;
   }
+
+  a.A_LinkCategory {
+    font-size: 1.4vw;
+  }
   section.S_FirstScreen {
-    width: 88.477vw;
+    width: 93.477vw;
 
     .O_WelcomeScreen {
       height: 42.969vw;
@@ -987,11 +986,16 @@
   }
   //  Typography
   .A_FooterCategoryList {
-    font-size: 1.953vw;
+    font-size: 1.453vw;
   }
   .AuthorName {
-    font-size: 2.188vw;
+    font-size: 1.288vw;
+
+    &:first-child {
+      font-size: 1.6vw;
+    }
   }
+
   h1.A_TitleManrope {
     font-size: 4.195vw;
 
@@ -1007,11 +1011,11 @@
     gap: 1vw;
   }
   .A_SubCard {
-    font-size: 1.753vw;
+    font-size: 1.553vw;
     width: 90%;
 
     em {
-      font-size: 2vw;
+      font-size: 1.9vw;
     }
   }
   .A_Tag {
@@ -1022,12 +1026,21 @@
     gap: 1.465vw;
   }
   .A_NavigationLogo {
-    width: 17.406vw;
-    height: 4.492vw;
+    width: 14.406vw;
+    height: 3.792vw;
   }
   .O_CardArticle {
-    width: 29.686vw;
+    width: 30.4vw;
+    row-gap: 1.5vw;
     min-width: 1px;
+    padding-bottom: 1.5rem;
+    padding: 1vw 1vw 2vw 1vw;
+
+    .Q_Image {
+      img {
+        height: 20vw;
+      }
+    }
 
     img {
       height: 23vw;
@@ -1037,7 +1050,8 @@
       gap: 1.563vw;
     }
   }
-  .S_ArticlesHeading {
+  section.S_ArticlesHeading {
+    padding: 5vw 0vw 7vw;
     .W_HeadingArticles {
       width: 88.477vw;
       .W_TitleLink {
@@ -1050,6 +1064,7 @@
     width: 88.477vw;
     justify-content: space-between;
     margin: 12.5vw auto 12.5vw;
+    gap: 2vw;
 
     .O_NewArticle {
       gap: 4vw;
@@ -1066,7 +1081,7 @@
       width: 55%;
     }
     .A_TextMain {
-      font-size: 1.753vw;
+      font-size: 1.5vw;
       width: 100%;
     }
   }
@@ -1076,11 +1091,12 @@
     //   display: none;
     // }
     .Q_ArrowForward {
-      width: 2.344vw;
-      height: 2.344vw;
+      width: 1.344vw;
+      height: 1.344vw;
     }
   }
   .S_AdvicesArticles {
+    padding: 5vw 0vw 7vw;
     .W_AdvicesArticles {
       width: 88.477vw;
     }
@@ -1090,26 +1106,35 @@
       width: 88.477vw;
     }
   }
+  .M_TagLine {
+    column-gap: 8px;
+  }
   .A_Tag {
+    font-size: 1.2vw;
     border: 1px solid;
+    padding: 0.6vw 0.7vw;
+    border-radius: 0.5vw;
   }
   .M_AdviceCard {
-    width: 28.516vw;
-    height: 14.531vw;
-    padding: 1rem;
+    width: 30.486vw;
+    height: auto;
+    padding: 1.25rem 1.25rem 1.5rem;
+    max-height: 14vw;
   }
   .O_ArticleWide {
-    height: 35.156vw;
+    height: 37.156vw;
   }
   .O_QaCard {
     width: 21.477vw;
+    gap: 1vw;
+    padding: 2vw 1.5vw;
   }
 
   footer.S_Footer {
     padding: 4.688vw 0 2.344vw;
     .W_FooterWithout {
-      justify-content: flex-start;
-      padding: 3vw;
+      justify-content: space-between;
+      padding: 3vw 5.5vw;
       width: 100%;
     }
     .W_Authors {
@@ -1120,85 +1145,97 @@
         display: none;
       }
     }
-    .O_FooterCategoriesForm {
-      width: 58%;
+    .M_FooterLogoSocial {
+      gap: 1.8vw;
     }
+    // .O_FooterCategoriesForm {
+    //   width: 58%;
+    // }
     .W_FooterNamesSocialLogo {
       gap: 1vw;
     }
   }
   .A_FormInput {
-    width: 38.086vw;
+    width: 22.086vw;
+    padding: 1.5vw;
+    font-size: 1.4vw;
   }
   .W_FooterCategories {
-    gap: 3vw;
+    gap: 2vw;
   }
   .C_Socials {
-    gap: 1.5vw;
+    gap: 1vw;
     a {
-      width: 4.395vw;
-      height: 4.395vw;
+      width: 3.395vw;
+      height: 3.395vw;
     }
   }
   // TabletArticles----------------------
   .W_ArticleSlider {
-    width: 88.477vw;
+    width: 93.447vw;
     .O_ArticleSlider {
       height: 40.527vw;
     }
   }
+
   .C_AllArticles {
     width: 93.477vw;
+    gap: 1.1vw;
+    row-gap: 2vw;
   }
   .O_CardArticleBig {
-    width: 46vw;
-    width: 45.5vw;
+    width: 46.1vw;
+    height: auto;
   }
   .С_ArticleCategoryTags {
     width: 80%;
+    margin: 4vw auto;
   }
   // IdeasTablet
   .O_ArticleIdeas {
     height: 40.527vw;
   }
   .C_AllIdeasArticles {
-    width: 89.477vw;
+    width: 93.477vw;
     row-gap: 1.5vw;
-    .O_CardHigh:nth-child(6) {
-      background-size: 57%;
-      background-position: right 44px;
+    column-gap: 1vw;
+    .Q_DrinksIdeas {
+      background-position: 98% 67%;
+      background-size: 48%;
     }
-    .O_CardHigh:nth-child(7) {
-      background-size: 89%;
-      background-position: right 44px;
+    .Q_VegetablesIdeas {
+      background-position: 108% 47%;
+      background-size: 77%;
     }
     .O_CardHigh {
-      width: 28.7vw;
-      height: 25.195vw;
+      width: 30.4vw;
+      height: 24vw;
+    }
+    .Q_RaindropsIdeas {
+      background-size: 57%;
+      background-position: 137%;
     }
   }
   .O_IdeaBigCard {
-    width: 44.168vw;
-    height: 37.109vw;
-  }
-  .W_TwoIdeasArticle {
-    width: 43.168vw;
-    .M_AdviceCard {
-      width: 100%;
-      height: 14.531vw;
-    }
-    .O_CardHigh {
-      width: 43.168vw;
-      height: 20.996vw;
+    width: 46.168vw;
+    height: 28.109vw;
+    background-size: 72%;
+    background-position: 107% 100%;
+    padding: 2.5vw 3vw;
 
-      .M_LongArticleHeading {
-        width: 100%;
-      }
+    .M_LongArticleHeading {
+      gap: 1vw;
     }
   }
+  .ray_Bg {
+    background-size: 60%;
+    background-position: 88% 100%;
+  }
+
   .C_AllQaCards {
     width: 91.477vw;
     gap: 1vw;
+    row-gap: 2vw;
   }
 
   // ArticleHtmlTablet
@@ -1216,6 +1253,7 @@
       }
       .M_TagLine {
         order: 1;
+        justify-content: flex-start;
       }
     }
   }
@@ -1243,11 +1281,28 @@
       }
     }
   }
+  // TextArticle
   .A_MainTextArticle {
     font-size: 1.66vw;
   }
+  // HeadingArticle
+  .A_SubHeadArticle {
+    font-size: 2.5vw;
+
+    em {
+      font-size: 3vw;
+    }
+  }
+  .O_ArticleBlock {
+    gap: 3vw;
+
+    .Q_ArticlePicture {
+      height: 30vw;
+    }
+  }
   .W_WholeArticle {
     width: 91.477vw;
+    gap: 5vw;
 
     .W_MainTexts:nth-child(3) {
       margin-right: 2rem;
@@ -1255,6 +1310,7 @@
 
     figcaption.A_PhotoDescprition {
       font-size: 1.367vw;
+      padding-left: 2vw;
     }
     .O_BreakerOpinion {
       .A_BreakerText {
@@ -1263,7 +1319,10 @@
     }
     .O_SocialMediaBreaker {
       .A_BreakerLineText {
-        font-size: 20px;
+        font-size: 1.953vw;
+      }
+      a.A_ActionArticle {
+        font-size: 1.66vw;
       }
     }
   }
@@ -1302,40 +1361,82 @@
         width: 100%;
       }
       .A_AdviceDescriptionText {
-        font-size: 2.539vw;
+        font-size: 2.339vw;
         width: 100%;
         margin-bottom: 3rem;
       }
     }
     .O_AdviceContnetBlock {
+      // IdeasIconPictures
+      .A_AdviceIllustration {
+        width: 23vw;
+        height: 16vw;
+      }
+      .M_AdvideArticleBlock {
+        gap: 6vw;
+      }
+      .M_AdviceTextHeading {
+        gap: 1.5vw;
+      }
       .A_AdviceHeading {
         font-size: 3.206vw;
-        width: 103%;
+        width: 90%;
         em {
-          font-size: 3.9vw;
+          font-size: 3.6vw;
         }
       }
     }
     .A_AdviceImage {
-      width: 51%;
+      width: 68%;
       height: 31.738vw;
     }
   }
   .M_AdviceBreaker {
+    gap: 1vw;
     .A_DividerAdviceHeading {
       width: 80%;
-      font-size: 2.734vw;
+      font-size: 2.434vw;
+      line-height: 120%;
     }
     .A_BreakerText {
       width: 80%;
-      font-size: 22px;
+      font-size: 1.86vw;
     }
   }
   .A_AdviceImageSquare {
     height: 31.738vw;
+    width: 50%;
   }
   .A_ButtonPrimary {
-    width: 21vw;
-    font-size: 2vw;
+    font-size: 1.4vw;
+    width: 14vw;
+    height: 4vw;
+  }
+}
+// ExtraForFont
+@media only screen and (max-width: 821px) and (min-width: 490px) {
+  .A_SubCard {
+    font-size: 1.4vw;
+
+    em {
+      font-size: 1.6vw;
+    }
+  }
+  .O_CardArticle {
+    max-height: 265px;
+    row-gap: 0.5vw;
+  }
+
+  .M_TagLine {
+    gap: 4px;
+
+    .A_Tag {
+      font-size: 0.9vw;
+    }
+  }
+
+  .M_AdviceCard {
+    padding: 1.5vw 1.5vw;
+    gap: 1.5vw;
   }
 }

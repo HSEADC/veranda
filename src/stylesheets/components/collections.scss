@@ -71,6 +71,8 @@
   row-gap: 2rem;
   width: 1620px;
   margin: 0 auto 10rem;
+  align-items: center;
+  justify-content: center;
 }
 // IdeasCards
 // .C_AllIdeasArticles > * {
@@ -89,22 +91,5 @@
 
   .M_AdviceCard {
     background-color: var(--darkerBezh);
-  }
-  .O_CardHigh:nth-child(6) {
-    background-image: url('images/Q_DrinksArticle.png');
-    background-repeat: no-repeat;
-    background-position: right 60px;
-  }
-  .O_CardHigh:nth-child(7) {
-    background-image: url('images/Q_VegetablesArticle.png');
-    background-repeat: no-repeat;
-    background-size: 95%;
-    background-position: right 45px;
-  }
-  .O_CardHigh:nth-child(8) {
-    background-image: url('images/Q_RaindropsArticle.png');
-    background-repeat: no-repeat;
-    background-size: 66%;
-    background-position: top 39px right -78px;
   }
 }

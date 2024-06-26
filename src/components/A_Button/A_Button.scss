@@ -1,0 +1,23 @@
+.A_Button {
+  display: flex;
+  line-height: 40px;
+  text-align: center;
+  padding: 0.3rem 1.5rem;
+  background-color: var(--darkGreen);
+  color: white;
+  border-radius: 0.5rem;
+  user-select: none;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.4;
+  }
+  &.resetField {
+    width: 24px;
+    height: 16px;
+    right: 105px;
+    background-color: transparent;
+    color: var(--darkGreen);
+    position: absolute;
+  }
+}

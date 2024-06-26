@@ -1,0 +1,15 @@
+.O_SearchBar {
+  .C_PostSuggestions {
+    position: absolute;
+    z-index: 10;
+    background-color: var(--bezh);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: 340px;
+    margin-top: 8px;
+    height: 200px;
+    border-radius: 1rem;
+    border-collapse: collapse;
+    border: 1px solid var(--darkGreen);
+  }
+}

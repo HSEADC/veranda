@@ -1,0 +1,195 @@
+.S_MenuBar {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1620px;
+  padding: 3rem 0rem 2rem;
+  align-items: center;
+
+  .menubarLogo {
+    width: 168px;
+    height: 56px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('images/A_NavigationLogoGreen.svg');
+  }
+  .C_MainMenu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: var(--darkGreen);
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  .O_SearchBar {
+    .C_PostSuggestions {
+      position: absolute;
+      z-index: 10;
+      background-color: var(--bezh);
+      overflow-y: hidden;
+      overflow-x: hidden;
+      width: 272px;
+      margin-top: 8px;
+      height: 200px;
+      border-radius: 0.5rem;
+      border-collapse: collapse;
+      border: 1px solid var(--darkGreen);
+
+      // Добавить ширину скролла 30px
+      .A_ScrollSearch {
+        // display: block;
+        overflow-x: hidden;
+        padding-right: 30px;
+        position: absolute;
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 302px;
+        left: 0;
+        top: 0;
+        padding: 1rem;
+        overflow-y: scroll;
+
+        .M_PostSuggestion {
+          width: 100%;
+          &:hover {
+            opacity: 75%;
+          }
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          .A_Text {
+            &::first-letter {
+              text-transform: uppercase;
+            }
+            &.h3 {
+              font-weight: bold;
+              font-size: 16px;
+              width: 90%;
+
+              color: var(--darkGreen);
+            }
+
+            &.p {
+              margin-top: 6px;
+              color: var(--darkGreen);
+              font-size: 13px;
+              width: 90%;
+              line-height: 120%;
+            }
+          }
+        }
+      }
+    }
+    .M_SearchForm {
+      display: flex;
+      border: 1px solid var(--darkGreen);
+      border-radius: 0.5rem;
+      position: relative;
+      // background-color: red;
+      display: flex;
+      // height: 44px;
+      // width: 290px;
+      overflow: hidden;
+
+      .A_Input {
+        background-color: var(--bezh);
+        color: var(--darkGreen);
+        border-radius: 0.6rem;
+        border: none;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        width: 220px;
+        // position: absolute;
+        // z-index: 1;
+        // left: 0;
+        // top: 0;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      .A_Button {
+        width: 50px;
+        text-align: center;
+        padding: 0.3rem 1.5rem;
+        // background-color: var(--darkGreen);
+        background-image: url('images/search.svg');
+        background-repeat: no-repeat;
+        background-size: 40%;
+        color: white;
+        background-color: var(--darkGreen);
+        background-position: center;
+        user-select: none;
+        cursor: pointer;
+
+        &.disabled {
+          opacity: 0.4;
+          cursor: default;
+        }
+        &.resetField {
+          width: 24px;
+          height: 16px;
+          right: 18%;
+          top: 22%;
+          background-color: transparent;
+          background: none;
+          color: var(--darkGreen);
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+// resposive header
+
+@media only screen and (max-width: 1720px) and (min-width: 1300px) {
+  .S_MenuBar {
+    max-width: 1260px;
+  }
+}
+@media only screen and (max-width: 1380px) and (min-width: 428px) {
+  .S_MenuBar {
+    padding-bottom: 0;
+    width: 88.477vw;
+    .menubarLogo {
+      width: 100px;
+      height: 36px;
+    }
+
+    .C_MainMenu {
+      width: 100%;
+      column-gap: 1.5rem;
+      a {
+        font-size: 1.567vw;
+      }
+    }
+    .O_SearchBar {
+      .M_SearchForm {
+        .A_Input {
+          height: 2.5rem;
+          width: 16vw;
+          font-size: 14px;
+        }
+        .A_Button {
+          display: flex;
+          height: 2.5rem;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

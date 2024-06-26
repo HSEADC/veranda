@@ -3,15 +3,22 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const SitemapPlugin = require('sitemap-webpack-plugin').default
+
 const webpack = require('webpack')
 const path = require('path')
+
+const paths = ['/', '/articles.html', 'ideas.html', 'index.html']
 
 module.exports = {
   entry: {
     index: './src/index.js',
     filterTag: './src/javascript/tagFilter.js',
     addNone: './src/javascript/addNone.js',
-    search_vanila: './src/search-vanila.js'
+    search_vanila: './src/search-vanila.js',
+    scrollNavbar: './src/javascript/scrollNavbar.js',
+    menubar: './src/menubar.jsx',
+    search: './src/search.jsx'
   },
   output: {
     filename: '[name].js',
@@ -85,6 +92,8 @@ module.exports = {
     ]
   },
   plugins: [
+    new SitemapPlugin({ base: 'https://veranda-adc.ac', paths }),
+
     new CopyPlugin({
       patterns: [
         {
@@ -105,14 +114,20 @@ module.exports = {
 
     // Index
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.ejs',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['index', 'menubar']
     }),
     new HtmlWebpackPlugin({
       template: './src/search-vanila.html',
       filename: './search-vanila.html',
       chunks: ['search_vanila']
+    }),
+    // searchPage
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['search', 'menubar']
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
@@ -120,14 +135,14 @@ module.exports = {
       chunks: ['index', 'filterTag']
     }),
     new HtmlWebpackPlugin({
-      template: './src/articles.html',
+      template: './src/articles.ejs',
       filename: './articles.html',
-      chunks: ['index', 'filterTag', 'addNone']
+      chunks: ['index', 'menubar', 'filterTag', 'addNone']
     }),
     new HtmlWebpackPlugin({
-      template: './src/queAnswer.html',
+      template: './src/queAnswer.ejs',
       filename: './queAnswer.html',
-      chunks: ['index', 'filterTag']
+      chunks: ['index', 'menubar', 'filterTag']
     }),
     new HtmlWebpackPlugin({
       template: './src/styleGuide.html',
@@ -135,9 +150,9 @@ module.exports = {
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
-      template: './src/ideas.html',
+      template: './src/ideas.ejs',
       filename: './ideas.html',
-      chunks: ['index', 'filterTag']
+      chunks: ['index', 'menubar', 'filterTag']
     }),
     new HtmlWebpackPlugin({
       template: './src/404.html',
@@ -278,6 +293,11 @@ module.exports = {
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
+      template: './src/ideas/child.html',
+      filename: './ideas/child.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
       template: './src/ideas/collectingFlowers.html',
       filename: './ideas/collectingFlowers.html',
       chunks: ['index']
@@ -323,13 +343,19 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // Article
-
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
         path: path.join(__dirname, './src/partials/analytics.html'),
         location: 'analytics',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/searchbar.html'),
+        location: 'searchbar',
         template_filename: '*',
         priority: 'replace'
       }
