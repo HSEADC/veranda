@@ -18,7 +18,7 @@ section.S_ArticlesHeading {
   width: 1620px;
   position: relative;
   margin: 13rem auto 13rem;
-  gap: 5rem;
+  gap: 8vw;
 
   .A_IconDecoration {
     position: absolute;
@@ -57,6 +57,7 @@ section.S_ArticlesHeading {
 .S_Footer {
   width: 100%;
   display: flex;
+  margin-top: auto;
   height: 340px;
   padding: 3rem 0 1.5rem;
   align-items: center;

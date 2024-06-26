@@ -1,6 +1,9 @@
 body {
   font-family: Manrope, sans-serif;
   font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 // Links
 .A_LinkArticleNavigation {
@@ -119,7 +122,7 @@ a.A_LinkCategory {
   color: var(--darkGreen);
   letter-spacing: 0px;
   line-height: 120%;
-  width: 95%;
+  width: 94%;
   text-align: center;
 
   em {
@@ -143,7 +146,10 @@ p.A_TextMain {
   background-color: var(--darkGreen);
   font-size: 1.25rem;
   padding: 1.5rem 0.75rem;
-  width: 225px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 0.5rem;
   text-align: center;
   text-decoration: none;
@@ -293,6 +299,7 @@ a.A_ActionArticle {
 .A_AdviceHeading {
   font-size: 3.75rem;
   color: var(--darkGreen);
+  line-height: 120%;
 
   em {
     font-family: '_21_Cent';

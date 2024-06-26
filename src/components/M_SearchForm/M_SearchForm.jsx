@@ -41,7 +41,7 @@ export default class M_SearchForm extends React.Component {
         {searchInputValue != '' && this.renderResetButton()}
 
         <A_Button
-          text="Найти"
+          text=""
           type="primary"
           disabled={isSearchButtonDisabled}
           handleClick={handleSearchSubmit}

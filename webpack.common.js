@@ -293,6 +293,11 @@ module.exports = {
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
+      template: './src/ideas/child.html',
+      filename: './ideas/child.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
       template: './src/ideas/collectingFlowers.html',
       filename: './ideas/collectingFlowers.html',
       chunks: ['index']
