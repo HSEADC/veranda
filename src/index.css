@@ -7,6 +7,7 @@
 @import 'stylesheets/article.scss';
 @import 'stylesheets/articles.scss';
 @import 'stylesheets/styleGuide.scss';
+@import 'stylesheets/about.scss';
 /* Components */
 @import 'stylesheets/components/quarks.scss';
 @import 'stylesheets/components/superOrganisms.scss';
