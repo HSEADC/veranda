@@ -5,11 +5,11 @@ section.S_FirstScreen {
   display: flex;
   width: 100%;
   width: 1620px;
-  margin: 30px auto 0px auto;
+  margin: 3vw auto 0px auto;
 }
 section.S_ArticlesHeading {
   background-color: var(--primaryGreen);
-  border-radius: 32px;
+  border-radius: 2vw;
   margin-top: 4rem;
   padding: 6rem 0px;
 }
@@ -40,14 +40,14 @@ section.S_ArticlesHeading {
   flex-direction: column;
   padding: 4rem 0px 6rem;
   position: relative;
-  border-radius: 32px;
+  border-radius: 2vw;
   background-color: var(--blue);
 }
 .S_QaCards {
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 32px;
+  border-radius: 2vw;
   margin: 6rem 0;
 
   .M_HeadingLink {
@@ -63,7 +63,7 @@ section.S_ArticlesHeading {
   align-items: center;
   background-color: var(--darkGreen);
   justify-content: space-between;
-  border-radius: 32px 32px 0px 0px;
+  border-radius: 2vw 2vw 0px 0px;
 }
 // ArticleHtml
 .S_ArticlePreview {

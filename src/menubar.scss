@@ -46,7 +46,7 @@
       width: 295px;
       margin-top: 8px;
       height: 200px;
-      border-radius: 0.5rem;
+      border-radius: 0.5vw;
       border: 1px solid var(--darkGreen);
 
       .A_ScrollSearch {
@@ -255,6 +255,48 @@
           padding: 0.434vw 1.086vw; // 6px 15px to vw
           background-size: 1.448vw; // 20px to vw
           font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    .S_MenuBar {
+      flex-direction: column;
+      gap: 1.5vw;
+      width: 100%;
+      padding: 4vw 3vw 0vw;
+      .menubarLogo {
+        width: 16vw;
+        height: 4vw;
+        margin-bottom: 0.5vw;
+      }
+      .C_MainMenu {
+        a {
+          font-size: 2.148vw;
+        }
+      }
+      .O_SearchBar {
+        width: 100%;
+        margin-top: 1vw;
+
+        .C_PostSuggestions {
+          width: 100%;
+          border-radius: 1vw;
+          .A_ScrollSearch {
+            width: 100%;
+          }
+        }
+        .M_SearchForm {
+          width: 100%;
+          border-radius: 1vw;
+
+          .A_Input {
+            width: 100%;
+            height: 4vw;
+            font-size: 1.6vw;
+          }
         }
       }
     }
