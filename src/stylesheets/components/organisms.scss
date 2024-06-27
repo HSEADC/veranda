@@ -20,7 +20,7 @@ header.O_Header {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 32px;
+  border-radius: 2vw;
 
   .M_IconHeading {
     margin: 30px auto 0px;
@@ -34,12 +34,12 @@ header.O_Header {
   width: 530px;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
-  border-radius: 16px;
+  border-radius: 1vw;
   text-decoration: none;
   gap: 20px;
 
   img {
-    border-radius: 16px;
+    border-radius: 1vw;
   }
 }
 .O_CardArticleBig {
@@ -47,13 +47,13 @@ header.O_Header {
   display: flex;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
-  border-radius: 16px;
+  border-radius: 1vw;
   text-decoration: none;
   background-color: var(--primaryGreen);
   gap: 20px;
 
   img {
-    border-radius: 16px;
+    border-radius: 1vw;
   }
 }
 .O_ArticleCardLong {
@@ -65,7 +65,7 @@ header.O_Header {
   background-color: var(--bezh);
   row-gap: 30px;
   width: 32.5%;
-  border-radius: 12px;
+  border-radius: 1vw;
   padding: 25px;
   text-decoration: none;
 
@@ -308,7 +308,7 @@ header.O_Header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 3vw;
 }
 .O_ErrorTextNumber {
   margin: auto auto;

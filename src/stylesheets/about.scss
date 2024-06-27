@@ -1,3 +1,266 @@
-.amogus {
-  background-color: red;
+.S_AboutMainScreen {
+  width: 1620px;
+  margin: 0 auto;
+  height: 756px;
+  display: flex;
+  justify-content: center;
+  border-radius: 2vw;
+  margin-top: 5vw;
+  background-image: url('images/about_mainscreen.png');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 3.5vw;
+  .M_IconHeading {
+    width: 822px;
+    height: 160px;
+  }
+}
+.O_AboutFirstScreen {
+  width: 1620px;
+  margin: 0 auto;
+  margin-top: 3vw;
+  height: 720px;
+  position: relative;
+
+  .M_TextDescription {
+    position: absolute;
+    top: 5vw;
+    right: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    width: 580px;
+    .A_TitleManrope {
+      text-align: left;
+    }
+    .A_TextMain {
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+
+    &:nth-child(2) {
+      height: 29.3vw;
+      width: 38.4vw;
+      bottom: 0;
+    }
+    &:nth-child(3) {
+      height: 10.3vw;
+      width: 39vw;
+      bottom: 0;
+      position: absolute;
+      left: 34vw;
+    }
+  }
+}
+.S_ThirdScreenAbout {
+  background-color: var(--darkerBezh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vw 4vw;
+  margin-bottom: 10rem;
+  border-radius: 3vw 3vw 0 0;
+  .W_AboutFresh {
+    width: 1620px;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-direction: column;
+
+    .S_AboutWho {
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+      .W_AboutWho {
+        display: flex;
+        gap: 1rem;
+
+        .O_AboutWho {
+          width: 50%;
+          border-radius: 1rem;
+          border-radius: 1vw;
+          gap: 1rem;
+          padding: 2.5rem 1rem 2rem 2rem;
+          height: 280px;
+          display: flex;
+          background-color: var(--primaryGreen);
+          .A_SubTitle {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+            h3 {
+              color: var(--darkGreen);
+              font-size: 32px;
+              line-height: 105%;
+            }
+            p.A_TextMain {
+              width: 95%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .O_AboutFreshArticles {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    border-radius: 2rem;
+    background-image: url('./images/Q_AboutBlueBg.png');
+
+    img {
+      position: absolute;
+      width: 590px;
+      left: 16%;
+      top: 8%;
+    }
+    .S_HeadingArticlesLink {
+      position: absolute;
+      top: 20%;
+      right: 4%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .O_HeadingText {
+      display: flex;
+      flex-direction: column;
+      width: 580px;
+      gap: 16px;
+
+      .M_IconHeading {
+        justify-content: left;
+        align-items: center;
+        gap: 4px;
+      }
+      .A_TextMain {
+        text-align: left;
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1720px) {
+  .S_AboutMainScreen {
+    width: 1260px;
+    height: 590px;
+  }
+  .O_AboutFirstScreen {
+    width: 1260px;
+    height: 510px;
+  }
+  .S_ThirdScreenAbout {
+    .W_AboutFresh {
+      width: 1260px;
+
+      .O_AboutWho {
+        padding: 1.5rem 1rem 1rem 1.5rem;
+      }
+    }
+    .O_AboutFreshArticles {
+      height: 600px;
+      position: relative;
+
+      img {
+        width: 480px;
+        left: 8%;
+        top: 5%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1380px) {
+  .S_AboutMainScreen {
+    width: 87.5vw;
+    height: 40.972vw;
+    .M_IconHeading {
+      height: 9.111vw;
+      width: 43.722vw;
+      row-gap: 0;
+      h1.A_TitleManrope {
+        font-size: 3.195vw;
+
+        em.Accent {
+          font-size: 3.7vw;
+        }
+      }
+      .A_TitleSuperAccent {
+        font-size: 3.4vw;
+      }
+    }
+  }
+  .O_AboutFirstScreen {
+    width: 87.5vw;
+    height: 35.417vw;
+    .M_TextDescription {
+      width: 40.278vw;
+    }
+    h1.A_TitleManrope {
+      font-size: 2.8vw;
+
+      em.Accent {
+        font-size: 3vw;
+      }
+    }
+  }
+
+  .S_ThirdScreenAbout {
+    .W_AboutFresh {
+      width: 87.5vw;
+      gap: 2vw;
+
+      .S_AboutWho {
+        h1.A_TitleManrope {
+          font-size: 2.8vw;
+
+          em.Accent {
+            font-size: 3vw;
+          }
+        }
+        .W_AboutWho {
+          .O_AboutWho {
+            padding: 1.8vw 1vw 1vw 1.8vw;
+            height: 19vw;
+            gap: 1vw;
+            border-radius: 2vw;
+            .A_SubTitle {
+              h3 {
+                font-size: 2.2vw;
+              }
+            }
+          }
+        }
+      }
+
+      .O_AboutFreshArticles {
+        height: 41.667vw;
+
+        img {
+          width: 33.333vw;
+        }
+      }
+      .O_HeadingText {
+        width: 40.278vw;
+        gap: 0.5vw;
+        .M_IconHeading {
+          width: 25vw;
+          gap: 0;
+        }
+        h1.A_TitleManrope {
+          font-size: 2.8vw;
+        }
+        .A_TitleAccent {
+          font-size: 3.1vw;
+        }
+      }
+    }
+  }
 }

@@ -7,66 +7,45 @@ body.styleGuide {
     box-sizing: border-box;
   }
   p {
-    font-family: Manrope;
-    font-size: 1.333vw;
+    font-size: 1.4vw;
     color: var(--darkGreen);
     line-height: 120%;
   }
   h1 {
     font-size: 4.375vw;
-    font-family: Manrope;
     font-weight: 600;
     color: var(--darkGreen);
   }
   h3 {
     font-size: 1.429vw;
-    font-weight: 600;
-    font-family: Manrope;
     color: var(--darkGreen);
   }
   //   Cover
   section.cover {
-    height: 100vh;
+    height: 48.9vw;
     background-color: var(--primaryGreen);
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0.714vw;
-    grid-row-gap: 0px;
-    // padding: 4.167vw;
-    background-image: url('images/elki.svg');
+    background-image: url('images/style_guide_cover.webp');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
+    background-size: 90%;
     background-size: 110%;
-    position: relative;
     margin-bottom: 4.762vw;
 
-    img.coverImg:first-child {
-      grid-column: 7/9;
-      position: absolute;
-      width: 23.906vw;
-      bottom: 1vw;
-    }
-    img.coverImg:nth-child(2) {
-      grid-column: 14/16;
-      position: absolute;
-      width: 13.25vw;
-      top: 9.524vw;
-    }
-    img.coverImg:nth-child(3) {
-      grid-column: 2/5;
-      position: absolute;
-      width: 14.354vw;
-      height: 15.313vw;
-      top: 9.524vw;
-    }
     .nameWrap {
-      grid-column: 6/12;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 5.714vw;
+      gap: 1vw;
 
+      h3:first-child {
+        margin-bottom: 3vw;
+        span {
+          padding: 0.5vw 1vw;
+          border-radius: 10vw;
+          border: 1px solid var(--darkGreen);
+        }
+      }
       .tagsLine {
         display: flex;
         flex-wrap: wrap;
@@ -85,19 +64,9 @@ body.styleGuide {
           background-color: var(--primaryGreen);
         }
       }
-      h1.mainHead > span {
-        background-color: var(--darkGreen);
-        color: var(--bezh);
-        font-family: '_21_Cent';
-        font-size: 3.048vw;
-        font-weight: lighter;
-        display: inline-block;
-        padding: 0.238vw 0.714vw;
-        border-radius: 0.381vw;
-      }
       .logo {
         img {
-          height: 10.417vw;
+          height: 6.417vw;
         }
       }
     }
@@ -109,6 +78,7 @@ body.styleGuide {
   }
   section.styleGuide {
     background-color: var(--bezh);
+    margin-top: 4vw;
 
     .menuLeft {
       display: flex;
@@ -126,7 +96,6 @@ body.styleGuide {
         opacity: 75%;
       }
       a {
-        font-family: Manrope;
         text-decoration: none;
         color: var(--darkGreen);
       }
@@ -141,35 +110,35 @@ body.styleGuide {
       .insertIcon {
         width: 4.286vw;
         height: 4.524vw;
-        background-image: url('images/cup.svg');
-        background-size: cover;
+        background-image: url('images/Q_CupMedium.png');
+        background-size: contain;
         background-repeat: no-repeat;
       }
       #sparks.insertIcon {
-        background-image: url('images/sparksInsIcon.svg');
+        background-image: url('images/Q_GlitterMedium.svg');
         width: 4.381vw;
       }
       #clouds.insertIcon {
-        background-image: url('images/cloudsStyle.svg');
+        background-image: url('images/Q_CloudsMedium.svg');
         width: 5.095vw;
       }
       #pong.insertIcon {
-        background-image: url('images/pingMyPong.svg');
-        width: 3.762vw;
+        background-image: url('images/Q_PongMedium.png');
+        width: 4.762vw;
         height: 5.095vw;
       }
       #coverGrid.insertIcon {
-        background-image: url('images/coverGrid.svg');
+        background-image: url('images/Q_CarpetMedium.png');
         width: 4.952vw;
         height: 5.095vw;
       }
       #orange.insertIcon {
-        background-image: url('images/orange.svg');
+        background-image: url('images/Q_CitrusMedium.svg');
         width: 4.667vw;
         height: 5.095vw;
       }
       #mush.insertIcon {
-        background-image: url('images/mush.svg');
+        background-image: url('images/Q_MushroomMedium.png');
         width: 5vw;
         height: 5vw;
       }
@@ -195,7 +164,7 @@ body.styleGuide {
         display: flex;
         min-width: 26.19vw;
         flex-direction: column;
-        gap: 1.429vw;
+        gap: 1vw;
         margin-bottom: 4.167vw;
         p {
           max-width: 26.19vw;
@@ -246,8 +215,8 @@ body.styleGuide {
         }
         .usingColors {
           width: 62.667vw;
-          height: 12.952vw;
-          background-image: url('images/usingColors.svg');
+          height: 13.52vw;
+          background-image: url('images/usingColors.png');
           background-size: cover;
           background-repeat: no-repeat;
         }
@@ -277,38 +246,15 @@ body.styleGuide {
         .identityPicBig {
           width: 66.571vw;
           height: 39.048vw;
-          background-image: url('images/identityPicBig.png');
           background-size: cover;
           border-radius: 0.571vw;
           background-repeat: no-repeat;
-        }
-        .identityPicBig:nth-child(2) {
-          background-image: url('images/plates.png');
-        }
-        .identityPicBig:nth-child(3) {
-          background-image: url('images/kepka.png');
-        }
-        .identityPicBig:nth-child(4) {
-          background-image: url('images/kepka.png');
-          height: 43vw;
-        }
-        .identityPicBig:nth-child(5) {
-          background-image: url('images/shop.png');
-        }
-        .identityPicBig:nth-child(6) {
-          background-image: url('images/shirt.png');
-        }
-        .identityPicBig:nth-child(7) {
-          background-image: url('images/kover.png');
-        }
-        .identityPicBig:nth-child(8) {
-          background-image: url('images/aero.png');
-        }
-        .identityPicBig:nth-child(9) {
-          background-image: url('images/double.png');
-        }
-        .identityPicBig:nth-child(10) {
-          background-image: url('images/pot.png');
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+          }
         }
       }
       // Colum Wrap
@@ -390,22 +336,22 @@ body.styleGuide {
       }
     }
     .contentBlock:nth-child(3) {
-      background-color: var(--yellow);
+      background-color: var(--darkerBezh);
       padding-top: 4.167vw;
       border-radius: 1.524vw;
     }
     .contentBlock:nth-child(5) {
-      background-color: var(--primaryGreen);
+      background-color: var(--darkerBezh);
       padding-top: 4.167vw;
       border-radius: 1.524vw;
     }
     .contentBlock:nth-child(7) {
-      background-color: var(--yellow);
+      background-color: var(--darkerBezh);
       padding-top: 4.167vw;
       border-radius: 1.524vw;
     }
     .contentBlock:nth-child(9) {
-      background-color: var(--primaryGreen);
+      background-color: var(--darkerBezh);
       padding-top: 4.167vw;
       border-radius: 1.524vw;
       margin-bottom: 0;
@@ -419,7 +365,7 @@ body.styleGuide {
       margin-bottom: 9.524vw;
     }
     .gridExample {
-      width: 62.667vw;
+      width: 66.667vw;
       height: 33.619vw;
       background-image: url('images/gridExample.png');
       background-size: cover;
@@ -427,10 +373,10 @@ body.styleGuide {
     }
     .photoStyle {
       width: 66.667vw;
-      height: 32.905vw;
+      height: 23.905vw;
       border-radius: 1.524vw;
       background-image: url('images/photoStyle.png');
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       margin-bottom: 3.81vw;
     }
@@ -443,16 +389,17 @@ body.styleGuide {
     }
     .graphicsExample {
       width: 66.81vw;
-      height: 59.333vw;
-      background-image: url('images/graphicsExample.png');
+      height: 34vw;
+      background-image: url('images/using_icons.png');
       background-repeat: no-repeat;
       background-size: cover;
       margin-bottom: 3.81vw;
+      border-radius: 24px;
     }
     .manyGraph {
       width: 66.667vw;
-      height: 11.905vw;
-      background-image: url('images/manyGraph.png');
+      height: 46.905vw;
+      background-image: url('images/graphicsExample.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
