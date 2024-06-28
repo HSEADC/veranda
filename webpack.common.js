@@ -157,17 +157,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/404.html',
       filename: './404.html',
-      chunks: ['index', 'filterTag', 'menubar']
+      chunks: ['index', 'menubar']
     }),
     new HtmlWebpackPlugin({
       template: './src/500.html',
       filename: './500.html',
-      chunks: ['index', 'filterTag', 'menubar']
+      chunks: ['index', 'menubar']
     }),
     new HtmlWebpackPlugin({
       template: './src/505.html',
       filename: './505.html',
-      chunks: ['index', 'filterTag', 'menubar']
+      chunks: ['index', 'menubar']
     }),
     // Articles
     new HtmlWebpackPlugin({
