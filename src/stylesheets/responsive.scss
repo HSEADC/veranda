@@ -296,6 +296,7 @@
     .S_Error {
       flex-direction: column;
       margin-top: 4%;
+      gap: 3vw;
       .O_ErrorTextNumber {
         order: 2;
         .W_ErrorText {
@@ -309,18 +310,21 @@
             font-size: 5vw;
             margin-top: 4vw;
           }
+          .M_IconHeadingLeft {
+            width: 55%;
+          }
         }
 
         .A_ErrorNumber {
-          font-size: 44vw;
-          height: 38vw;
+          font-size: 38vw;
+          height: 32vw;
           text-align: center;
         }
       }
       .A_ErrorIcon404 {
         order: 1;
         width: 100%;
-        height: 60vw;
+        height: 56vw;
         display: flex;
         justify-content: center;
 
