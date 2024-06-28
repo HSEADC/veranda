@@ -10,7 +10,7 @@
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-  padding-top: 3.5vw;
+  padding-top: 3vw;
   .M_IconHeading {
     width: 822px;
     height: 160px;
@@ -179,8 +179,8 @@
 }
 @media only screen and (max-width: 1380px) {
   .S_AboutMainScreen {
-    width: 87.5vw;
-    height: 40.972vw;
+    width: 92.477vw;
+    height: 42.972vw;
     .M_IconHeading {
       height: 9.111vw;
       width: 43.722vw;
@@ -198,7 +198,7 @@
     }
   }
   .O_AboutFirstScreen {
-    width: 87.5vw;
+    width: 90vw;
     height: 35.417vw;
     .M_TextDescription {
       width: 40.278vw;
@@ -214,7 +214,7 @@
 
   .S_ThirdScreenAbout {
     .W_AboutFresh {
-      width: 87.5vw;
+      width: 90vw;
       gap: 2vw;
 
       .S_AboutWho {
