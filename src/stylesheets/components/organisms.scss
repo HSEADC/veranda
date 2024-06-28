@@ -108,7 +108,7 @@ header.O_Header {
 .O_NewArticle {
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 3vw;
 }
 // ArticleHeading
 .O_ArticleWide {
@@ -263,7 +263,7 @@ header.O_Header {
   align-items: flex-end;
 
   .M_IconHeadingLeft {
-    width: 100%;
+    width: 70%;
   }
   .M_TagLine {
     width: 20%;

@@ -54,6 +54,10 @@
   }
   .W_HeadingArticles {
     width: 1240px;
+
+    .W_TitleLink {
+      width: 69%;
+    }
   }
   .W_AdvicesArticles {
     width: 1240px;
@@ -285,13 +289,13 @@
   }
 }
 // Mobile
-@media only screen and (max-width: 701px) {
+@media only screen and (max-width: 700px) {
   //  Typography
   h1.A_TitleManrope {
     font-size: 6.542vw;
 
     em.Accent {
-      font-size: 7vw;
+      font-size: 8vw;
     }
   }
   h1.A_TitleAccent {
@@ -302,7 +306,7 @@
   }
   .A_SubCard {
     font-size: 4.5vw;
-    width: 90%;
+    width: 85%;
 
     em {
       font-size: 5vw;
@@ -317,7 +321,7 @@
     font-size: 2.736vw;
     border: 1px solid var(--darkGreen);
     padding: 6px 9px;
-    border-radius: 1.5vw;
+    border-radius: 1vw;
   }
 
   // Icons
@@ -342,6 +346,7 @@
 
       .M_IconHeading {
         width: 100%;
+        row-gap: 1vw;
       }
     }
   }
@@ -354,6 +359,7 @@
   .A_LinkArticleNavigation {
     border-bottom: 0px;
     padding: 0;
+    margin-bottom: 1vw;
 
     a.A_LinkCategory {
       font-size: 3vw;
@@ -421,7 +427,7 @@
       padding-left: 4vw;
       .W_NewArticleHeading {
         .M_IconHeadingLeft {
-          width: 80%;
+          width: 74vw;
           margin-bottom: 1rem;
         }
       }
@@ -499,24 +505,41 @@
   .S_Footer {
     flex-direction: column;
     height: auto;
-    padding: 2rem 0 3.5rem;
+    padding: 2rem 0 0;
     border-radius: 1.5rem 1.5rem 0 0;
 
     .W_FooterWithout {
-      gap: 6rem;
+      gap: 9vw;
       width: 100%;
-      padding: 1rem;
+      padding: 6vw;
       .W_FooterCategories {
         flex-wrap: wrap;
+        gap: 6vw;
+        row-gap: 4vw;
       }
       .A_FooterCategoryList {
-        font-size: 1.2rem;
+        font-size: 4vw;
       }
       flex-direction: column;
       .O_FooterCategoriesForm {
+        gap: 15vw;
         width: 100%;
         .A_SubscriptionForm {
-          display: none;
+          gap: 3vw;
+
+          .M_FooterLogoSocial {
+            .A_NavigationLogo {
+              width: 37.1vw;
+              height: 9.7vw;
+            }
+            .C_Socials {
+              gap: 3vw;
+              a {
+                width: 8.5vw;
+                height: 8.5vw;
+              }
+            }
+          }
         }
       }
     }
@@ -524,12 +547,14 @@
       justify-content: space-between;
       .W_Authors {
         order: 2;
+        display: none;
       }
       .M_FooterLogoSocial {
         order: 1;
       }
       .M_FooterLogoSocial {
         gap: 1.5rem;
+        margin: 0;
       }
       .W_Authors {
         .W_FooterNamesList:nth-child(1) {
@@ -616,7 +641,7 @@
     height: 360px;
   }
   .O_QaCard {
-    width: 48.7%;
+    width: 41.5vw;
     gap: 3vw;
     height: 65vw;
     padding: 3.8vw 0;
@@ -644,7 +669,8 @@
   }
   .M_AdviceCard {
     width: 100%;
-    height: 27vw;
+    height: 30vw;
+    border-radius: 3vw;
     padding: 3vw 4vw 4vw;
 
     .A_SubCard {
@@ -658,8 +684,8 @@
     margin-top: 2rem;
   }
   .Q_PersonArticlePic {
-    width: 60px;
-    height: 60px;
+    width: 11vw;
+    height: 11vw;
   }
   .O_ArticleIdeas {
     height: 84vw;
@@ -673,7 +699,7 @@
     }
   }
   .С_ArticleCategoryTags {
-    margin: 3rem auto 1.5rem;
+    margin: 10vw auto 1.5rem;
   }
   .A_FilterTag {
     font-size: 3.736vw;
@@ -753,12 +779,13 @@
   // IndexHtml
   p.A_AuthorArticle {
     font-size: 3.4vw;
+    font-weight: 600;
   }
   p.A_NameDescArticle {
     font-size: 12px;
   }
   .Q_ImageWide {
-    height: 72.222vw;
+    height: 64vw;
 
     img {
       border-radius: 1rem;
@@ -774,6 +801,7 @@
     border-radius: 0 0 1rem 1rem;
     .O_ArticleAuthorDescription {
       gap: 1rem;
+      margin-top: 4vw;
       p.A_NameDescArticle {
         font-size: 14px;
       }
@@ -801,11 +829,21 @@
       .M_IconHeadingLeft {
         width: 100%;
         order: 2;
+
+        .A_TitleManrope {
+          font-size: 6.4vw;
+        }
+        .A_TitleAccent {
+          span.A_TitleSuperAccent {
+            font-size: 7vw;
+          }
+        }
       }
       .M_TagLine {
         order: 1;
         width: 100%;
         justify-content: left;
+        margin-bottom: 2vw;
       }
     }
   }
@@ -814,7 +852,7 @@
     gap: 1rem;
   }
   .A_MainTextArticle {
-    font-size: 3.289vw;
+    font-size: 2.9vw;
   }
   .W_WholeArticle {
     width: 100%;
@@ -843,7 +881,7 @@
           font-size: 6vw;
 
           em {
-            font-size: 6.5vw;
+            font-size: 6.8vw;
           }
         }
       }
@@ -863,9 +901,9 @@
     }
     .O_BreakerOpinion {
       flex-direction: column;
-      gap: 1rem;
+      gap: 3vw;
       padding: 4vw;
-      margin-top: 2rem;
+      margin-top: 4vw;
 
       .M_PersonProfileArticle {
         width: 100%;
@@ -882,8 +920,8 @@
       width: 100%;
       background-color: var(--darkerBezh);
       padding: 1rem;
-      padding-top: 2rem;
-      border-radius: 16px;
+      padding-top: 8vw;
+      border-radius: 3vw;
       margin-bottom: 4rem;
       .W_Phreference {
         width: 100%;
@@ -898,10 +936,9 @@
   .O_SocialMediaBreaker {
     flex-direction: column;
     gap: 1rem;
-    padding: 0.75rem;
+    padding: 4vw 3vw;
 
     .M_BreakerIconText {
-      padding-left: 4%;
       .A_Telegram {
         background-image: url('images/A_Telegram_Article.svg');
         height: 8.5vw;
@@ -913,11 +950,12 @@
     }
   }
   a.A_ActionArticle {
-    max-width: 33vw;
+    max-width: 35vw;
+    justify-content: center;
     height: 10vw;
     border-radius: 1vw;
     font-size: 3vw;
-    margin-left: 17%;
+    margin-left: 12%;
   }
   // IdeasArticleMobile
   .W_WholeIdeaArticle {
@@ -936,25 +974,26 @@
         justify-content: flex-start;
       }
       .A_AdviceDescriptionText {
-        font-size: 16px;
+        font-size: 3.5vw;
         width: 100%;
         text-align: left;
+        margin-top: 3vw;
       }
     }
     .A_AdviceImage {
-      height: 72.222vw;
+      height: 60vw;
       width: 100%;
     }
     .M_AdviceBreaker {
       .A_DividerAdviceHeading {
-        font-size: 18px;
+        font-size: 4vw;
         line-height: 120%;
         text-align: left;
         width: 100%;
       }
     }
     .A_BreakerText {
-      font-size: 16px;
+      font-size: 3.6vw;
       text-align: left;
       width: 100%;
     }
@@ -963,7 +1002,7 @@
     gap: 2rem;
     .M_AdvideArticleBlock {
       flex-direction: column;
-      gap: 1rem;
+      gap: 6vw;
 
       .M_AdviceTextHeading {
         width: 100%;
@@ -971,10 +1010,11 @@
       }
     }
     .A_AdviceHeading {
-      font-size: 22px;
+      font-size: 6vw;
+      line-height: 102%;
 
       em {
-        font-size: 28px;
+        font-size: 7vw;
       }
     }
     .A_AdviceIllustration {
@@ -984,7 +1024,7 @@
       flex-direction: column;
       .A_AdviceImageSquare:nth-child(2) {
         width: 100%;
-        height: 60.222vw;
+        height: 60vw;
       }
     }
   }
@@ -1008,7 +1048,7 @@
       width: 100%;
     }
     .A_QaArticleHeading {
-      font-size: 24px;
+      font-size: 5vw;
       margin-bottom: 0.7rem;
     }
   }
@@ -1132,13 +1172,14 @@
     gap: 2vw;
 
     .O_NewArticle {
-      gap: 4vw;
+      gap: 3vw;
     }
     .W_NewArticleHeading {
       width: 90%;
 
       .M_IconHeadingLeft {
         width: 47vw;
+        margin-bottom: 1vw;
       }
     }
     .Q_ImageArticleNew {
@@ -1206,10 +1247,10 @@
     }
     .W_Authors {
       .W_FooterNamesList:nth-child(1) {
-        display: none;
+        // display: none;
       }
       .W_FooterNamesList:nth-child(2) {
-        display: none;
+        // display: none;
       }
     }
     .M_FooterLogoSocial {
@@ -1306,9 +1347,12 @@
   }
 
   // ArticleHtmlTablet
-
+  .W_HomeScreenArticle {
+    border-radius: 0 0 3vw 3vw;
+  }
   .S_ArticlePreview {
     width: 91.477vw;
+    padding-bottom: 0;
 
     .O_HeadingArticle {
       flex-direction: column;
@@ -1321,6 +1365,7 @@
       .M_TagLine {
         order: 1;
         justify-content: flex-start;
+        width: 100%;
       }
     }
   }
@@ -1477,7 +1522,7 @@
   .A_ButtonPrimary {
     font-size: 1.4vw;
     width: 14vw;
-    height: 4vw;
+    height: 5vw;
   }
 }
 // ExtraForFont
