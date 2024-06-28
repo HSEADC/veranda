@@ -285,7 +285,7 @@
       width: 100%;
     }
     img:nth-child(2) {
-      height: 62.4vw;
+      height: 62.7vw;
       width: 82.4vw;
       bottom: 0;
       left: 3vw;
@@ -308,7 +308,7 @@
 
           .O_AboutWho {
             width: 100%;
-            height: 36vw;
+            height: 40vw;
             border-radius: 4vw;
             padding: 4vw 3vw;
             gap: 2vw;
@@ -338,6 +338,10 @@
         .O_HeadingText {
           width: 100%;
           gap: 1vw;
+
+          .M_IconHeading {
+            row-gap: 0;
+          }
         }
       }
     }
