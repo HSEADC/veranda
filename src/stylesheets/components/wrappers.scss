@@ -215,9 +215,25 @@
   gap: 1rem;
 }
 .W_ErrorText {
-  width: 505px;
+  width: 34vw;
   gap: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  .M_IconHeading {
+    .A_TitleManrope {
+      font-size: 4vw;
+
+      .A_TitleSuperAccent {
+        font-size: 4.5vw;
+        border-radius: 0.5vw;
+        padding: 0px 0.5vw;
+      }
+    }
+  }
+  p.A_ErrorTextMain {
+    font-size: 1.1vw;
+    width: 83%;
+  }
 }

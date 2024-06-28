@@ -359,7 +359,8 @@ a.A_ActionArticle {
   color: var(--darkGreen);
 }
 .A_ErrorNumber {
-  font-size: 19.833vw;
+  font-size: 16vw;
+  height: 14vw;
   font-family: '_21_Cent';
   color: var(--darkGreen);
 }
@@ -369,8 +370,8 @@ p.A_ErrorTextMain {
   line-height: 140%;
 }
 .A_ErrorIcon404 {
-  width: 37.014vw;
-  height: 37.014vw;
+  width: 30vw;
+  height: 30vw;
 
   img {
     width: 100%;
@@ -379,12 +380,11 @@ p.A_ErrorTextMain {
   }
 }
 .A_BackToMain {
-  font-size: 24px;
+  font-size: 1.6vw;
+  margin-top: 1vw;
   font-family: '_21_Cent';
   text-decoration: none;
-  border-bottom: 1px solid var(--darkGreen);
-  padding: 0.75rem;
-  padding-left: 0;
-  padding-right: 0;
+  border-bottom: 2px solid var(--darkGreen);
+  padding-bottom: 0.5vw;
   color: var(--darkGreen);
 }

@@ -181,7 +181,7 @@
 @media only screen and (max-width: 1380px) and (min-width: 701px) {
   .S_AboutMainScreen {
     width: 92.477vw;
-    height: 42.972vw;
+    height: 45vw;
     .M_IconHeading {
       height: 9.111vw;
       width: 43.722vw;
@@ -265,15 +265,16 @@
     }
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) and (min-width: 100px) {
   .S_AboutMainScreen {
     width: 93.477vw;
-    height: 84vw;
+    height: 87vw;
+    margin-top: 5vw;
     background-image: url('images/about_mobile_cover.png');
 
     .M_IconHeading {
       width: 100%;
-      height: 21vw;
+      height: 19vw;
     }
   }
   .O_AboutFirstScreen {
@@ -281,6 +282,7 @@
     height: 100vw;
     .M_TextDescription {
       left: 2vw;
+      width: 100%;
     }
     img:nth-child(2) {
       height: 62.4vw;
@@ -297,6 +299,7 @@
     border-radius: 7vw;
     .W_AboutFresh {
       width: 93.477vw;
+      gap: 5vw;
 
       .S_AboutWho {
         .W_AboutWho {
@@ -307,6 +310,15 @@
             width: 100%;
             height: 36vw;
             border-radius: 4vw;
+            padding: 4vw 3vw;
+            gap: 2vw;
+
+            .A_SubTitle {
+              h3 {
+                font-size: 4.5vw;
+                font-weight: 600;
+              }
+            }
           }
         }
       }
@@ -321,6 +333,12 @@
       }
       .S_HeadingArticlesLink {
         top: 58%;
+        width: 86%;
+
+        .O_HeadingText {
+          width: 100%;
+          gap: 1vw;
+        }
       }
     }
   }

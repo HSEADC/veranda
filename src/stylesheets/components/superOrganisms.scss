@@ -102,6 +102,13 @@ section.S_ArticlesHeading {
 }
 .S_Error {
   display: flex;
-  margin-top: 4vw;
-  margin-right: 10vw;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.S_Container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
