@@ -354,14 +354,14 @@
   }
   .A_SubCard {
     font-size: 4.5vw;
-    width: 85%;
+    width: 87%;
 
     em {
       font-size: 5vw;
     }
   }
   p.A_TextMain {
-    font-size: 3vw;
+    font-size: 3.4vw;
     width: 90%;
   }
   // Tags
@@ -647,11 +647,18 @@
   .O_CardHigh {
     height: 65vw;
     width: 100%;
-    background-size: 76%;
+    background-size: 81%;
+    background-position: 18vw 6vw;
+    padding: 3vw 4vw 4vw;
+    .M_LongArticleHeading {
+      .A_SubCard {
+        width: 80%;
+      }
+    }
   }
   .Q_RaindropsIdeas {
     background-size: 61%;
-    background-position: 138% 63%;
+    background-position: 50vw 4vw;
   }
   .O_CardArticle {
     width: 100%;
@@ -664,10 +671,12 @@
     }
   }
   .O_IdeaBigCard {
-    height: 73vw;
+    height: 70vw;
     background-size: auto 60%;
+    padding: 4vw;
     .M_LongArticleHeading {
       width: 100%;
+      gap: 2vw;
       .A_SubCard {
         order: 2;
       }
@@ -733,8 +742,8 @@
     margin-top: 2rem;
   }
   .Q_PersonArticlePic {
-    width: 11vw;
-    height: 11vw;
+    width: 12vw;
+    height: 12vw;
   }
   .O_ArticleIdeas {
     height: 84vw;
@@ -768,7 +777,7 @@
     }
     .O_CardHigh:nth-child(8) {
       background-size: 54%;
-      background-position: 182px;
+      background-position: 43vw 3vw;
     }
     .W_TwoIdeasArticle {
       width: 100%;
@@ -827,8 +836,9 @@
   }
   // IndexHtml
   p.A_AuthorArticle {
-    font-size: 3.4vw;
+    font-size: 3.7vw;
     font-weight: 600;
+    margin-bottom: 1vw;
   }
   p.A_NameDescArticle {
     font-size: 12px;
@@ -844,7 +854,7 @@
     width: 100%;
     padding: 1rem;
     margin-top: 1rem;
-    row-gap: 1rem;
+    row-gap: 2vw;
     margin-bottom: 5vw;
     padding-bottom: 6vw;
     border-radius: 0 0 1rem 1rem;
@@ -852,13 +862,14 @@
       gap: 1rem;
       margin-top: 4vw;
       p.A_NameDescArticle {
-        font-size: 2.3vw;
+        font-size: 3vw;
       }
       flex-direction: column;
     }
     .M_PersonProfileArticle {
       display: flex;
       width: 100%;
+      gap: 2vw;
     }
     .A_ArticleDescription {
       width: 100%;
@@ -959,6 +970,7 @@
 
       .M_PersonProfileArticle {
         width: 100%;
+        gap: 2vw;
       }
       .A_BreakerText {
         font-size: 3.5vw;
@@ -1018,7 +1030,7 @@
     .W_ArticleHead {
       align-items: flex-start;
       margin-top: 2rem;
-      gap: 0.75rem;
+      gap: 0;
       padding-bottom: 3rem;
       margin-bottom: 1rem;
       .M_IconHeading {
@@ -1064,7 +1076,7 @@
     }
     .A_AdviceHeading {
       font-size: 6vw;
-      line-height: 102%;
+      line-height: 115%;
 
       em {
         font-size: 7vw;
@@ -1084,6 +1096,7 @@
   // QaArticle
   .S_QaArticle {
     gap: 1rem;
+    margin-top: 5vw;
     margin-bottom: 3rem;
     .M_IconHeading {
       width: 100%;
