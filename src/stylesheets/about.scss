@@ -265,10 +265,10 @@
     }
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) and (min-width: 100px) {
   .S_AboutMainScreen {
     width: 93.477vw;
-    height: 84vw;
+    height: 87vw;
     background-image: url('images/about_mobile_cover.png');
 
     .M_IconHeading {
@@ -281,6 +281,7 @@
     height: 100vw;
     .M_TextDescription {
       left: 2vw;
+      width: 100%;
     }
     img:nth-child(2) {
       height: 62.4vw;
@@ -307,6 +308,11 @@
             width: 100%;
             height: 36vw;
             border-radius: 4vw;
+
+            .A_SubTitle {
+              font-size: 3.5vw;
+              font-weight: 600;
+            }
           }
         }
       }

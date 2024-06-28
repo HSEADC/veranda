@@ -785,7 +785,7 @@
     font-size: 12px;
   }
   .Q_ImageWide {
-    height: 64vw;
+    height: 72vw;
 
     img {
       border-radius: 1rem;
@@ -803,7 +803,7 @@
       gap: 1rem;
       margin-top: 4vw;
       p.A_NameDescArticle {
-        font-size: 14px;
+        font-size: 2.3vw;
       }
       flex-direction: column;
     }
@@ -852,7 +852,10 @@
     gap: 1rem;
   }
   .A_MainTextArticle {
-    font-size: 3vw;
+    font-size: 3.4vw;
+  }
+  .W_HomeScreenArticle {
+    border-radius: 0 0 6vw 6vw;
   }
   .W_WholeArticle {
     width: 100%;
@@ -886,10 +889,10 @@
         }
       }
       .Q_ArticlePicture {
-        height: 51vw;
+        height: 72vw;
         width: 100%;
         figcaption.A_PhotoDescprition {
-          font-size: 2.5vw;
+          font-size: 3.1vw;
           margin-top: 0.5rem;
           padding-left: 5%;
         }
