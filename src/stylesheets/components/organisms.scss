@@ -311,7 +311,8 @@ header.O_Header {
   gap: 3vw;
 }
 .O_ErrorTextNumber {
-  margin: auto auto;
+  display: flex;
+  flex-direction: column;
 }
 // Search
 .O_Search {
