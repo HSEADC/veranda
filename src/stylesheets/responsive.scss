@@ -852,7 +852,7 @@
     gap: 1rem;
   }
   .A_MainTextArticle {
-    font-size: 2.9vw;
+    font-size: 3vw;
   }
   .W_WholeArticle {
     width: 100%;
@@ -990,6 +990,7 @@
         line-height: 120%;
         text-align: left;
         width: 100%;
+        font-weight: 600;
       }
     }
     .A_BreakerText {
@@ -1481,8 +1482,12 @@
     .O_AdviceContnetBlock {
       // IdeasIconPictures
       .A_AdviceIllustration {
-        width: 23vw;
-        height: 16vw;
+        width: 28vw;
+        height: 23vw;
+
+        &.tall {
+          height: 34vw;
+        }
       }
       .M_AdvideArticleBlock {
         gap: 6vw;
@@ -1499,7 +1504,7 @@
       }
     }
     .A_AdviceImage {
-      width: 68%;
+      width: 63%;
       height: 31.738vw;
     }
   }

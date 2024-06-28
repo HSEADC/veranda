@@ -158,40 +158,6 @@
   }
 }
 
-// @media only screen and (max-width: 1380px) and (min-width: 428px) {
-//   .S_MenuBar {
-//     padding-bottom: 0;
-//     width: 92.477vw;
-
-//     .C_MainMenu {
-//       width: 100%;
-//       column-gap: 1.5rem;
-
-//       a {
-//         font-size: 1.567vw;
-//       }
-//     }
-
-//     .O_SearchBar {
-//       .M_SearchForm {
-//         .A_Input {
-//           height: 2.5rem;
-//           width: 17.391vw;
-//           font-size: 1.5vw;
-//         }
-
-//         .A_Button {
-//           display: flex;
-//           width: 3.623vw;
-//           height: 3.899vw;
-//           padding: 0;
-//           justify-content: center;
-//           align-items: center;
-//         }
-//       }
-//     }
-//   }
-// }
 @media only screen and (max-width: 1380px) and (min-width: 700px) {
   .S_MenuBar {
     padding-bottom: 0;
@@ -328,7 +294,7 @@
             width: 24px;
             height: 24px;
             right: 13vw;
-            top: 16%;
+            top: 21%;
             font-size: 4vw;
             background-color: transparent;
             color: var(--darkGreen);

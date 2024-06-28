@@ -1,4 +1,4 @@
-const homeURL = 'https://hseadc.github.io/veranda/'
+const homeURL = 'http://localhost:8080/'
 // https://hseadc.github.io/veranda/ |||| http://localhost:8080/ Вписать перед билдом
 const menu = [
   {
