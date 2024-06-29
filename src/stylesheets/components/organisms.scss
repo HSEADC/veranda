@@ -148,6 +148,10 @@ header.O_Header {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+
+  .M_ArticleInfo {
+    align-items: center;
+  }
 }
 .O_ArticleIdeas {
   display: flex;
@@ -171,7 +175,7 @@ header.O_Header {
 .rainingBg {
   background-image: url('images/Q_Raining.png');
   background-size: 107%;
-  background-position: 80% 129%;
+  background-position: 76% 129%;
 }
 // IdeaCardBig
 

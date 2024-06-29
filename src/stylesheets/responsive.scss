@@ -933,7 +933,7 @@
   .W_WholeArticle {
     width: 100%;
     padding: 1rem;
-    gap: 2rem;
+    gap: 9vw;
 
     .O_ArticleBlock:nth-child(6) {
       .A_MainTextArticle {
@@ -1143,7 +1143,7 @@
   // Background images
   .rainingBg {
     background-size: 108%;
-    background-position: bottom;
+    background-position: 65% 86%;
   }
   .Q_IconMedium {
     width: 4.348vw;
@@ -1155,6 +1155,11 @@
   }
   section.S_FirstScreen {
     width: 93.477vw;
+    .M_ArticleInfo {
+      .A_SubCard {
+        width: 80%;
+      }
+    }
 
     .O_WelcomeScreen {
       height: 42.969vw;
@@ -1438,6 +1443,7 @@
     .O_HeadingArticle {
       flex-direction: column;
       align-items: flex-start;
+      gap: 1vw;
 
       .M_IconHeadingLeft {
         width: 84%;
@@ -1514,11 +1520,21 @@
       .A_BreakerLineText {
         font-size: 1.953vw;
       }
+      .M_BreakerIconText {
+        gap: 1vw;
+
+        .A_Telegram {
+          width: 4.2vw;
+          height: 4.2vw;
+        }
+      }
+
       a.A_ActionArticle {
         font-size: 1.66vw;
       }
     }
   }
+
   .S_Phreference {
     padding: 4.688vw 0 10.938vw;
   }
