@@ -121,6 +121,13 @@ input.M_Searchbar:focus {
 .M_BreakerIconText {
   display: flex;
   gap: 1rem;
+
+  .A_Telegram {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-size: cover;
+    background-image: url('images/A_Telegram_Article.svg');
+  }
 }
 // IdeasArticleHtml
 .M_PersonProfileArticle {
