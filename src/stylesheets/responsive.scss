@@ -759,6 +759,16 @@
     padding: 0 1rem;
     height: 84vw;
     margin-top: 2rem;
+
+    .swiper-slide {
+      .O_ArticleSlider {
+        .M_ArticleInfo {
+          .A_SubCard {
+            width: 78%;
+          }
+        }
+      }
+    }
   }
   .Q_PersonArticlePic {
     width: 12vw;
