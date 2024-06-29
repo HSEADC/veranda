@@ -93,6 +93,10 @@ header.O_Header {
   align-items: center;
   transition: transform 0.5s ease, opacity 0.5s ease;
 
+  .M_ArticleInfo {
+    align-items: center;
+  }
+
   .Q_QaIconArticle {
     svg {
       width: 100%;
@@ -170,6 +174,7 @@ header.O_Header {
 
   .M_ArticleInfo {
     width: 50%;
+    align-items: center;
   }
 }
 .rainingBg {
