@@ -19,13 +19,13 @@
 
   .C_MainMenu {
     display: flex;
-    gap: 2rem;
+    gap: 2.3vw;
     align-items: center;
     justify-content: center;
 
-    a {
+    a.A_MainMenu {
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.3vw;
       color: var(--darkGreen);
 
       &:hover {
@@ -155,6 +155,12 @@
 @media only screen and (max-width: 1720px) and (min-width: 1300px) {
   .S_MenuBar {
     max-width: 1260px;
+
+    // .C_MainMenu {
+    //   a.A_MainMenu {
+    //     font-size: 1.4vw;
+    //   }
+    // }
   }
 }
 
@@ -164,11 +170,15 @@
     width: 92.477vw;
     max-width: 100vw;
 
+    .menubarLogo {
+      width: 17vw;
+    }
+
     .C_MainMenu {
       width: 100%;
       column-gap: 2.4vw;
 
-      a {
+      a.A_MainMenu {
         font-size: 1.6vw;
       }
     }
@@ -234,7 +244,7 @@
     }
     .C_MainMenu {
       gap: 7vw;
-      a {
+      a.A_MainMenu {
         font-size: 3.738vw;
       }
     }
