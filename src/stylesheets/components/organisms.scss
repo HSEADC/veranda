@@ -32,12 +32,15 @@ header.O_Header {
   background-color: var(--bezh);
   display: flex;
   width: 530px;
+  height: 560px;
   flex-direction: column;
   padding: 10px 10px 30px 10px;
   border-radius: 1vw;
   text-decoration: none;
   gap: 20px;
-
+  .M_ArticleInfo {
+    align-items: center;
+  }
   img {
     border-radius: 1vw;
   }
@@ -51,7 +54,9 @@ header.O_Header {
   text-decoration: none;
   background-color: var(--primaryGreen);
   gap: 20px;
-
+  .M_ArticleInfo {
+    align-items: center;
+  }
   img {
     border-radius: 1vw;
   }

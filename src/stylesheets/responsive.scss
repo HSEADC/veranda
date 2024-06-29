@@ -25,7 +25,7 @@
     line-height: 120%;
     width: 94%;
     em {
-      font-size: 26px;
+      font-size: 27px;
     }
   }
   h1.A_TitleAccent {
@@ -102,6 +102,11 @@
   .O_CardArticleBig {
     width: 620px;
     height: 580px;
+    gap: 1rem;
+
+    .M_ArticleInfo {
+      gap: 8px;
+    }
   }
   .O_CardHigh {
     width: 402px;
@@ -135,6 +140,9 @@
   .Q_PersonArticlePic {
     width: 72px;
     height: 72px;
+  }
+  .W_HomeScreenArticle {
+    border-radius: 0 0 4vw 4vw;
   }
   .S_ArticlePreview {
     width: 1240px;
@@ -187,8 +195,13 @@
   }
 
   .O_CardArticle {
-    width: 403px;
-    // height: 460px;
+    width: 410px;
+    height: 450px;
+    gap: 1rem;
+
+    .M_ArticleInfo {
+      gap: 8px;
+    }
   }
   .S_ArticlesHeading {
     padding: 3.125rem 0px;
@@ -1178,11 +1191,11 @@
   }
   .M_ArticleInfo {
     align-items: center;
-    gap: 1vw;
+    gap: 0.5vw;
   }
   .A_SubCard {
     font-size: 1.553vw;
-    width: 90%;
+    // width: 90%;
 
     em {
       font-size: 1.9vw;
@@ -1201,7 +1214,8 @@
   }
   .O_CardArticle {
     width: 30.4vw;
-    row-gap: 1.5vw;
+    height: 33vw;
+    row-gap: 1vw;
     min-width: 1px;
     padding-bottom: 1.5rem;
     padding: 1vw 1vw 2vw 1vw;
@@ -1359,7 +1373,8 @@
   }
   .O_CardArticleBig {
     width: 46.1vw;
-    height: auto;
+    height: 41vw;
+    gap: 1vw;
   }
   .С_ArticleCategoryTags {
     width: 80%;
@@ -1596,30 +1611,30 @@
   }
 }
 // ExtraForFont
-@media only screen and (max-width: 821px) and (min-width: 701px) {
-  .A_SubCard {
-    font-size: 1.4vw;
+// @media only screen and (max-width: 821px) and (min-width: 701px) {
+//   .A_SubCard {
+//     font-size: 1.4vw;
 
-    em {
-      font-size: 1.6vw;
-    }
-  }
-  .O_CardArticle {
-    max-height: 265px;
-    row-gap: 0.5vw;
-  }
+//     em {
+//       font-size: 1.6vw;
+//     }
+//   }
+//   .O_CardArticle {
+//     max-height: 265px;
+//     row-gap: 0.5vw;
+//   }
 
-  .M_TagLine {
-    gap: 4px;
+//   .M_TagLine {
+//     gap: 4px;
 
-    .A_Tag {
-      font-size: 0.9vw;
-    }
-  }
+//     .A_Tag {
+//       font-size: 0.9vw;
+//     }
+//   }
 
-  .M_AdviceCard {
-    padding: 1.5vw 1.5vw;
-    gap: 1.5vw;
-  }
-}
+//   .M_AdviceCard {
+//     padding: 1.5vw 1.5vw;
+//     gap: 1.5vw;
+//   }
+// }
 // Errors
