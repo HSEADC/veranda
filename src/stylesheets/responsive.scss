@@ -448,7 +448,7 @@
   }
   section.S_ArticlesHeading {
     background-color: var(--darkerBezh);
-    padding: 2rem 1rem;
+    padding: 9vw 1rem;
     margin-top: 2rem;
     .W_HeadingArticles {
       width: 95%;
@@ -513,8 +513,8 @@
     padding: 4vw 4vw;
   }
   .W_TitleLink {
-    margin-bottom: 6vw;
-    align-items: flex;
+    margin-bottom: 3vw;
+    align-items: flex-end;
   }
   .rainingBg {
     background-image: url('images/rainingMobile.png');
@@ -1178,7 +1178,7 @@
   }
   section.S_FirstScreen {
     width: 93.477vw;
-    margin-top: 3vw;
+    margin-top: 3rem;
     .M_ArticleInfo {
       .A_SubCard {
         width: 80%;
