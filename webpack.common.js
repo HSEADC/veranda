@@ -8,7 +8,51 @@ const SitemapPlugin = require('sitemap-webpack-plugin').default
 const webpack = require('webpack')
 const path = require('path')
 
-const paths = ['/', '/articles.html', 'ideas.html', 'index.html']
+const paths = [
+  '/',
+  '/articles.html',
+  'ideas.html',
+  'index.html',
+  'styleGuide.html',
+  'search.html',
+  'queAnswer.html',
+  'about.html',
+  'about.html',
+  'cherryJam.html',
+  'creativeCountryside.html',
+  'cultureCode.html',
+  'decoration.html',
+  'ecoHobby.html',
+  'flowersForYou.html',
+  'mayChillOut.html',
+  'nutriciolog.html',
+  'nutriciolog.html',
+  'picnicCountry.html',
+  'restzone.html',
+  'banya.html',
+  'child.html',
+  'collectingFlowers.html',
+  'drinks.html',
+  'herbs.html',
+  'ideaPage.html',
+  'kite.html',
+  'rainday.html',
+  'rayPhoto.html',
+  'romantice.html',
+  'sports.html',
+  'activeGames.html',
+  'carrot.html',
+  'fence.html',
+  'findDecor.html',
+  'komari.html',
+  'mushrooms.html',
+  'notFreeze.html',
+  'queAns.html',
+  'summerDrinks.html',
+  'taxes.html',
+  'watering.html',
+  'whichFlowers.html'
+]
 
 module.exports = {
   entry: {
@@ -92,7 +136,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new SitemapPlugin({ base: 'https://veranda-adc.ac', paths }),
+    new SitemapPlugin({ base: 'https://hseadc.github.io/veranda/', paths }),
 
     new CopyPlugin({
       patterns: [
