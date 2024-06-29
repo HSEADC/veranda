@@ -7,6 +7,9 @@
 
   .A_Tag {
     font-size: 14px;
+    padding: 0.5vw;
+    border-radius: 6px;
+    border: 1px solid var(--darkGreen);
   }
   .W_ArticleSlider {
     width: 1260px;
@@ -21,7 +24,7 @@
     }
   }
   .A_SubCard {
-    font-size: 1.5rem;
+    font-size: 1.1vw;
     line-height: 120%;
     width: 94%;
     em {
@@ -69,6 +72,9 @@
   //   CardsResposnsive
   .O_ArticleWide {
     height: 480px;
+    .M_ArticleInfo {
+      align-items: center;
+    }
   }
   .O_ArticleSlider {
     height: 480px;
@@ -718,7 +724,7 @@
     height: 360px;
   }
   .O_QaCard {
-    width: 41.5vw;
+    width: 43vw;
     gap: 3vw;
     height: 65vw;
     padding: 3.8vw 0;
@@ -1171,6 +1177,7 @@
   }
   section.S_FirstScreen {
     width: 93.477vw;
+    margin-top: 3vw;
     .M_ArticleInfo {
       .A_SubCard {
         width: 80%;
@@ -1219,7 +1226,7 @@
     // width: 90%;
 
     em {
-      font-size: 1.9vw;
+      font-size: 1.7vw;
     }
   }
   .A_Tag {
@@ -1382,6 +1389,7 @@
   // TabletArticles----------------------
   .W_ArticleSlider {
     width: 93.447vw;
+    margin-top: 3vw;
     .O_ArticleSlider {
       height: 40.527vw;
     }
