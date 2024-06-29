@@ -4916,7 +4916,7 @@ var S_MenuBar = /*#__PURE__*/function (_React$Component) {
 }(react.Component);
 
 ;// CONCATENATED MODULE: ./src/menubar-data.js
-var homeURL = 'http://localhost:8080/';
+var homeURL = 'https://hseadc.github.io/veranda/';
 // https://hseadc.github.io/veranda/ |||| http://localhost:8080/ Вписать перед билдом
 var menu = [{
   text: 'Статьи',
