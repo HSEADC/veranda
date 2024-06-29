@@ -146,6 +146,12 @@
   }
   .S_ArticlePreview {
     width: 1240px;
+
+    .O_HeadingArticle {
+      .M_IconHeadingLeft {
+        width: 78%;
+      }
+    }
   }
   .A_ArticleDescription {
     h3 {
@@ -685,7 +691,7 @@
   }
   .O_IdeaBigCard {
     height: 70vw;
-    background-size: auto 60%;
+    background-size: auto 65%;
     padding: 4vw;
     .M_LongArticleHeading {
       width: 100%;
@@ -1513,7 +1519,7 @@
     }
     .O_BreakerOpinion {
       .A_BreakerText {
-        font-size: 1.66vw;
+        font-size: 2vw;
       }
     }
     .O_SocialMediaBreaker {
