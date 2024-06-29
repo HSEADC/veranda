@@ -448,8 +448,9 @@
   }
   section.S_ArticlesHeading {
     background-color: var(--darkerBezh);
-    padding: 9vw 1rem;
+    padding: 8vw 2vw 16vw;
     margin-top: 2rem;
+    border-radius: 4vw;
     .W_HeadingArticles {
       width: 95%;
       .W_TitleLink {
@@ -525,7 +526,7 @@
     margin: 3rem auto 3rem;
     gap: 2rem;
     padding: 8vw 2vw 16vw;
-    border-radius: 1.5rem;
+    border-radius: 4vw;
     background-color: var(--darkerBezh);
     .W_AdvicesArticles {
       width: 95%;
@@ -771,7 +772,7 @@
       .O_ArticleSlider {
         .M_ArticleInfo {
           .A_SubCard {
-            width: 78%;
+            width: 88%;
           }
         }
       }
